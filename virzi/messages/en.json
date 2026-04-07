@@ -1,0 +1,210 @@
+{
+  "LocaleSwitcher": {
+    "en": "English",
+    "it": "Italiano",
+    "label": "Language"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "journal": "Journal",
+    "digitalProducts": "Digital products",
+    "concierge": "Concierge",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "brand": "Del Moro Sicily",
+    "tagline": "A cultural journal on Sicily and the Mediterranean — the luxury of not rushing.",
+    "explore": "Explore",
+    "journal": "Journal",
+    "about": "About",
+    "guides": "Guides",
+    "guidesSoon": "(soon)",
+    "privateAccess": "Private access",
+    "digitalProducts": "Digital products",
+    "contact": "Contact",
+    "rights": "© {year} Del Moro Sicily. All rights reserved.",
+    "location": "Palermo, Sicily"
+  },
+  "Hero": {
+    "videoAria": "Slow aerial views of Sicily — silent, cinematic intro",
+    "logoAlt": "Del Moro Sicily",
+    "title": "A slower way to experience Sicily",
+    "subtitle": "A cultural journal exploring the Mediterranean way of life.",
+    "ctaJournal": "Explore the Journal",
+    "ctaStory": "Read the Story"
+  },
+  "Home": {
+    "manifestoLabel": "Manifesto",
+    "manifesto1": "This project is born against the concept of aggressive tourism.",
+    "manifesto2": "Travel today has become a fast escape — a temporary illusion that turns places into products. We believe in something else: a slower way of experiencing, a deeper connection with culture, people, and time.",
+    "manifestoQuote": "Sicily is not just a destination. It is a way of living.",
+    "latestLabel": "Latest",
+    "latestTitle": "Latest from the Journal",
+    "latestLead": "One story each week — Culture & History, Lifestyle, Places, and Letters.",
+    "journalCta": "Explore the Journal",
+    "aboutLabel": "About",
+    "aboutTitle": "A cultural bridge between Sicily and those who love it.",
+    "aboutBody": "Through stories of architecture, history, food, and everyday life, Del Moro Sicily explores a slower Mediterranean lifestyle — rooted in tradition, shaped by light, lived without urgency. This is not tourism. It is a way of understanding a place.",
+    "discoverMore": "Discover more",
+    "letterLabel": "Weekly letter",
+    "letterTitle": "Each week, a new story.",
+    "letterBody": "Architecture, markets, silence, sea — subscribe for editorial notes from Sicily. No noise, no sales pitch."
+  },
+  "About": {
+    "label": "About",
+    "title": "This is not tourism.",
+    "intro": "It is a way of understanding a place.",
+    "p1": "This project is born against the concept of aggressive tourism, where travel is only a short period and a fast escape from day-to-day life, and the place you visit ends up on the same level as a new dress — something that lifts you for a week before you return to “real life.”",
+    "p2Before": "Here, fast tourism is replaced by something that belongs to all of us:",
+    "p2Em": "freedom",
+    "p2After": "— the freedom to enter, truly and deeply, into a culture. The Mediterranean and Sicilian culture in particular has always welcomed and absorbed influences from across the world, making it unique together with the character of Sicilians and the people of the island.",
+    "quoteLabel": "From the editorial",
+    "quote1": "The idea of fast tourism is replaced by that of freedom: the freedom to truly and deeply enter a culture — the Mediterranean and Sicilian one in particular — that has always welcomed and woven together cultures from around the world.",
+    "quote2": "This historic blend is not only in Sicilian ways and hospitality: it appears in food, architecture, and in that boundless idea of slow living.",
+    "p3": "We create a cultural bridge between Sicily and those who love it. Through stories of architecture, history, food, and everyday life, we explore a slower Mediterranean lifestyle — rooted in tradition, shaped by light, and lived without urgency.",
+    "darkLine1": "This is not tourism.",
+    "darkLine2a": "It's a way",
+    "darkLine2b": "of understanding a place.",
+    "roadmapLabel": "Roadmap",
+    "phase1": "Phase 1 (0–3 months):",
+    "phase1Text": "editorial only — depth, rhythm, and aesthetics. No selling.",
+    "phase2": "Phase 2 (3–6 months):",
+    "phase2Text": "curated digital guides for readers.",
+    "phase3": "Phase 3:",
+    "phase3Text": "private access and concierge — always discreet, never loud."
+  },
+  "Journal": {
+    "label": "Journal",
+    "title": "Stories of a place that moves at its own pace",
+    "intro": "Four editorial lines — one new piece every week.",
+    "guideCtaKicker": "For our readers",
+    "guideCtaTitle": "The Sicilian Summer",
+    "guideCtaLead": "A digital guide and audio experience — a small cultural companion, not a travel package.",
+    "guideCtaButton": "Explore the Guide",
+    "categoryNames": {
+      "cultureHistory": "Culture & History",
+      "lifestyle": "Lifestyle",
+      "places": "Places",
+      "letters": "Letters"
+    },
+    "storyCount": "{count, plural, =1 {# story} other {# stories}}",
+    "pillars": {
+      "cultureHistory": {
+        "title": "Culture & History",
+        "description": "Architecture, stratified memories, and the civilizations that shaped the island."
+      },
+      "lifestyle": {
+        "title": "Lifestyle",
+        "description": "Slow rituals, community, food as sustenance and story, and light as measure of the day."
+      },
+      "places": {
+        "title": "Places",
+        "description": "Olives and boats, inland silence and coastline: geography felt, not listed."
+      },
+      "letters": {
+        "title": "Letters",
+        "description": "Poetic notes on belonging, solitude, return, and why Sicily stays with you."
+      }
+    }
+  },
+  "Article": {
+    "further": "Further",
+    "furtherLead": "Share this story with someone who loves thoughtful travel.",
+    "privateAccess": "Request Private Access",
+    "related": "Related stories",
+    "subscribeTitle": "Subscribe to the letter",
+    "subscribeLead": "Receive one thoughtful story each week from Sicily."
+  },
+  "Guides": {
+    "label": "Phase 2",
+    "title": "Guides, in time",
+    "p1": "We are building a small collection of cultural digital guides for our readers — written with the same care as the Journal, never sold like standard travel products.",
+    "p2": "For now, follow the weekly stories. The guides will arrive quietly, when the editorial voice is ready.",
+    "cta": "Explore the Journal"
+  },
+  "DigitalProducts": {
+    "pageLabel": "Digital products",
+    "pageTitle": "Guides and listening experiences for slow travelers.",
+    "pageIntro": "Editorial pieces made with the same voice as the Journal — cultural depth, never a catalogue tone.",
+    "productLabel": "First product",
+    "productTitle": "The Sicilian Summer",
+    "productFormat": "Digital guide + audio experience.",
+    "priceLabel": "Suggested price:",
+    "priceRange": "29€ – 39€",
+    "presentationLabel": "How we present it",
+    "notProduct": "Not as a product.",
+    "butAs": "But as:",
+    "readerGuide": "A small cultural guide created for our readers."
+  },
+  "Concierge": {
+    "label": "Concierge",
+    "title": "A concierge service for those who want to experience Sicily authentically.",
+    "intro": "Itineraries, tables, villas, and experiences chosen with care — beyond the obvious circuits, close to the island’s real life. Discreet, bespoke, never loud.",
+    "servicesTitle": "Services",
+    "services": [
+      "Personalized itineraries",
+      "Hidden restaurants",
+      "Villas",
+      "Local experiences",
+      "Artisans"
+    ],
+    "requestTitle": "Request",
+    "requestLead": "Tell us what kind of journey you imagine. We respond personally and curate each request with care."
+  },
+  "Contact": {
+    "label": "Contact",
+    "title": "Begin your Sicily.",
+    "intro": "For editorial conversations, guide access, or private Sicily requests.",
+    "detailsTitle": "Studio",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "countryLine": "Italy",
+    "writeTitle": "Write to us",
+    "newsletterTitle": "Newsletter",
+    "newsletterLead": "Subscribe to receive weekly stories from Sicily."
+  },
+  "Forms": {
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribeSuccess": "You are subscribed. Welcome to Del Moro Sicily.",
+    "subscribeError": "Something went wrong. Please try again.",
+    "fullName": "Full name",
+    "email": "Email",
+    "message": "Your message",
+    "contactSubmit": "Begin Your Sicily",
+    "contactSuccess": "Thank you. We will reply soon with care.",
+    "contactError": "Unable to send your message right now.",
+    "travelWindow": "Travel window",
+    "guests": "Number of guests",
+    "conciergeNotes": "Tell us about your rhythm, interests, and what kind of Sicily you are looking for.",
+    "conciergeSubmit": "Request Private Access",
+    "conciergeSuccess": "Request received. We will respond personally within 48 hours.",
+    "conciergeError": "Unable to send your request now. Please try again later."
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Story not found.",
+    "body": "The page you are looking for is no longer available or has moved.",
+    "cta": "Explore the Journal"
+  },
+  "Metadata": {
+    "siteName": "Del Moro Sicily",
+    "siteDescription": "An international cultural journal on Sicily and the Mediterranean — slow, poetic, independent of aggressive tourism.",
+    "homeTitle": "Not a destination, a state of mind",
+    "homeDescription": "A cultural digital journal on Sicily and the Mediterranean — slow, poetic, and free of aggressive tourism.",
+    "aboutTitle": "About",
+    "aboutDescription": "Against aggressive tourism: Del Moro Sicily is an international cultural journal on Mediterranean slowness, Sicily, and freedom in how we approach a place.",
+    "journalTitle": "Journal",
+    "journalDescription": "Weekly editorial stories on Sicilian culture — Culture & History, Lifestyle, Places, and Letters.",
+    "guidesTitle": "Guides",
+    "guidesDescription": "Curated digital guides — Del Moro Sicily, phase two. Editorial companions, not packages.",
+    "conciergeTitle": "Concierge — Authentic Sicily",
+    "conciergeDescription": "Concierge for travelers who want authentic Sicily: itineraries, restaurants, villas, local experiences, and artisans.",
+    "contactTitle": "Contact",
+    "contactDescription": "Contact Del Moro Sicily for editorial inquiries and private requests.",
+    "digitalProductsTitle": "Digital products",
+    "digitalProductsDescription": "The Sicilian Summer — a digital guide and audio experience for Del Moro Sicily readers."
+  }
+}

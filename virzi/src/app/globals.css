@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/*
+  Palette allineata al tema The Cappa (stesso stack di masserialelamie.it):
+  - body / canvas: #fff
+  - testo: #666, titoli #222
+  - fasce: #f5efe5, #f8f5f0
+  - accento oro: #aa8453, CTA: #ab8a62, hover CTA: #222
+  - bordi caldi: #eee3d0
+*/
+:root {
+  --paper: #ffffff;
+  --cream: #f8f5f0;
+  --section-warm: #f5efe5;
+  --ink: #222222;
+  --muted: #666666;
+  /* Secondary copy — come blocchi Elementor sul loro sito */
+  --muted-warm: #766666;
+  --gold-label: #aa8453;
+  --bronze: #ab8a62;
+  --bronze-hover: #222222;
+  --line: #eee3d0;
+  --line-neutral: #ececec;
+  --on-dark-muted: #adadad;
+}
+
+@theme inline {
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-label: var(--font-label);
+}
+
+body {
+  background: var(--paper);
+  color: var(--muted);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.75em;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-label {
+  font-family: var(--font-label), system-ui, sans-serif;
+}
+
+.field {
+  @apply w-full px-4 py-3 text-sm outline-none placeholder:text-[color:var(--muted)];
+  border: 1px solid var(--bronze);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.field:focus {
+  border-color: var(--gold-label);
+}
+
+.container {
+  @apply mx-auto w-full max-w-[1140px] px-5 md:px-8;
+}
