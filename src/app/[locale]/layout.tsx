@@ -3,8 +3,10 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Barlow, Barlow_Condensed, Gilda_Display } from "next/font/google";
+import { BackToTop } from "@/components/back-to-top";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ScrollToTopOnNavigation } from "@/components/scroll-to-top";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 import "../globals.css";
@@ -71,9 +73,11 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col bg-[color:var(--paper)]">
         <NextIntlClientProvider messages={messages}>
+          <ScrollToTopOnNavigation />
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
+          <BackToTop />
         </NextIntlClientProvider>
       </body>
     </html>

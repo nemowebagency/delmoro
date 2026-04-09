@@ -21,11 +21,11 @@ export const siteConfig = {
   siteUrl,
   nav: [
     { href: "/", labelKey: "home" },
-    { href: "/about", labelKey: "about" },
+    { href: "/esperienze", labelKey: "experiences" },
     { href: "/journal", labelKey: "journal" },
-    { href: "/digital-products", labelKey: "digitalProducts" },
-    { href: "/concierge", labelKey: "concierge" },
     { href: "/contact", labelKey: "contact" },
+    { href: "/about", labelKey: "about" },
+    { href: "/prenota", labelKey: "book" },
   ],
 };
 

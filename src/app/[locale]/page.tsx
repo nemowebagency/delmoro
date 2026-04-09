@@ -40,12 +40,52 @@ export default async function Home() {
         <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
           {t("manifestoLabel")}
         </p>
-        <div className="mt-6 max-w-3xl space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-          <p>{t("manifesto1")}</p>
-          <p>{t("manifesto2")}</p>
-          <p className="font-serif text-2xl font-normal leading-snug text-[color:var(--ink)] md:text-[32px]">
-            {t("manifestoQuote")}
-          </p>
+        <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-12">
+          <div className="space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+            <p>{t("manifesto1")}</p>
+            <p>{t("manifesto2")}</p>
+            <p className="font-serif text-2xl font-normal leading-snug text-[color:var(--ink)] md:text-[32px]">
+              {t("manifestoQuote")}
+            </p>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/media/img/wall-opening-with-view-cityscape-by-sea.jpg"
+              alt="Sicily view"
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
+          </div>
+        </div>
+      </AnimatedSection>
+
+      <AnimatedSection className="container border-y border-[color:var(--line)] py-[84px] md:py-[104px]">
+        <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+          <div>
+            <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
+              {t("experiencesLabel")}
+            </p>
+            <h2 className="mt-4 font-serif text-4xl font-normal leading-tight text-[color:var(--ink)] md:text-[45px]">
+              {t("experiencesTitle")}
+            </h2>
+            <p className="mt-3 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
+              {t("experiencesLead")}
+            </p>
+          </div>
+          <div className="flex flex-col justify-end gap-4">
+            <ul className="grid gap-3 text-[15px] leading-[1.75] text-[color:var(--muted)] md:grid-cols-2">
+              {(t.raw("experiencesBullets") as string[]).map((s) => (
+                <li key={s}>• {s}</li>
+              ))}
+            </ul>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <ButtonLink href="/esperienze" variant="ghost">
+                {t("experiencesCta")}
+              </ButtonLink>
+              <ButtonLink href="/prenota">{t("bookCta")}</ButtonLink>
+            </div>
+          </div>
         </div>
       </AnimatedSection>
 

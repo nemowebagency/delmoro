@@ -11,6 +11,7 @@ function FlagUk({ className }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60 30"
       className={className}
+      preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
     >
       <path fill="#012169" d="M0 0h60v30H0z" />
@@ -28,6 +29,7 @@ function FlagIt({ className }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 3 2"
       className={className}
+      preserveAspectRatio="xMidYMid slice"
       aria-hidden="true"
     >
       <path fill="#009246" d="M0 0h1v2H0z" />
@@ -68,11 +70,13 @@ export function LocaleSwitcher() {
                 : "opacity-50 hover:opacity-80",
             )}
           >
-            {isEn ? (
-              <FlagUk className="h-2.5 w-5 rounded-[1px]" />
-            ) : (
-              <FlagIt className="h-2.5 w-[0.94rem] rounded-[1px]" />
-            )}
+            <span className="block h-2.5 w-5 overflow-hidden rounded-[1px]">
+              {isEn ? (
+                <FlagUk className="h-full w-full" />
+              ) : (
+                <FlagIt className="h-full w-full" />
+              )}
+            </span>
           </Link>
         );
       })}

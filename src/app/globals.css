@@ -19,6 +19,7 @@
   --gold-label: #aa8453;
   --bronze: #ab8a62;
   --bronze-hover: #222222;
+  --brand: #b99e7e;
   --line: #eee3d0;
   --line-neutral: #ececec;
   --on-dark-muted: #adadad;
@@ -43,6 +44,17 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Hide Next.js DevTools floating indicator ("N" button) in dev. */
+#__next-devtools,
+#__next_devtools,
+[id*="__next-devtools"],
+[id*="__next_devtools"],
+[class*="next-devtools"],
+[data-nextjs-devtools],
+[data-nextjs-devtools-button] {
+  display: none !important;
 }
 
 .font-label {

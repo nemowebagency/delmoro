@@ -4,16 +4,21 @@ export type EditorialPillar =
   | "Places"
   | "Letters";
 
+export type Localized<T> = {
+  en: T;
+  it: T;
+};
+
 export type JournalArticle = {
   slug: string;
-  title: string;
-  excerpt: string;
+  title: Localized<string>;
+  excerpt: Localized<string>;
   category: EditorialPillar;
-  readTime: string;
-  publishedAt: string;
+  readTime: Localized<string>;
+  publishedAt: Localized<string>;
   heroImage: string;
-  location: string;
-  content: string[];
+  location: Localized<string>;
+  content: Localized<string[]>;
 };
 
 export type Guide = {

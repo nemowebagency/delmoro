@@ -21,7 +21,12 @@ export async function generateMetadata({
   });
 }
 
-export default async function JournalPage() {
+export default async function JournalPage({
+  params,
+}: {
+  params: Promise<{ locale: "en" | "it" }>;
+}) {
+  const { locale } = await params;
   const t = await getTranslations("Journal");
 
   const categoryLabel = (c: EditorialPillar) =>
@@ -50,6 +55,7 @@ export default async function JournalPage() {
               key={article.slug}
               article={article}
               categoryLabel={categoryLabel(article.category)}
+              locale={locale}
             />
           ))}
         </div>

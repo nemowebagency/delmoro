@@ -19,6 +19,16 @@ export async function SiteFooter() {
           </p>
           <ul className="space-y-3">
             <li>
+              <Link href="/" className="transition hover:text-white">
+                {t("home")}
+              </Link>
+            </li>
+            <li>
+              <Link href="/esperienze" className="transition hover:text-white">
+                {t("experiences")}
+              </Link>
+            </li>
+            <li>
               <Link href="/journal" className="transition hover:text-white">
                 {t("journal")}
               </Link>
@@ -29,19 +39,13 @@ export async function SiteFooter() {
               </Link>
             </li>
             <li>
-              <Link href="/guides" className="transition hover:text-white">
-                {t("guides")}{" "}
-                <span className="text-white/40">{t("guidesSoon")}</span>
+              <Link href="/prenota" className="transition hover:text-white">
+                {t("book")}
               </Link>
             </li>
             <li>
-              <Link href="/digital-products" className="transition hover:text-white">
-                {t("digitalProducts")}
-              </Link>
-            </li>
-            <li>
-              <Link href="/concierge" className="transition hover:text-white">
-                {t("privateAccess")}
+              <Link href="/contact" className="transition hover:text-white">
+                {t("contact")}
               </Link>
             </li>
           </ul>

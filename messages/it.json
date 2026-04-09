@@ -6,22 +6,21 @@
   },
   "Nav": {
     "home": "Home",
+    "experiences": "Esperienze",
     "about": "Chi siamo",
     "journal": "Journal",
-    "digitalProducts": "Prodotti digitali",
-    "concierge": "Concierge",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "book": "Prenota"
   },
   "Footer": {
     "brand": "Del Moro Sicily",
     "tagline": "Un journal culturale su Sicilia e Mediterraneo — il lusso di non correre.",
     "explore": "Esplora",
+    "home": "Home",
+    "experiences": "Esperienze",
     "journal": "Journal",
     "about": "Chi siamo",
-    "guides": "Guide",
-    "guidesSoon": "(presto)",
-    "privateAccess": "Accesso privato",
-    "digitalProducts": "Prodotti digitali",
+    "book": "Prenota",
     "contact": "Contatti",
     "rights": "© {year} Del Moro Sicily. Tutti i diritti riservati.",
     "location": "Palermo, Sicilia"
@@ -49,30 +48,191 @@
     "discoverMore": "Scopri di più",
     "letterLabel": "Lettera settimanale",
     "letterTitle": "Ogni settimana, una nuova storia.",
-    "letterBody": "Architettura, mercati, silenzio, mare — iscriviti per note editoriali dalla Sicilia. Niente rumore, niente pressioni commerciali."
+    "letterBody": "Architettura, mercati, silenzio, mare — iscriviti per note editoriali dalla Sicilia. Niente rumore, niente pressioni commerciali.",
+    "experiencesLabel": "Esperienze",
+    "experiencesTitle": "Viaggi su misura in Sicilia",
+    "experiencesLead": "Tour fittizi per ispirarti, e servizi reali per organizzare tutto: auto, barche, feste private, ville, tavoli e logistica.",
+    "experiencesBullets": [
+      "Sicilia occidentale (Palermo, Trapani, Egadi)",
+      "Arte, mare, borghi e cucina",
+      "Noleggio auto e transfer",
+      "Barche, skipper ed escursioni"
+    ],
+    "experiencesCta": "Vedi le Esperienze",
+    "bookCta": "Prenota"
   },
   "About": {
     "label": "Chi siamo",
-    "title": "Questo non è turismo.",
-    "intro": "È un modo di capire un luogo.",
-    "p1": "Questo progetto nasce contro il turismo aggressivo, in cui il viaggio è solo una parentesi e una fuga dalla quotidianità, e il luogo che visiti finisce allo stesso livello di un vestito nuovo — qualcosa che ti solleva per una settimana prima di tornare alla «vita reale».",
-    "p2Before": "Qui il turismo veloce lascia spazio a ciò che appartiene a tutti:",
-    "p2Em": "libertà",
-    "p2After": "— la libertà di entrare, davvero e in profondità, in una cultura. Il Mediterraneo e la cultura siciliana in particolare hanno sempre accolto e assorbito influenze da tutto il mondo, restando unici insieme al carattere dei siciliani e delle persone dell’isola.",
-    "quoteLabel": "Dall'editoriale",
-    "quote1": "Il concetto di fast tourism viene sostituito da quello di libertà: libertà di entrare davvero e a fondo in una cultura, quella mediterranea e siciliana in particolare, che da sempre ha ospitato e inglobato culture da tutto il mondo.",
-    "quote2": "Questo storico mix non sta solo nei modi di fare e nell'accoglienza siciliana: si riflette nel cibo, nell'architettura e in quel concetto infinito di vita lenta.",
-    "p3": "Creiamo un ponte culturale tra la Sicilia e chi la ama. Attraverso storie di architettura, storia, cibo e vita quotidiana, esploriamo un Mediterraneo più lento — radicato nella tradizione, modellato dalla luce, vissuto senza urgenza.",
-    "darkLine1": "Questo non è turismo.",
-    "darkLine2a": "È un modo",
-    "darkLine2b": "di capire un luogo.",
-    "roadmapLabel": "Roadmap",
-    "phase1": "Fase 1 (0–3 mesi):",
-    "phase1Text": "solo editoriale — profondità, respiro ed estetica. Nessuna vendita.",
-    "phase2": "Fase 2 (3–6 mesi):",
-    "phase2Text": "guide digitali curate per i lettori.",
-    "phase3": "Fase 3:",
-    "phase3Text": "accesso privato e concierge — sempre discreto, mai invadente."
+    "title": "Del Moro Sicily",
+    "intro": "Un servizio ideato e portato avanti da Gabriele.",
+    "p1": "Del Moro è un servizio ideato e portato avanti da Gabriele, un ragazzo siciliano con la passione per la sua terra e per tutto ciò che la rende unica: la luce, i paesaggi, i sapori e le persone.",
+    "p2": "L’idea è semplice: creare esperienze autentiche e su misura in Sicilia, con attenzione ai dettagli e al ritmo di chi viaggia.",
+    "p3": "Dai tour in Sicilia occidentale ai servizi privati (auto, barche, feste e momenti speciali), ogni richiesta viene curata con discrezione e presenza reale sul territorio."
+  },
+  "Experiences": {
+    "label": "Esperienze",
+    "title": "Sicilia occidentale, e oltre",
+    "intro": "Alcune idee di tour (fittizie) per iniziare a immaginare il viaggio. Tutto può essere personalizzato in base al tuo ritmo.",
+    "duration": "Durata",
+    "area": "Zona",
+    "priceFrom": "A partire da",
+    "galleryLabel": "Galleria",
+    "close": "Chiudi",
+    "tours": [
+      {
+        "title": "Palermo & Monreale",
+        "lead": "Una giornata tra vicoli, mercati storici, cucina di strada e la luce dorata dei mosaici normanni.",
+        "duration": "1 giorno",
+        "area": "Palermo / Monreale",
+        "priceFrom": "€ 190",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1586201375754-79b26055f2a4?auto=format&fit=crop&w=1200&q=80", "alt": "Palermo streets" },
+          { "src": "https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&w=1200&q=80", "alt": "Sicilian market" },
+          { "src": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", "alt": "Monreale mosaics" }
+        ],
+        "details": [
+          "Passeggiamo tra i mercati storici e le strade più vive della città, fermandoci dove il cibo racconta davvero Palermo.",
+          "Nel pomeriggio ci spostiamo verso Monreale per chiudere la giornata tra silenzio, panorami e mosaici normanni."
+        ],
+        "highlights": [
+          "Mercati + street food selezionato",
+          "Monreale e mosaici",
+          "Tempo libero per foto e soste"
+        ]
+      },
+      {
+        "title": "Zingaro & San Vito",
+        "lead": "Sentieri sul mare, calette trasparenti, pranzo semplice e tramonto sulla costa.",
+        "duration": "1 giorno",
+        "area": "Trapani",
+        "priceFrom": "€ 240",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80", "alt": "Coastline" },
+          { "src": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80", "alt": "Sea trail" },
+          { "src": "https://images.unsplash.com/photo-1505739773434-c9fca0d0ed24?auto=format&fit=crop&w=1200&q=80", "alt": "San Vito Lo Capo beach" }
+        ],
+        "details": [
+          "Un giorno di mare vero: camminate leggere, soste in calette e tempo per nuotare senza fretta.",
+          "Chiudiamo con San Vito Lo Capo, tra spiaggia e un finale al tramonto."
+        ],
+        "highlights": [
+          "Cale e snorkeling",
+          "Percorsi modulabili (easy/medium)",
+          "Tramonto in costa"
+        ]
+      },
+      {
+        "title": "Erice & Marsala",
+        "lead": "Panorami d’altura, vento, saline al tramonto e degustazione in cantina.",
+        "duration": "1 giorno",
+        "area": "Erice / Marsala",
+        "priceFrom": "€ 220",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80", "alt": "Hilltop town" },
+          { "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80", "alt": "Salt pans" },
+          { "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80", "alt": "Winery tasting" }
+        ],
+        "details": [
+          "Erice è pietra, vento e viste infinite: ci muoviamo lentamente tra vicoli e botteghe.",
+          "Nel tardo pomeriggio scendiamo verso le saline e chiudiamo con una degustazione in zona Marsala."
+        ],
+        "highlights": [
+          "Borgo medievale di Erice",
+          "Saline al tramonto",
+          "Degustazione in cantina (fittizia)"
+        ]
+      },
+      {
+        "title": "Templi & Scala dei Turchi",
+        "lead": "Archeologia e mare: una giornata tra colonne antiche e scogli bianchi.",
+        "duration": "1 giorno",
+        "area": "Agrigento",
+        "priceFrom": "€ 260",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1526932521119-1ee3d32d6c50?auto=format&fit=crop&w=1200&q=80", "alt": "Ancient temple" },
+          { "src": "https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?auto=format&fit=crop&w=1200&q=80", "alt": "White cliffs" },
+          { "src": "https://images.unsplash.com/photo-1520975693414-6b92f15536b6?auto=format&fit=crop&w=1200&q=80", "alt": "Sea view" }
+        ],
+        "details": [
+          "Una mattina tra i templi, con pause per capire la storia senza trasformarla in una corsa.",
+          "Nel pomeriggio ci spostiamo verso la Scala dei Turchi per il mare e la luce sulla roccia bianca."
+        ],
+        "highlights": [
+          "Valle dei Templi (percorso flessibile)",
+          "Scala dei Turchi",
+          "Soste foto e mare"
+        ]
+      },
+      {
+        "title": "Favignana in barca",
+        "lead": "Soste nelle cale più belle, tempo lento in acqua, pranzo a bordo.",
+        "duration": "1 giorno",
+        "area": "Isole Egadi",
+        "priceFrom": "€ 390",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80", "alt": "Boat day" },
+          { "src": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80", "alt": "Clear water" },
+          { "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80", "alt": "Island coast" }
+        ],
+        "details": [
+          "Giornata in barca tra le cale iconiche di Favignana: soste, bagni e ritmo rilassato.",
+          "Pranzo a bordo e rientro nel tardo pomeriggio con la luce migliore."
+        ],
+        "highlights": [
+          "Cale principali + soste extra",
+          "Pranzo a bordo (fittizio)",
+          "Possibilità privata o condivisa"
+        ]
+      },
+      {
+        "title": "Noto, Modica, Ragusa",
+        "lead": "Barocco, cioccolato, piazze e sera lenta tra pietra chiara e profumi.",
+        "duration": "2 giorni",
+        "area": "Val di Noto",
+        "priceFrom": "€ 540",
+        "gallery": [
+          { "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80", "alt": "Baroque street" },
+          { "src": "https://images.unsplash.com/photo-1541976844346-f18aeac57b06?auto=format&fit=crop&w=1200&q=80", "alt": "Town square" },
+          { "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80", "alt": "Evening atmosphere" }
+        ],
+        "details": [
+          "Due giorni per respirare il barocco: Noto al mattino, Modica per una pausa dolce e Ragusa Ibla per una sera lenta.",
+          "Il secondo giorno lo moduliamo tra scorci, botteghe e tempi vuoti — perché sono quelli che restano."
+        ],
+        "highlights": [
+          "Noto e passeggiata barocca",
+          "Modica (cioccolato)",
+          "Ragusa Ibla al tramonto"
+        ]
+      }
+    ],
+    "otherServicesTitle": "Altri servizi",
+    "otherServicesLead": "Oltre ai tour, Del Moro può occuparsi anche di servizi su richiesta per rendere il viaggio (o un evento) semplice e speciale.",
+    "otherServices": [
+      "Noleggio auto con consegna e ritiro",
+      "Noleggio barche e skipper",
+      "Feste private e occasioni speciali",
+      "Chef privato e tavoli selezionati",
+      "Ville e soggiorni su misura",
+      "Transfer e logistica"
+    ],
+    "cta": "Prenota / Richiedi informazioni"
+  },
+  "Booking": {
+    "label": "Prenota",
+    "title": "Raccontaci cosa immagini",
+    "intro": "Compila la richiesta e ti ricontattiamo personalmente per costruire un’esperienza su misura.",
+    "servicesTitle": "Cosa possiamo organizzare",
+    "services": [
+      "Tour personalizzati in Sicilia occidentale e non solo",
+      "Auto e transfer",
+      "Barche, escursioni e skipper",
+      "Feste private ed eventi",
+      "Ville e soggiorni",
+      "Esperienze locali"
+    ],
+    "requestTitle": "Richiesta",
+    "requestLead": "Dicci periodo, numero di persone e cosa ti piacerebbe fare: rispondiamo con proposte concrete."
   },
   "Journal": {
     "label": "Journal",
@@ -198,12 +358,16 @@
     "aboutDescription": "Contro il turismo aggressivo: Del Moro Sicily è un journal culturale internazionale sulla lentezza mediterranea, la Sicilia e la libertà di avvicinarsi a un luogo.",
     "journalTitle": "Journal",
     "journalDescription": "Storie editoriali settimanali sulla cultura siciliana — Cultura e storia, Stile di vita, Luoghi e Lettere.",
+    "experiencesTitle": "Esperienze",
+    "experiencesDescription": "Tour ed esperienze (esempi) in Sicilia occidentale e servizi su richiesta: auto, barche, feste private e altro.",
     "guidesTitle": "Guide",
     "guidesDescription": "Guide digitali curate — Del Moro Sicily, fase due. Compagne editoriali, non pacchetti.",
     "conciergeTitle": "Concierge — Sicilia autentica",
     "conciergeDescription": "Servizio concierge per chi vuole vivere la Sicilia in modo autentico: itinerari, ristoranti, ville, esperienze e artigiani.",
     "contactTitle": "Contatti",
     "contactDescription": "Contatta Del Moro Sicily per richieste editoriali e private.",
+    "bookingTitle": "Prenota",
+    "bookingDescription": "Richiedi informazioni o prenota un’esperienza: tour, auto, barche, eventi e servizi su misura in Sicilia.",
     "digitalProductsTitle": "Prodotti digitali",
     "digitalProductsDescription": "The Sicilian Summer — guida digitale ed esperienza audio per i lettori di Del Moro Sicily."
   }

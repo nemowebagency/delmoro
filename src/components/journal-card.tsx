@@ -5,16 +5,22 @@ import type { JournalArticle } from "@/lib/types";
 export function JournalCard({
   article,
   categoryLabel,
+  locale,
 }: {
   article: JournalArticle;
   categoryLabel?: string;
+  locale: "en" | "it";
 }) {
+  const title = article.title[locale];
+  const excerpt = article.excerpt[locale];
+  const publishedAt = article.publishedAt[locale];
+  const readTime = article.readTime[locale];
   return (
     <article className="group">
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={article.heroImage}
-          alt={article.title}
+          alt={title}
           fill
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
           sizes="(max-width: 768px) 100vw, 33vw"
@@ -29,14 +35,14 @@ export function JournalCard({
             href={`/journal/${article.slug}`}
             className="transition hover:text-[color:var(--gold-label)]"
           >
-            {article.title}
+            {title}
           </Link>
         </h3>
         <p className="mt-2 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-          {article.excerpt}
+          {excerpt}
         </p>
         <p className="mt-3 text-xs text-[color:var(--muted-warm)]">
-          {article.publishedAt} · {article.readTime}
+          {publishedAt} · {readTime}
         </p>
       </div>
     </article>
