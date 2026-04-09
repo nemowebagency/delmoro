@@ -3,6 +3,7 @@ import { AnimatedSection } from "@/components/animated-section";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero";
 import { JournalCard } from "@/components/journal-card";
+import { RevealText } from "@/components/reveal-text";
 import { ButtonLink } from "@/components/ui/button-link";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
 import type { EditorialPillar } from "@/lib/types";
@@ -47,8 +48,8 @@ export default async function Home({
         </p>
         <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px] lg:items-start lg:gap-12">
           <div className="space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            <p>{t("manifesto1")}</p>
-            <p>{t("manifesto2")}</p>
+            <RevealText>{t("manifesto1")}</RevealText>
+            <RevealText delay={0.06}>{t("manifesto2")}</RevealText>
             <p className="font-serif text-2xl font-normal leading-snug text-[color:var(--ink)] md:text-[32px]">
               {t("manifestoQuote")}
             </p>
@@ -74,9 +75,9 @@ export default async function Home({
             <h2 className="mt-4 font-serif text-4xl font-normal leading-tight text-[color:var(--ink)] md:text-[45px]">
               {t("experiencesTitle")}
             </h2>
-            <p className="mt-3 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
+            <RevealText className="mt-3 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
               {t("experiencesLead")}
-            </p>
+            </RevealText>
           </div>
           <div className="flex flex-col justify-end gap-4">
             <ul className="grid gap-3 text-[15px] leading-[1.75] text-[color:var(--muted)] md:grid-cols-2">
@@ -104,9 +105,9 @@ export default async function Home({
               <h2 className="mt-4 font-serif text-4xl font-normal leading-tight text-[color:var(--ink)] md:text-[45px]">
                 {t("latestTitle")}
               </h2>
-              <p className="mt-3 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
+              <RevealText className="mt-3 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
                 {t("latestLead")}
-              </p>
+              </RevealText>
             </div>
             <ButtonLink href="/journal" variant="ghost">
               {t("journalCta")}
@@ -136,9 +137,9 @@ export default async function Home({
             </h2>
           </div>
           <div className="flex flex-col justify-end">
-            <p className="text-[15px] leading-[1.75] text-[color:var(--muted)]">
+            <RevealText className="text-[15px] leading-[1.75] text-[color:var(--muted)]">
               {t("aboutBody")}
-            </p>
+            </RevealText>
             <ButtonLink href="/about" className="mt-8 w-fit" variant="ghost">
               {t("discoverMore")}
             </ButtonLink>
@@ -154,9 +155,9 @@ export default async function Home({
           <h3 className="mt-4 font-serif text-4xl font-normal leading-tight text-[color:var(--muted)] md:text-[45px]">
             {t("letterTitle")}
           </h3>
-          <p className="mx-auto mt-4 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted-warm)]">
+          <RevealText className="mx-auto mt-4 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted-warm)]">
             {t("letterBody")}
-          </p>
+          </RevealText>
           <div className="mx-auto mt-8 flex max-w-xl justify-center">
             <NewsletterForm />
           </div>

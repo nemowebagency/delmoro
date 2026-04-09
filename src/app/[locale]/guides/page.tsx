@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ButtonLink } from "@/components/ui/button-link";
+import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata({
@@ -28,12 +29,15 @@ export default async function GuidesPage() {
       <h1 className="mt-6 max-w-2xl font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
         {t("title")}
       </h1>
-      <p className="mt-6 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
+      <RevealText className="mt-6 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted)]">
         {t("p1")}
-      </p>
-      <p className="mt-4 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted-warm)]">
+      </RevealText>
+      <RevealText
+        className="mt-4 max-w-xl text-[15px] leading-[1.75] text-[color:var(--muted-warm)]"
+        delay={0.06}
+      >
         {t("p2")}
-      </p>
+      </RevealText>
       <ButtonLink href="/journal" className="mt-8">
         {t("cta")}
       </ButtonLink>

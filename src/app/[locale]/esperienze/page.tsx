@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ExperienceTourCards, type ExperienceTour } from "@/components/experience-tour-cards";
+import { RevealText } from "@/components/reveal-text";
 import { ButtonLink } from "@/components/ui/button-link";
 import { buildMetadata } from "@/lib/site";
 
@@ -31,9 +32,9 @@ export default async function ExperiencesPage() {
         <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
           {t("title")}
         </h1>
-        <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("intro")}
-        </p>
+        </RevealText>
       </header>
 
       <section className="mt-12">
@@ -53,7 +54,7 @@ export default async function ExperiencesPage() {
         </h2>
         <div className="mt-4 grid gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:items-center md:gap-12">
           <div className="text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            <p>{t("otherServicesLead")}</p>
+            <RevealText>{t("otherServicesLead")}</RevealText>
             <ul className="mt-6 grid gap-3 md:grid-cols-2">
               {(t.raw("otherServices") as string[]).map((s) => (
                 <li key={s}>• {s}</li>

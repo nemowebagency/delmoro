@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { AnimatedSection } from "@/components/animated-section";
+import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata({
@@ -32,11 +33,11 @@ export default async function AboutPage() {
             <h1 className="font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
               {t("title")}
             </h1>
-            <p className="mt-5">{t("intro")}</p>
+            <RevealText className="mt-5">{t("intro")}</RevealText>
             <div className="mt-6 space-y-6">
-              <p>{t("p1")}</p>
-              <p>{t("p2")}</p>
-              <p>{t("p3")}</p>
+              <RevealText delay={0.06}>{t("p1")}</RevealText>
+              <RevealText delay={0.12}>{t("p2")}</RevealText>
+              <RevealText delay={0.18}>{t("p3")}</RevealText>
             </div>
           </div>
 

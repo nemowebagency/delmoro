@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ConciergeForm } from "@/components/forms/concierge-form";
+import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata({
@@ -30,9 +31,9 @@ export default async function ConciergePage() {
         <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
           {t("title")}
         </h1>
-        <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("intro")}
-        </p>
+        </RevealText>
       </header>
 
       <section className="mt-12 grid gap-12 md:grid-cols-2 md:gap-14">
@@ -50,9 +51,9 @@ export default async function ConciergePage() {
           <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)]">
             {t("requestTitle")}
           </h2>
-          <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+          <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("requestLead")}
-          </p>
+          </RevealText>
           <ConciergeForm />
         </div>
       </section>

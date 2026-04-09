@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/forms/contact-form";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
+import { RevealText } from "@/components/reveal-text";
 import { buildMetadata, contactPlaceholders } from "@/lib/site";
 
 export async function generateMetadata({
@@ -30,9 +31,9 @@ export default async function ContactPage() {
         <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
           {t("title")}
         </h1>
-        <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("intro")}
-        </p>
+        </RevealText>
       </header>
 
       <section className="mt-10 max-w-xl border-t border-[color:var(--line)] pt-8">
@@ -90,9 +91,9 @@ export default async function ContactPage() {
           <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)]">
             {t("newsletterTitle")}
           </h2>
-          <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+          <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("newsletterLead")}
-          </p>
+          </RevealText>
           <NewsletterForm />
         </div>
       </section>

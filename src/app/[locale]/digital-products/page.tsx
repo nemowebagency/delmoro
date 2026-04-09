@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata({
@@ -28,9 +29,9 @@ export default async function DigitalProductsPage() {
         <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
           {t("pageTitle")}
         </h1>
-        <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("pageIntro")}
-        </p>
+        </RevealText>
       </header>
 
       <article className="mt-12 max-w-2xl border border-[color:var(--line)] bg-[color:var(--section-warm)] px-8 py-10 md:px-12 md:py-14">
@@ -40,9 +41,9 @@ export default async function DigitalProductsPage() {
         <h2 className="mt-4 font-serif text-3xl font-normal text-[color:var(--ink)] md:text-[36px]">
           {t("productTitle")}
         </h2>
-        <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("productFormat")}
-        </p>
+        </RevealText>
         <div className="mt-8 border-t border-[color:var(--line)] pt-8">
           <p className="font-label text-[12px] uppercase tracking-[0.3em] text-[color:var(--muted-warm)]">
             {t("priceLabel")}
@@ -55,12 +56,12 @@ export default async function DigitalProductsPage() {
           <p className="font-label text-[12px] uppercase tracking-[0.3em] text-[color:var(--muted-warm)]">
             {t("presentationLabel")}
           </p>
-          <p className="mt-4 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+          <RevealText className="mt-4 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("notProduct")}
-          </p>
-          <p className="mt-2 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+          </RevealText>
+          <RevealText className="mt-2 text-[15px] leading-[1.75] text-[color:var(--muted)]" delay={0.06}>
             {t("butAs")}
-          </p>
+          </RevealText>
           <p className="mt-4 border-l-2 border-[color:var(--bronze)] pl-5 font-serif text-xl font-normal leading-snug text-[color:var(--ink)] md:text-[22px]">
             {t("readerGuide")}
           </p>
