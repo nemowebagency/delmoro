@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ExperienceTourCards, type ExperienceTour } from "@/components/experience-tour-cards";
+import { RevealMedia } from "@/components/reveal-media";
 import { RevealText } from "@/components/reveal-text";
 import { ButtonLink } from "@/components/ui/button-link";
 import { buildMetadata } from "@/lib/site";
@@ -64,7 +65,7 @@ export default async function ExperiencesPage() {
               {t("cta")}
             </ButtonLink>
           </div>
-          <div className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)] md:justify-self-end">
+          <RevealMedia className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)] md:justify-self-end">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/media/motors/bearded-man-scooter-with-womanfriend-outdoors.jpg"
@@ -72,7 +73,7 @@ export default async function ExperiencesPage() {
               loading="lazy"
               className="aspect-[4/3] w-full object-cover"
             />
-          </div>
+          </RevealMedia>
         </div>
       </section>
     </div>

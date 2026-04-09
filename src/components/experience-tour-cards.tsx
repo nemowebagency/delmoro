@@ -100,9 +100,40 @@ export function ExperienceTourCards({
             <article
               key={tour.title}
               className={[
-                "relative flex h-60 flex-col overflow-hidden rounded-lg border border-[color:var(--brand)] bg-[color:var(--brand)]",
-                "shadow-sm transition hover:shadow-md hover:shadow-[0_10px_30px_rgba(34,34,34,0.18)]",
+                "group relative isolate flex h-60 flex-col overflow-hidden rounded-lg border border-[color:var(--brand)] bg-[color:var(--brand)]",
+                "shadow-sm transition-[transform,box-shadow] duration-300 will-change-transform",
               ].join(" ")}
+              style={{
+                transform: "scale(var(--hover-scale, 1))",
+                boxShadow: "var(--card-shadow, 0 0 0 rgba(0,0,0,0))",
+              }}
+              onPointerEnter={(e) => {
+                e.currentTarget.style.setProperty("--spotlight-opacity", "1");
+                e.currentTarget.style.setProperty("--hover-scale", "1.015");
+                e.currentTarget.style.setProperty(
+                  "--card-shadow",
+                  "0 10px 30px rgba(34,34,34,0.18)",
+                );
+              }}
+              onPointerMove={(e) => {
+                const el = e.currentTarget;
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                el.style.setProperty("--spotlight-x", `${x}px`);
+                el.style.setProperty("--spotlight-y", `${y}px`);
+                el.style.setProperty("--spotlight-opacity", "1");
+                el.style.setProperty("--hover-scale", "1.015");
+                el.style.setProperty("--card-shadow", "0 10px 30px rgba(34,34,34,0.18)");
+              }}
+              onPointerLeave={(e) => {
+                const el = e.currentTarget;
+                el.style.setProperty("--spotlight-opacity", "0");
+                el.style.setProperty("--hover-scale", "1");
+                el.style.setProperty("--card-shadow", "0 0 0 rgba(0,0,0,0)");
+                el.style.removeProperty("--spotlight-x");
+                el.style.removeProperty("--spotlight-y");
+              }}
             >
               <button
                 id={tour.buttonId}
@@ -111,62 +142,77 @@ export function ExperienceTourCards({
                 onClick={() => setOpenIndex(i)}
                 className={[
                   "w-full text-left",
+                  "relative",
                   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--paper)]",
                 ].join(" ")}
               >
-                <div className="bg-white px-3 pb-3 pt-3 text-[color:var(--ink)]">
-                  <div className="flex items-center justify-between gap-3">
-                    <h2 className="min-w-0 truncate font-serif text-[18px] font-semibold leading-snug">
-                      {tour.title}
-                    </h2>
-                    <span
-                      className={[
-                        "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full",
-                        "border border-[color:var(--brand)] text-[color:var(--brand)]",
-                        "transition",
-                        open ? "bg-[color:var(--section-warm)]" : "bg-transparent",
-                      ].join(" ")}
-                      aria-hidden="true"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className={
-                          open ? "rotate-180 transition-transform" : "transition-transform"
-                        }
-                      >
-                        <path d="m6 9 6 6 6-6" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div className="mt-3 h-px w-full bg-[color:var(--brand)]/35" />
-                </div>
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 transition-opacity duration-300"
+                  style={{
+                    opacity: "var(--spotlight-opacity, 0)",
+                    background:
+                      "radial-gradient(850px circle at var(--spotlight-x, 30%) var(--spotlight-y, 0%), rgba(255,255,255,0.28), transparent 62%)",
+                  }}
+                />
 
-                <div className="flex-1 px-3 pb-3 pt-2 text-white">
-                  <p className="text-[13px] leading-[1.45] text-white/90">
-                    {tour.lead}
-                  </p>
-                  <dl className="mt-3 grid gap-1.5 text-sm text-white/85">
-                    <div className="flex items-baseline justify-between gap-6">
-                      <dt className="font-label text-[11px] uppercase tracking-[0.28em] text-white/70">
-                        {durationLabel}
-                      </dt>
-                      <dd className="text-right text-white/95">{tour.duration}</dd>
+                <div className="relative z-10">
+                  <div className="bg-white px-3 pb-3 pt-3 text-[color:var(--ink)]">
+                    <div className="flex items-center justify-between gap-3">
+                      <h2 className="min-w-0 truncate font-serif text-[18px] font-semibold leading-snug">
+                        {tour.title}
+                      </h2>
+                      <span
+                        className={[
+                          "inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full",
+                          "border border-[color:var(--brand)] text-[color:var(--brand)]",
+                          "transition",
+                          open ? "bg-[color:var(--section-warm)]" : "bg-transparent",
+                        ].join(" ")}
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className={
+                            open
+                              ? "rotate-180 transition-transform"
+                              : "transition-transform"
+                          }
+                        >
+                          <path d="m6 9 6 6 6-6" />
+                        </svg>
+                      </span>
                     </div>
-                    <div className="flex items-baseline justify-between gap-6">
-                      <dt className="font-label text-[11px] uppercase tracking-[0.28em] text-white/70">
-                        {areaLabel}
-                      </dt>
-                      <dd className="text-right text-white/95">{tour.area}</dd>
-                    </div>
-                  </dl>
+                    <div className="mt-3 h-px w-full bg-[color:var(--brand)]/35" />
+                  </div>
+
+                  <div className="flex-1 px-3 pb-3 pt-2 text-white">
+                    <p className="text-[13px] leading-[1.45] text-white/90">
+                      {tour.lead}
+                    </p>
+                    <dl className="mt-3 grid gap-1.5 text-sm text-white/85">
+                      <div className="flex items-baseline justify-between gap-6">
+                        <dt className="font-label text-[11px] uppercase tracking-[0.28em] text-white/70">
+                          {durationLabel}
+                        </dt>
+                        <dd className="text-right text-white/95">{tour.duration}</dd>
+                      </div>
+                      <div className="flex items-baseline justify-between gap-6">
+                        <dt className="font-label text-[11px] uppercase tracking-[0.28em] text-white/70">
+                          {areaLabel}
+                        </dt>
+                        <dd className="text-right text-white/95">{tour.area}</dd>
+                      </div>
+                    </dl>
+                  </div>
                 </div>
               </button>
             </article>

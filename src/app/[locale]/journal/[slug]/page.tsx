@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
+import { RevealMedia } from "@/components/reveal-media";
 import { ButtonLink } from "@/components/ui/button-link";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
 import { Link } from "@/i18n/navigation";
@@ -55,12 +56,14 @@ export default async function JournalArticlePage({
   return (
     <article className="pb-16">
       <section className="relative h-[55svh] min-h-[380px]">
-        <Image
-          src={article.heroImage}
-          alt={article.title[loc]}
-          fill
-          className="object-cover"
-        />
+        <RevealMedia className="absolute inset-0" delay={0.02}>
+          <Image
+            src={article.heroImage}
+            alt={article.title[loc]}
+            fill
+            className="object-cover"
+          />
+        </RevealMedia>
         <div className="absolute inset-0 bg-black/40" />
         <div className="container relative flex h-full items-end pb-12 text-white">
           <div className="max-w-3xl">

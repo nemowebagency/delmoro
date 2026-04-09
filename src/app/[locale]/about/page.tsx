@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { AnimatedSection } from "@/components/animated-section";
+import { RevealMedia } from "@/components/reveal-media";
 import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
@@ -41,7 +42,7 @@ export default async function AboutPage() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)] md:justify-self-end">
+          <RevealMedia className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)] md:justify-self-end">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/media/gabriele/art-thailand-greece-maldives-relaxing.jpg"
@@ -49,7 +50,7 @@ export default async function AboutPage() {
               loading="lazy"
               className="aspect-[4/3] w-full object-cover"
             />
-          </div>
+          </RevealMedia>
         </div>
       </AnimatedSection>
     </div>

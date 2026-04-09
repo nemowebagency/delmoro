@@ -3,6 +3,7 @@ import { AnimatedSection } from "@/components/animated-section";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero";
 import { JournalCard } from "@/components/journal-card";
+import { RevealMedia } from "@/components/reveal-media";
 import { RevealText } from "@/components/reveal-text";
 import { ButtonLink } from "@/components/ui/button-link";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
@@ -54,7 +55,10 @@ export default async function Home({
               {t("manifestoQuote")}
             </p>
           </div>
-          <div className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)]">
+          <RevealMedia
+            className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)]"
+            delay={0.05}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/media/img/wall-opening-with-view-cityscape-by-sea.jpg"
@@ -62,7 +66,7 @@ export default async function Home({
               loading="lazy"
               className="aspect-[4/3] w-full object-cover"
             />
-          </div>
+          </RevealMedia>
         </div>
       </AnimatedSection>
 
