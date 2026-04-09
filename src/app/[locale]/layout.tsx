@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Barlow, Barlow_Condensed, Gilda_Display } from "next/font/google";
@@ -73,7 +74,9 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full flex flex-col bg-[color:var(--paper)]">
         <NextIntlClientProvider messages={messages}>
-          <ScrollToTopOnNavigation />
+          <Suspense fallback={null}>
+            <ScrollToTopOnNavigation />
+          </Suspense>
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />
