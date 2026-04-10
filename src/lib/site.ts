@@ -19,6 +19,18 @@ export const siteConfig = {
     "An international cultural journal on Sicily and the Mediterranean — slow, poetic, independent of aggressive tourism.",
   tagline: "True luxury is not excess, it is access.",
   siteUrl,
+  /** Codice fiscale (persona / titolare). */
+  fiscalCode: "VRZGRL98A29H700X",
+  social: {
+    /** Replace with the real Instagram profile URL. */
+    instagram: "https://www.instagram.com/delmorosicily/",
+    /** Replace with wa.me link including country code, e.g. https://wa.me/393331234567 */
+    whatsapp: "https://wa.me/393282579590",
+  },
+  credits: {
+    agencyName: "Nemo Web Agency",
+    agencyUrl: "https://www.nemoagency.it/",
+  },
   nav: [
     { href: "/", labelKey: "home" },
     { href: "/esperienze", labelKey: "experiences" },

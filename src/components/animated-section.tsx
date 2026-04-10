@@ -6,11 +6,13 @@ import { cn } from "@/lib/utils";
 type AnimatedSectionProps = {
   children: React.ReactNode;
   className?: string;
+  id?: string;
 };
 
-export function AnimatedSection({ children, className }: AnimatedSectionProps) {
+export function AnimatedSection({ children, className, id }: AnimatedSectionProps) {
   return (
     <motion.section
+      id={id}
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-10%" }}

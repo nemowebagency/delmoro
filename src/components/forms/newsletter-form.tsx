@@ -30,30 +30,32 @@ export function NewsletterForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="mt-2 flex w-full max-w-xl flex-col gap-3 sm:flex-row sm:justify-center"
+      className="mx-auto mt-2 w-full max-w-xl"
     >
-      <input
-        type="email"
-        required
-        value={email}
-        onChange={(event) => setEmail(event.target.value)}
-        placeholder={t("emailPlaceholder")}
-        className="field h-12 flex-1 rounded-sm"
-      />
-      <button
-        type="submit"
-        className="font-label h-12 shrink-0 rounded-sm border border-[color:var(--bronze)] bg-[color:var(--bronze)] px-6 text-sm font-medium uppercase tracking-[0.2em] text-white transition hover:border-[color:var(--bronze-hover)] hover:bg-[color:var(--bronze-hover)] disabled:opacity-70"
-        disabled={status === "loading"}
-      >
-        {t("subscribe")}
-      </button>
+      <div className="flex w-full items-stretch rounded-full border border-[color:var(--bronze)] bg-[color:var(--paper)] p-1.5 pl-5 transition-colors focus-within:border-[color:var(--gold-label)]">
+        <input
+          type="email"
+          required
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
+          placeholder={t("emailPlaceholder")}
+          className="min-h-0 min-w-0 flex-1 border-0 bg-transparent py-2.5 pr-2 text-sm text-[color:var(--ink)] outline-none placeholder:text-[color:var(--muted)] focus:ring-0"
+        />
+        <button
+          type="submit"
+          className="font-label shrink-0 cursor-pointer rounded-full border border-[color:var(--bronze)] bg-[color:var(--bronze)] px-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors duration-200 hover:border-[#c9b08a] hover:bg-[#c9b08a] disabled:cursor-not-allowed disabled:opacity-70 sm:px-6 sm:text-sm"
+          disabled={status === "loading"}
+        >
+          {t("subscribe")}
+        </button>
+      </div>
       {status === "success" && (
-        <p className="text-sm text-[color:var(--gold-label)] sm:basis-full">
+        <p className="mt-3 text-sm text-[color:var(--gold-label)]">
           {t("subscribeSuccess")}
         </p>
       )}
       {status === "error" && (
-        <p className="text-sm text-red-700 sm:basis-full">{t("subscribeError")}</p>
+        <p className="mt-3 text-sm text-red-700">{t("subscribeError")}</p>
       )}
     </form>
   );

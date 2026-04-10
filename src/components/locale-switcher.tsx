@@ -39,7 +39,14 @@ function FlagIt({ className }: { className?: string }) {
   );
 }
 
-export function LocaleSwitcher() {
+export function LocaleSwitcher({
+  inverted,
+  embedded,
+}: {
+  inverted?: boolean;
+  /** No left border / margin — e.g. mobile menu panel */
+  embedded?: boolean;
+}) {
   const locale = useLocale();
   const pathname = usePathname();
   const t = useTranslations("LocaleSwitcher");
@@ -48,7 +55,15 @@ export function LocaleSwitcher() {
     <div
       role="group"
       aria-label={t("label")}
-      className="ml-1.5 flex items-center gap-1 border-l border-[color:var(--line)] pl-3 md:pl-4"
+      className={cn(
+        "flex items-center",
+        embedded
+          ? "gap-2"
+          : cn(
+              "ml-1.5 gap-1 border-l pl-3 md:pl-4",
+              inverted ? "border-[#b99e7e]/35" : "border-[color:var(--line)]",
+            ),
+      )}
     >
       {routing.locales.map((loc) => {
         const isEn = loc === "en";
@@ -63,14 +78,24 @@ export function LocaleSwitcher() {
             aria-label={label}
             aria-current={locale === loc ? "page" : undefined}
             className={cn(
-              "flex h-5 min-h-5 items-center justify-center overflow-hidden rounded-[2px] border border-transparent px-px transition-[opacity,box-shadow]",
-              "hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-[color:var(--bronze)]",
-              locale === loc
-                ? "opacity-100 shadow-[0_0_0_1px_var(--bronze)]"
-                : "opacity-50 hover:opacity-80",
+              "inline-flex h-6 min-h-6 items-center justify-center overflow-hidden px-px",
+              "border-b border-solid pb-0.5 transition-[opacity,border-color] focus-visible:outline-none",
+              inverted
+                ? cn(
+                    locale === loc ? "border-[#b99e7e] opacity-100" : "border-transparent opacity-70",
+                    "hover:border-[#b99e7e] hover:opacity-100",
+                    "focus-visible:border-[#b99e7e]",
+                  )
+                : cn(
+                    locale === loc
+                      ? "border-[color:var(--ink)] opacity-100"
+                      : "border-transparent opacity-60",
+                    "hover:border-[#b3997a] hover:opacity-100",
+                    "focus-visible:border-[#b3997a]",
+                  ),
             )}
           >
-            <span className="block h-2.5 w-5 overflow-hidden rounded-[1px]">
+            <span className="block h-3 w-6 overflow-hidden">
               {isEn ? (
                 <FlagUk className="h-full w-full" />
               ) : (

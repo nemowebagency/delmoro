@@ -94,7 +94,9 @@ export default async function ContactPage() {
           <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("newsletterLead")}
           </RevealText>
-          <NewsletterForm />
+          <div className="mt-4">
+            <NewsletterForm />
+          </div>
         </div>
       </section>
     </div>

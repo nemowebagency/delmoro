@@ -34,6 +34,426 @@ export const editorialPillars = [
 /** Single ordered list: Journal page shows all stories in this order (no category splits). */
 export const journalArticles: JournalArticle[] = [
   {
+    slug: "why-sicily-feels-different",
+    title: {
+      en: "Why Sicily Feels Different",
+      it: "Perché la Sicilia sembra diversa",
+    },
+    excerpt: {
+      en: "Places you visit, and places that stay — Sicily asks you to slow down, stay, and notice.",
+      it: "Luoghi che visiti e luoghi che restano: la Sicilia chiede di rallentare, fermarsi e accorgersi.",
+    },
+    category: "Letters",
+    readTime: { en: "6 min read", it: "6 min di lettura" },
+    publishedAt: { en: "April 2026", it: "Aprile 2026" },
+    heroImage: "/articles/segesta.jpg",
+    location: { en: "Sicily", it: "Sicilia" },
+    content: {
+      en: [
+        `There are places you visit,
+and places that stay.
+
+Sicily belongs to the second kind.
+
+Not because of what it shows,
+but because of what it does—quietly, almost without asking.`,
+        `It begins slowly.
+
+Not with monuments,
+nor with plans.
+
+But with something less visible.
+
+A certain light in the morning,
+soft against stone walls.
+A street that feels suspended in time.
+A silence that is never empty.
+
+You arrive thinking you will explore.
+
+Instead, something begins to change.`,
+        `Time, first.
+
+It loosens.
+
+Lunch takes longer than expected.
+Afternoons stretch without purpose.
+Evenings arrive gently, without urgency.
+
+No one seems to be in a hurry.
+And after a while, neither are you.`,
+        `Then, attention.
+
+You begin to notice things you would normally pass by.
+
+A balcony, slightly worn,
+full of plants and life.
+
+A table set for hours,
+where nothing feels rushed.
+
+Voices in the distance,
+not loud, but present.
+
+Nothing here is designed to impress.
+
+And yet, everything leaves a mark.`,
+        `In Sicily, beauty is not displayed.
+
+It is lived.
+
+This is why it feels different.
+
+Because it does not try to be.
+
+Because it does not need to be explained.
+
+Because it exists in its own rhythm,
+indifferent to expectations.`,
+        `Most places ask something from you.
+
+To see more.
+To move faster.
+To do.
+
+Sicily asks the opposite.
+
+To slow down.
+To stay.
+To notice.`,
+        `And somewhere between a long lunch
+and a quiet afternoon,
+
+you begin to understand.
+
+That what you were looking for
+was never a place.
+
+But a way of being.
+
+And once you feel it,
+
+it stays.`,
+      ],
+      it: [
+        `Ci sono luoghi che visiti
+e luoghi che restano.
+
+La Sicilia appartiene al secondo tipo.
+
+Non per ciò che mostra,
+ma per ciò che fa — in silenzio, quasi senza chiedere.`,
+        `Comincia piano.
+
+Non con i monumenti,
+né con i programmi.
+
+Ma con qualcosa di meno visibile.
+
+Una certa luce al mattino,
+morbida sulle pareti di pietra.
+Una strada che sembra sospesa nel tempo.
+Un silenzio che non è mai vuoto.
+
+Arrivi pensando di esplorare.
+
+E invece qualcosa comincia a cambiare.`,
+        `Il tempo, prima.
+
+Si allenta.
+
+Il pranzo dura più del previsto.
+I pomeriggi si allungano senza meta.
+Le sere arrivano piano, senza urgenza.
+
+Nessuno sembra avere fretta.
+E dopo un po’, neanche tu.`,
+        `Poi, l’attenzione.
+
+Cominci a notare cose che di solito lasceresti passare.
+
+Un balcone, un po’ consumato,
+pieno di piante e di vita.
+
+Una tavola apparecchiata per ore,
+dove nulla sembra affrettato.
+
+Voci in lontananza,
+non alte, ma presenti.
+
+Qui nulla è pensato per impressionare.
+
+Eppure tutto lascia il segno.`,
+        `In Sicilia la bellezza non è esposta.
+
+Si vive.
+
+Ecco perché sembra diversa.
+
+Perché non cerca di esserlo.
+
+Perché non ha bisogno di essere spiegata.
+
+Perché esiste nel suo ritmo,
+indifferente alle aspettative.`,
+        `La maggior parte dei luoghi chiede qualcosa.
+
+Vedere di più.
+Muoversi più in fretta.
+Fare.
+
+La Sicilia chiede il contrario.
+
+Rallentare.
+Restare.
+Accorgersi.`,
+        `E in un punto tra un pranzo lungo
+e un pomeriggio quieto,
+
+cominci a capire.
+
+Che ciò che cercavi
+non era mai un posto.
+
+Ma un modo di essere.
+
+E una volta che lo senti,
+
+resta.`,
+      ],
+    },
+  },
+  {
+    slug: "il-moro-and-the-many-faces-of-sicily",
+    title: {
+      en: "Il moro and the Many Faces of Sicily",
+      it: "Il moro e le molte facce della Sicilia",
+    },
+    excerpt: {
+      en: "Teste di Moro on balconies and in homes — a ceramic symbol of an island shaped by centuries of encounter and exchange.",
+      it: "Teste di Moro sui balconi e in casa — un simbolo in ceramica di un’isola plasmata da secoli di incontro e scambio.",
+    },
+    category: "Culture & History",
+    readTime: { en: "8 min read", it: "8 min di lettura" },
+    publishedAt: { en: "April 2026", it: "Aprile 2026" },
+    heroImage: "/articles/barbara808-moors-heads-7111837.jpg",
+    location: { en: "Sicily", it: "Sicilia" },
+    content: {
+      en: [
+        `There is a symbol that appears again and again across Sicily.
+
+On terraces filled with light.
+On old balconies overlooking quiet streets.
+Inside homes, where objects are never just objects.
+
+It is the Moor.
+
+Teste di Moro`,
+        `At first glance, it feels like a fragment of the past.
+
+A story, frozen in ceramic.
+
+But in Sicily, the past is never distant.
+
+It lives quietly within the present.`,
+        `The legend tells of a meeting.
+
+A Sicilian woman and a foreign man.
+An encounter between two worlds.
+
+Different languages.
+Different origins.
+A shared moment.
+
+And perhaps this is what the story has always been about.
+
+Not an ending,
+but a beginning.`,
+        `Because Sicily has always been a place of encounters.
+
+A crossroads in the center of the Mediterranean.
+
+For centuries, people have arrived here:
+
+Greeks,
+Arabs,
+Normans,
+Spaniards.
+
+Not only passing through,
+but leaving something behind.`,
+        `You can see it in the architecture.
+
+Arches that speak of the East.
+Stone that carries Northern forms.
+Cities that do not belong to one time,
+but to many.`,
+        `You can taste it in the food.
+
+Sweet and savory, together.
+Spices that traveled across the sea.
+Ingredients that found a new home here.
+
+Every dish tells a story of movement,
+of exchange,
+of adaptation.`,
+        `And over time, all of this became something else.
+
+Not a collection of influences.
+
+But a culture.`,
+        `In Sicily, diversity is not a recent idea.
+
+It is something deeply rooted.
+
+Something that does not need to be explained.
+
+There is a natural openness here.
+
+A curiosity towards what comes from outside.
+
+Not as something to imitate,
+but as something to understand.
+
+And, slowly, to make one’s own.`,
+        `This is why Sicily feels familiar, even to those who arrive from far away.
+
+Because, in some way,
+it already contains many parts of the world.`,
+        `The Moor, then, is not just a figure.
+
+It is a reminder.
+
+Of how this island has always lived through connection.
+
+Through exchange.
+
+Through the meeting of cultures that, over time,
+have become inseparable.`,
+        `Nothing here is completely isolated.
+
+Everything is part of a larger story.
+
+And this is what gives Sicily its quiet richness.
+
+Not excess.
+
+Not spectacle.
+
+But depth.
+
+A place shaped by many voices,
+that learned how to speak as one — Il Moro Sicily`,
+      ],
+      it: [
+        `C’è un simbolo che torna, ancora e ancora, in tutta la Sicilia.
+
+Sulle terrazze piene di luce.
+Sui vecchi balconi che guardano strade silenziose.
+Dentro le case, dove gli oggetti non sono mai solo oggetti.
+
+È il Moro.
+
+Teste di Moro`,
+        `A prima vista sembra un frammento del passato.
+
+Una storia, fissata nella ceramica.
+
+Ma in Sicilia il passato non è mai lontano.
+
+Vive in silenzio nel presente.`,
+        `La leggenda racconta un incontro.
+
+Una donna siciliana e un uomo straniero.
+Un incontro tra due mondi.
+
+Lingue diverse.
+Origini diverse.
+Un momento condiviso.
+
+E forse è sempre stato questo il senso della storia.
+
+Non una fine,
+ma un inizio.`,
+        `Perché la Sicilia è sempre stata un luogo di incontri.
+
+Un crocevia al centro del Mediterraneo.
+
+Per secoli, qui sono arrivati persone:
+
+Greci,
+Arabi,
+Normanni,
+Spagnoli.
+
+Non solo di passaggio,
+ma lasciando qualcosa.`,
+        `Lo vedi nell’architettura.
+
+Archi che parlano d’Oriente.
+Pietra che porta forme del Nord.
+Città che non appartengono a un solo tempo,
+ma a molti.`,
+        `Lo senti nel cibo.
+
+Dolce e salato, insieme.
+Spezie che hanno attraversato il mare.
+Ingredienti che qui hanno trovato una nuova casa.
+
+Ogni piatto racconta movimento,
+scambio,
+adattamento.`,
+        `Col tempo, tutto questo è diventato altro.
+
+Non una raccolta di influenze.
+
+Ma una cultura.`,
+        `In Sicilia la diversità non è un’idea recente.
+
+È qualcosa di profondamente radicato.
+
+Qualcosa che non ha bisogno di essere spiegato.
+
+C’è qui un’apertura naturale.
+
+Una curiosità verso ciò che arriva da fuori.
+
+Non come cosa da imitare,
+ma da capire.
+
+E, lentamente, da far propria.`,
+        `Ecco perché la Sicilia sembra familiare, anche a chi arriva da lontano.
+
+Perché, in qualche modo,
+contiene già molte parti del mondo.`,
+        `Il Moro, allora, non è solo una figura.
+
+È un promemoria.
+
+Di come quest’isola ha sempre vissuto di legami.
+
+Di scambio.
+
+Dell’incontro di culture che, col tempo,
+sono diventate inseparabili.`,
+        `Qui nulla è del tutto isolato.
+
+Tutto fa parte di una storia più grande.
+
+Ed è questo che dà alla Sicilia la sua ricchezza silenziosa.
+
+Non l’eccesso.
+
+Non lo spettacolo.
+
+Ma la profondità.
+
+Un luogo plasmato da molte voci,
+che ha imparato a parlare come una sola — Il Moro Sicily`,
+      ],
+    },
+  },
+  {
     slug: "the-hidden-architecture-of-sicilian-towns",
     title: {
       en: "The Hidden Architecture of Sicilian Towns",

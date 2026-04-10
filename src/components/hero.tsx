@@ -1,12 +1,33 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Lottie from "lottie-react";
 import { useTranslations } from "next-intl";
-import { ButtonLink } from "@/components/ui/button-link";
+import { Link } from "@/i18n/navigation";
+
+const SCROLL_LOTTIE_SRC = encodeURI("/Scroll Down.json");
+
+function heroTitleParts(rawTitle: string): { before: string; last: string } | null {
+  const trimmed = rawTitle.trim();
+  const body = /[.!?…]$/.test(trimmed) ? trimmed.slice(0, -1).trimEnd() : trimmed;
+  const en = /^(.+)\s+(Sicily)$/i.exec(body);
+  if (en) {
+    return { before: en[1], last: `${en[2]}.` };
+  }
+  const it = /^(.+)\s+(la Sicilia)$/i.exec(body);
+  if (it) {
+    return { before: it[1], last: `${it[2]}.` };
+  }
+  return null;
+}
 
 export function Hero() {
   const t = useTranslations("Hero");
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [scrollLottie, setScrollLottie] = useState<object | null>(null);
+  const rawTitle = t("title").trim();
+  const split = heroTitleParts(rawTitle);
+  const titleFallback = /[.!?…]$/.test(rawTitle) ? rawTitle : `${rawTitle}.`;
 
   useEffect(() => {
     const el = videoRef.current;
@@ -18,8 +39,26 @@ export function Hero() {
     return () => el.removeEventListener("loadedmetadata", slow);
   }, []);
 
+  useEffect(() => {
+    let cancelled = false;
+    void fetch(SCROLL_LOTTIE_SRC)
+      .then((res) => res.json())
+      .then((data: object) => {
+        if (!cancelled) setScrollLottie(data);
+      })
+      .catch(() => {
+        if (!cancelled) setScrollLottie(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return (
-    <section className="relative overflow-hidden border-b border-[color:var(--line)]">
+    <section
+      id="hero"
+      className="relative overflow-hidden border-b border-[color:var(--line)]"
+    >
       <div className="absolute inset-0">
         <video
           ref={videoRef}
@@ -29,51 +68,53 @@ export function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster="https://images.unsplash.com/photo-1542382257-80dedb725088?auto=format&fit=crop&w=1800&q=80"
           aria-label={t("videoAria")}
         >
-          <source src="/media/hero-cinematic.mp4" type="video/mp4" />
+          <source src="/media/Full-hd.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/45" />
+        <div
+          className="absolute inset-0 bg-linear-to-t from-[#0a1f36]/82 from-0% via-[#132f4d]/38 via-42% to-transparent to-100%"
+          aria-hidden
+        />
       </div>
 
-      {/* Griglia a una cella = centro geometrico reale del viewport */}
-      <div className="relative grid min-h-[78svh] w-full place-items-center px-5 py-16 sm:py-20 md:px-8 md:py-24">
-        <div className="mx-auto flex w-full max-w-[36rem] flex-col items-center justify-center gap-4 text-center text-white md:max-w-[42rem] md:gap-5">
-          {/* SVG locale: <img> per allineamento prevedibile (next/Image aggiunge wrapper) */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/brand/logo-b99e7e.svg"
-            alt={t("logoAlt")}
-            width={440}
-            height={440}
-            decoding="async"
-            fetchPriority="high"
-            className="mx-auto block h-56 w-56 max-w-full shrink-0 object-contain md:h-72 md:w-72 lg:h-80 lg:w-80 xl:h-[22rem] xl:w-[22rem]"
-          />
-
-          <h1
-            className="w-full max-w-[34rem] font-serif text-2xl font-normal leading-snug tracking-normal text-balance md:text-[28px] md:leading-snug"
-            style={{ textShadow: "0 1px 2px rgba(0,0,0,.85), 0 4px 20px rgba(0,0,0,.45)" }}
-          >
-            {t("title")}
+      <div className="relative flex min-h-[90svh] w-full flex-col justify-end px-6 pb-20 pt-16 sm:pb-24 sm:pt-20 md:pb-28 md:pt-24">
+        <div className="mx-auto flex w-full flex-col items-start gap-4 text-left text-white md:w-[70%] md:gap-5 md:px-8 lg:px-10">
+          <h1 className="w-full font-serif text-[60px] font-normal leading-[1.04] tracking-normal text-balance sm:text-[76px] md:text-[100px] md:leading-[1.01] lg:text-[118px]">
+            {split ? (
+              <>
+                {split.before}
+                <br />
+                {split.last}
+              </>
+            ) : (
+              titleFallback
+            )}
           </h1>
 
-          <p className="w-full max-w-md text-balance text-[15px] leading-[1.75] text-white/85">
+          <p className="w-full max-w-[44rem] text-balance text-[15px] leading-[1.75] text-white/85 md:text-[16px]">
             {t("subtitle")}
           </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <ButtonLink href="/journal">{t("ctaJournal")}</ButtonLink>
-            <ButtonLink
-              href="/about"
-              variant="ghost"
-              className="!border-white/50 !bg-transparent !text-white hover:!border-white hover:!bg-white/10"
-            >
-              {t("ctaStory")}
-            </ButtonLink>
-          </div>
         </div>
+      </div>
+
+      <div className="pointer-events-none absolute bottom-5 left-1/2 z-10 -translate-x-1/2 md:bottom-8">
+        <Link
+          href="#discover-sicily"
+          aria-label={t("scrollHint")}
+          className="pointer-events-auto block opacity-90 transition-opacity hover:opacity-100"
+        >
+          {scrollLottie ? (
+            <Lottie
+              animationData={scrollLottie}
+              loop
+              className="mx-auto h-9 w-9 md:h-11 md:w-11"
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+          ) : (
+            <div className="mx-auto h-9 w-9 md:h-11 md:w-11" aria-hidden />
+          )}
+        </Link>
       </div>
     </section>
   );

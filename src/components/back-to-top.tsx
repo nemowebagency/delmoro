@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { ArrowUp } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 function prefersReducedMotion() {
   return (
@@ -9,68 +11,54 @@ function prefersReducedMotion() {
   );
 }
 
-export function BackToTop() {
-  const [visible, setVisible] = useState(false);
+const SCROLL_THRESHOLD = 300;
 
-  const threshold = useMemo(() => 480, []);
+export function BackToTop() {
+  const t = useTranslations("Nav");
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     let raf = 0;
 
-    const onScroll = () => {
+    const toggleVisibility = () => {
       if (raf) return;
       raf = window.requestAnimationFrame(() => {
         raf = 0;
-        setVisible(window.scrollY > threshold);
+        setIsVisible(window.scrollY > SCROLL_THRESHOLD);
       });
     };
 
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+    toggleVisibility();
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => {
       if (raf) window.cancelAnimationFrame(raf);
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("scroll", toggleVisibility);
     };
-  }, [threshold]);
+  }, []);
 
-  if (!visible) return null;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+    });
+  };
+
+  const label = t("backToTop");
 
   return (
     <button
       type="button"
-      aria-label="Torna su"
-      title="Torna su"
-      onClick={() => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: prefersReducedMotion() ? "auto" : "smooth",
-        });
-      }}
-      className={[
-        "fixed bottom-5 right-5 z-50",
-        "inline-flex h-11 w-11 items-center justify-center rounded-full",
-        "border border-[color:var(--line)] bg-[color:var(--paper)] text-[color:var(--ink)] shadow-sm",
-        "transition hover:bg-[color:var(--section-warm)]",
-        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--bronze)]",
-      ].join(" ")}
+      onClick={scrollToTop}
+      aria-label={label}
+      title={label}
+      className={`fixed bottom-8 right-8 z-50 cursor-pointer rounded-full bg-[#b99e7e] p-4 text-white shadow-lg transition-all duration-300 hover:bg-[#a68d6f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b99e7e] ${
+        isVisible
+          ? "pointer-events-auto translate-y-0 opacity-100"
+          : "pointer-events-none translate-y-4 opacity-0"
+      }`}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <path d="M12 19V5" />
-        <path d="m5 12 7-7 7 7" />
-      </svg>
+      <ArrowUp size={24} aria-hidden />
     </button>
   );
 }
-

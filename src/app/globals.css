@@ -42,8 +42,19 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+::selection {
+  background-color: #b99e7e;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: #b99e7e;
+  color: #fff;
+}
+
+/* auto: lo scroll “morbido” e inerziale è gestito da Lenis (smooth-scroll.tsx) */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Hide Next.js DevTools floating indicator ("N" button) in dev. */

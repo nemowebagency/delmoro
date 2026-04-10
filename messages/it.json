@@ -10,55 +10,67 @@
     "about": "Chi siamo",
     "journal": "Journal",
     "contact": "Contatti",
-    "book": "Prenota"
+    "book": "Prenota",
+    "backToTop": "Torna all'inizio",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mainNav": "Navigazione principale"
   },
   "Footer": {
-    "brand": "Del Moro Sicily",
-    "tagline": "Un journal culturale su Sicilia e Mediterraneo — il lusso di non correre.",
-    "explore": "Esplora",
-    "home": "Home",
-    "experiences": "Esperienze",
-    "journal": "Journal",
-    "about": "Chi siamo",
-    "book": "Prenota",
-    "contact": "Contatti",
-    "rights": "© {year} Del Moro Sicily. Tutti i diritti riservati.",
-    "location": "Palermo, Sicilia"
+    "footerIntro": "La Sicilia nel tuo tempo. Viaggi su misura e note editoriali.",
+    "colExperiences": "Esperienze",
+    "colMenu": "Menu",
+    "colUseful": "Link utili",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "terms": "Termini e condizioni",
+    "fiscalCodeLabel": "Codice fiscale",
+    "sitemap": "Mappa del sito",
+    "poweredBy": "Realizzato da",
+    "logoAlt": "Del Moro Sicily",
+    "instagramLabel": "Del Moro Sicily su Instagram",
+    "whatsappLabel": "Contattaci su WhatsApp",
+    "rights": "© {year} Del Moro Sicily. Tutti i diritti riservati."
   },
   "Hero": {
     "videoAria": "Viste aeree lente della Sicilia — introduzione silenziosa e cinematografica",
     "logoAlt": "Del Moro Sicily",
     "title": "Un modo più lento di vivere la Sicilia",
     "subtitle": "Un journal culturale sul modo di vita mediterraneo.",
-    "ctaJournal": "Scopri il Journal",
-    "ctaStory": "Leggi la storia"
+    "ctaExplore": "Esplora",
+    "ctaAbout": "chi siamo",
+    "scrollHint": "Scorri alla sezione successiva"
   },
   "Home": {
-    "manifestoLabel": "Manifesto",
-    "manifesto1": "Questo progetto nasce in opposizione al turismo aggressivo.",
-    "manifesto2": "Il viaggio oggi è spesso una fuga veloce — un'illusione che trasforma i luoghi in prodotti. Noi crediamo in altro: un modo più lento di incontrare, un legame più profondo con cultura, persone e tempo.",
-    "manifestoQuote": "La Sicilia non è solo una meta. È un modo di vivere.",
-    "latestLabel": "Recenti",
-    "latestTitle": "Dal Journal",
-    "latestLead": "Un racconto a settimana — Cultura e storia, Stile di vita, Luoghi e Lettere.",
+    "discoverOverline": "Home",
+    "manifestoLabel": "Scopri la Sicilia",
+    "manifesto1": "La Sicilia è per chi cerca più di uno sfondo per una foto: strati di storia nella pietra e nelle storie, una luce che cambia il mare nell'arco della giornata, una cucina ancora legata alle stagioni e borghi che sembrano davvero vissuti.",
+    "manifesto2": "I nostri servizi sono pensati per chi pretende qualità in ogni esperienza: organizzazione attenta, partner locali di fiducia e percorsi costruiti sul tuo ritmo, non su pacchetti tutti uguali.",
+    "manifestoQuote": "Qui il senso sta nelle piccole cose: uno sguardo, un piatto, un tratto di strada. Il nostro compito è lasciarti libero di accorgertene.",
+    "discoverImageAlt": "Veduta della Sicilia — costa e paesaggio",
+    "journalLabel": "Journal",
+    "journalTitle": "Dal Journal",
+    "journalLead": "Un racconto a settimana su Cultura e storia, Stile di vita, Luoghi e Lettere.",
     "journalCta": "Scopri il Journal",
     "aboutLabel": "Chi siamo",
     "aboutTitle": "Un ponte culturale tra la Sicilia e chi la ama.",
-    "aboutBody": "Attraverso storie di architettura, storia, cibo e vita quotidiana, Del Moro Sicily esplora un Mediterraneo più lento — radicato nella tradizione, modellato dalla luce, vissuto senza urgenza. Non è turismo. È un modo di capire un luogo.",
+    "aboutBody": "Delmoro Sicily nasce per farti vivere la Sicilia senza pensieri.\nCi prendiamo cura di ogni dettaglio della tua vacanza, così tu puoi solo lasciarti andare alle emozioni.\n\nNon organizziamo semplici viaggi: creiamo esperienze su misura, fatte di bellezza, autenticità e libertà.\n\nLa Sicilia, come non l’hai mai vissuta.",
     "discoverMore": "Scopri di più",
-    "letterLabel": "Lettera settimanale",
+    "letterLabel": "Newsletter",
     "letterTitle": "Ogni settimana, una nuova storia.",
-    "letterBody": "Architettura, mercati, silenzio, mare — iscriviti per note editoriali dalla Sicilia. Niente rumore, niente pressioni commerciali.",
+    "letterBody": "Lettere, novità, promozioni... iscriviti per ricevere le ultime informazioni da Del Moro Sicily.",
     "experiencesLabel": "Esperienze",
     "experiencesTitle": "Viaggi su misura in Sicilia",
-    "experiencesLead": "Tour fittizi per ispirarti, e servizi reali per organizzare tutto: auto, barche, feste private, ville, tavoli e logistica.",
-    "experiencesBullets": [
-      "Sicilia occidentale (Palermo, Trapani, Egadi)",
-      "Arte, mare, borghi e cucina",
-      "Noleggio auto e transfer",
-      "Barche, skipper ed escursioni"
-    ],
+    "experiencesLead": "Le nostre esperienze sono fatte per farti stare senza pensieri: ci pensiamo noi a itinerari, spostamenti, alloggi e ogni dettaglio: tu hai solo da goderti la Sicilia.",
     "experiencesCta": "Vedi le Esperienze",
+    "experiencesTileHistory": "Immergiti nella storia",
+    "experiencesTileNature": "Esperienze naturalistiche",
+    "experiencesTileRental": "Noleggio mezzi",
+    "experiencesTileStays": "Alloggi selezionati",
+    "experiencesTileHistoryAlt": "Colonne antiche e architettura storica",
+    "experiencesTileNatureAlt": "Colline e costa mediterranea",
+    "experiencesTileRentalAlt": "Auto su una strada panoramica vicino al mare",
+    "experiencesTileStaysAlt": "Esterno di villa con piscina e giardino",
     "bookCta": "Prenota"
   },
   "About": {
@@ -273,8 +285,8 @@
     "furtherLead": "Condividi questo racconto con chi ama viaggiare con lentezza e attenzione.",
     "privateAccess": "Richiedi accesso privato",
     "related": "Altri racconti",
-    "subscribeTitle": "Iscriviti alla lettera settimanale",
-    "subscribeLead": "Ricevi ogni settimana un racconto dalla Sicilia."
+    "subscribeTitle": "Iscriviti alla newsletter",
+    "subscribeLead": "Lettere, novità, promozioni... iscriviti per ricevere le ultime informazioni da Del Moro Sicily."
   },
   "Guides": {
     "label": "Fase 2",
@@ -323,7 +335,7 @@
     "countryLine": "Italia",
     "writeTitle": "Scrivici",
     "newsletterTitle": "Newsletter",
-    "newsletterLead": "Iscriviti per ricevere ogni settimana racconti dalla Sicilia."
+    "newsletterLead": "Lettere, novità, promozioni... iscriviti per ricevere le ultime informazioni da Del Moro Sicily."
   },
   "Forms": {
     "emailPlaceholder": "La tua email",
@@ -349,6 +361,35 @@
     "body": "La pagina che cerchi non è più disponibile o è stata spostata.",
     "cta": "Scopri il Journal"
   },
+  "CookieBanner": {
+    "title": "Gestione cookie",
+    "description": "Questo sito utilizza cookie tecnici necessari al funzionamento. Non utilizziamo cookie di profilazione o marketing. Puoi aggiornare la tua scelta in qualsiasi momento.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "moreInfo": "Maggiori informazioni",
+    "closeBanner": "Chiudi banner",
+    "managePreferences": "Gestisci preferenze cookie",
+    "acceptedLabel": "Cookie accettati",
+    "rejectedLabel": "Cookie rifiutati"
+  },
+  "CookiePolicy": {
+    "label": "Note legali",
+    "title": "Cookie policy",
+    "intro": "Qui trovi una sintesi su come questo sito gestisce cookie e tecnologie simili. La pagina può essere aggiornata nel tempo insieme al servizio.",
+    "body": "Cookie tecnici: possiamo usare cookie strettamente necessari per sicurezza e funzionamento del sito (ad esempio preferenze di sessione o lingua ove applicabile).\n\nAnalytics e marketing: salvo che non li attiviamo esplicitamente e tu non dia consenso, non utilizziamo cookie di profilazione o pubblicità di terze parti su questo sito.\n\nLa tua scelta: quando accetti o rifiuti dal banner, memorizziamo la preferenza nel browser (local storage) così non ti chiediamo ogni visita. Puoi riaprire il banner dal piccolo controllo in basso a sinistra.\n\nContatti: per domande su questa informativa, usa i recapiti nella pagina Contatti."
+  },
+  "PrivacyPolicy": {
+    "label": "Note legali",
+    "title": "Privacy policy",
+    "intro": "Questa pagina descrive come Del Moro Sicily tratta i dati personali in relazione a questo sito. È fornita per trasparenza e può essere aggiornata nel tempo.",
+    "body": "Titolare del trattamento: Del Moro Sicily — per i recapiti vedi la pagina Contatti di questo sito.\n\nDati che possiamo trattare: quando ci scrivi o ti iscrivi alla newsletter, trattiamo i dati che ci fornisci (ad esempio nome, email, contenuto del messaggio) solo per risponderti o per erogare il servizio richiesto.\n\nBase giuridica e conservazione: trattiamo i dati nella misura necessaria per adempiere a una tua richiesta, eseguire un contratto o per legittimo interesse, nel rispetto della normativa vigente. Conserviamo i dati solo per il tempo necessario a tali finalità, salvo obblighi di legge più lunghi.\n\nI tuoi diritti: a seconda del tuo ordinamento, puoi avere diritto di accesso, rettifica, cancellazione, limitazione o opposizione al trattamento, e di proporre reclamo all’autorità di controllo.\n\nAggiornamenti: possiamo modificare questa informativa; la data dell’ultima versione sarà indicata su questa pagina."
+  },
+  "Terms": {
+    "label": "Note legali",
+    "title": "Termini e condizioni",
+    "intro": "Questi termini regolano l’uso di questo sito e delle informazioni e dei servizi offerti tramite esso. Utilizzando il sito dichiari di aver letto questa informativa.",
+    "body": "Uso del sito: i contenuti sono forniti a titolo informativo generale su Del Moro Sicily. Non costituiscono offerta vincolante salvo conferma separata dei servizi (ad esempio via email o contratto).\n\nProprietà intellettuale: testi, immagini, logotipi e elementi di design sono tutelati dalle leggi applicabili. La riutilizzazione senza autorizzazione non è consentita salvo quanto consentito dalla legge.\n\nResponsabilità: ci impegniamo a mantenere le informazioni corrette ma non garantiamo completezza o disponibilità continua del sito. Nei limiti consentiti dalla legge, non siamo responsabili per danni indiretti derivanti dall’uso del sito.\n\nCollegamenti: i siti di terzi collegati non sono sotto il nostro controllo; non siamo responsabili dei loro contenuti o policy.\n\nLegge applicabile: salvo norme imperative diverse, questi termini sono regolati dalla legge italiana. Per le controversie è competente il Foro di Palermo.\n\nModifiche: possiamo aggiornare questi termini; l’uso continuato del sito dopo le modifiche implica accettazione dei termini aggiornati."
+  },
   "Metadata": {
     "siteName": "Del Moro Sicily",
     "siteDescription": "Un journal culturale internazionale su Sicilia e Mediterraneo — lento, poetico, lontano dal turismo aggressivo.",
@@ -369,6 +410,12 @@
     "bookingTitle": "Prenota",
     "bookingDescription": "Richiedi informazioni o prenota un’esperienza: tour, auto, barche, eventi e servizi su misura in Sicilia.",
     "digitalProductsTitle": "Prodotti digitali",
-    "digitalProductsDescription": "The Sicilian Summer — guida digitale ed esperienza audio per i lettori di Del Moro Sicily."
+    "digitalProductsDescription": "The Sicilian Summer — guida digitale ed esperienza audio per i lettori di Del Moro Sicily.",
+    "cookiePolicyTitle": "Cookie policy",
+    "cookiePolicyDescription": "Come Del Moro Sicily utilizza i cookie e come gestire le preferenze.",
+    "privacyPolicyTitle": "Privacy policy",
+    "privacyPolicyDescription": "Come Del Moro Sicily tratta i dati personali e quali sono i tuoi diritti.",
+    "termsTitle": "Termini e condizioni",
+    "termsDescription": "Condizioni d’uso del sito e dei servizi Del Moro Sicily."
   }
 }

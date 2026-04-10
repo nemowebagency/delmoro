@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "ghost" | "light";
+  variant?: "primary" | "ghost" | "light" | "navBook";
   className?: string;
 };
 
@@ -25,6 +25,8 @@ export function ButtonLink({
           "border-[color:var(--gold-label)] bg-transparent text-[color:var(--gold-label)] hover:border-[color:var(--ink)] hover:bg-[color:var(--ink)] hover:text-white",
         variant === "light" &&
           "border-transparent bg-[color:var(--cream)] text-[color:var(--ink)] hover:bg-white",
+        variant === "navBook" &&
+          "rounded-full border-[color:var(--ink)]/25 bg-transparent px-9 py-2 text-[14px] font-normal normal-case tracking-wide text-[color:var(--muted)] transition-[color,border-color,background-color] hover:border-[#b99e7e] hover:bg-[#b99e7e] hover:text-white md:px-10 md:py-2.5 md:text-[15px]",
         className,
       )}
     >

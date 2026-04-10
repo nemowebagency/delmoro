@@ -82,10 +82,10 @@ export default async function JournalArticlePage({
 
       <section className="container mt-12 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
         <div className="max-w-3xl">
-          {article.content[loc].map((paragraph) => (
+          {article.content[loc].map((paragraph, i) => (
             <p
-              key={paragraph}
-              className="mb-6 text-[15px] leading-[1.75] text-[color:var(--muted)] md:text-[17px]"
+              key={i}
+              className="mb-6 whitespace-pre-line text-[15px] leading-[1.75] text-[color:var(--muted)] md:text-[17px]"
             >
               {paragraph}
             </p>
@@ -136,7 +136,9 @@ export default async function JournalArticlePage({
         <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted-warm)]">
           {t("subscribeLead")}
         </p>
-        <NewsletterForm />
+        <div className="mt-4">
+          <NewsletterForm />
+        </div>
       </section>
     </article>
   );

@@ -12,6 +12,11 @@ const staticPaths = [
   "/digital-products",
   "/concierge",
   "/contact",
+  "/cookie-policy",
+  "/privacy-policy",
+  "/terms",
+  "/esperienze",
+  "/prenota",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
