@@ -11,10 +11,17 @@
     "journal": "Journal",
     "contact": "Contact",
     "book": "Book",
+    "concierge": "Concierge",
+    "guides": "Guides",
+    "digitalProducts": "Digital products",
+    "privacyPolicy": "Privacy policy",
+    "cookiePolicy": "Cookie policy",
+    "terms": "Terms and conditions",
     "backToTop": "Back to top",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "mainNav": "Main navigation"
+    "mainNav": "Main navigation",
+    "experiencesSubmenu": "Four experience themes"
   },
   "Footer": {
     "footerIntro": "Sicily, experienced slowly. Bespoke journeys and editorial notes.",
@@ -33,7 +40,7 @@
     "rights": "© {year} Del Moro Sicily. All rights reserved."
   },
   "Hero": {
-    "videoAria": "Slow aerial views of Sicily — silent, cinematic intro",
+    "videoAria": "Slow aerial views of Sicily, silent, cinematic intro",
     "logoAlt": "Del Moro Sicily",
     "title": "A slower way to experience Sicily",
     "subtitle": "A cultural journal exploring the Mediterranean way of life.",
@@ -47,14 +54,14 @@
     "manifesto1": "Sicily is for travellers who want more than a backdrop for photos: layers of history in stone and story, light that changes the sea by the hour, food that still follows the seasons, and towns that feel genuinely lived in.",
     "manifesto2": "Our services are designed for people who expect quality in every experience: careful planning, trusted local partners, and itineraries built around your rhythm, not a one-size-fits-all package.",
     "manifestoQuote": "Here, the reward is in the small things: a view, a meal, a stretch of road. Our job is to leave you free to notice them.",
-    "discoverImageAlt": "View of Sicily — coast and landscape",
+    "discoverImageAlt": "View of Sicily, coast and landscape",
     "journalLabel": "Journal",
     "journalTitle": "From the Journal",
     "journalLead": "One story each week about Culture & History, Lifestyle, Places, and Letters.",
     "journalCta": "Explore the Journal",
     "aboutLabel": "About",
     "aboutTitle": "A cultural bridge between Sicily and those who love it.",
-    "aboutBody": "Del Moro Sicily exists so you can experience Sicily without a worry.\nWe take care of every detail of your stay, so you can simply give in to the moment.\n\nWe don’t just arrange trips — we craft bespoke experiences built on beauty, authenticity, and freedom.\n\nSicily, as you’ve never lived it before.",
+    "aboutBody": "Del Moro Sicily exists so you can experience Sicily without a worry.\nWe take care of every detail of your stay, so you can simply give in to the moment.\n\nWe don’t just arrange trips: we craft bespoke experiences built on beauty, authenticity, and freedom.\n\nSicily, as you’ve never lived it before.",
     "discoverMore": "Discover more",
     "letterLabel": "Newsletter",
     "letterTitle": "Each week, a new story.",
@@ -84,12 +91,37 @@
   "Experiences": {
     "label": "Experiences",
     "title": "Western Sicily, and beyond",
-    "intro": "A few sample tours to start imagining the journey. Everything can be tailored to your rhythm.",
+    "seeAllExperiences": "See all experiences",
+    "requestInfoCta": "Request information",
+    "galleryHeading": "Gallery",
+    "galleryLead": "Mood and details connected to this experience.",
+    "galleryImageNumber": "photo {n}",
+    "galleryOpenImage": "Open image {n} of {total}",
+    "galleryDialogLabel": "Full screen gallery",
+    "galleryPrevious": "Previous image",
+    "galleryNext": "Next image",
+    "galleryCounter": "{current} of {total}",
+    "intro": "Four themes to guide you through history, nature, mobility, and stays. Below you will also find bespoke services: car hire, rooms and villas, boats, and everything your trip needs.",
+    "themesSectionTitle": "The four experience themes",
     "duration": "Duration",
     "area": "Area",
     "priceFrom": "From",
     "galleryLabel": "Gallery",
     "close": "Close",
+    "experienceThemes": {
+      "storia": {
+        "body": "Paths through Sicily’s memory: layered architecture, the language of stone, and stories that read the landscape slowly."
+      },
+      "natura": {
+        "body": "Trails, coastlines, and inland silence: Sicily as a breath of air, away from the obvious circuits."
+      },
+      "noleggio": {
+        "body": "Cars, boats, and selected skippers: discreet, safe mobility tailored to you."
+      },
+      "alloggi": {
+        "body": "Villas, homes, and stays chosen with care, tuned to the island’s rhythm."
+      }
+    },
     "tours": [
       {
         "title": "Palermo & Monreale",
@@ -209,7 +241,7 @@
         ],
         "details": [
           "Two days to breathe the Baroque: Noto in the morning, Modica for a sweet pause, and Ragusa Ibla for an unhurried evening.",
-          "Day two stays flexible — views, shops, and empty time, because that’s what you remember."
+          "Day two stays flexible: views, shops, and empty time, because that’s what you remember."
         ],
         "highlights": [
           "Noto baroque walk",
@@ -219,7 +251,8 @@
       }
     ],
     "otherServicesTitle": "Other services",
-    "otherServicesLead": "Beyond tours, Del Moro can also handle on-request services to make your trip (or an event) easy and special.",
+    "otherServicesImageAlt": "Two people on a scooter on a country road",
+    "otherServicesLead": "Beyond the themed routes, we can arrange car hire (including delivery and pick-up), rooms and villas, transfers and logistics to make your trip or event smooth and well looked after.",
     "otherServices": [
       "Car hire with delivery and pickup",
       "Boat hire and skipper",
@@ -244,15 +277,15 @@
       "Local experiences"
     ],
     "requestTitle": "Request",
-    "requestLead": "Share your dates, group size, and what you’d love to do — we’ll reply with concrete options."
+    "requestLead": "Share your dates, group size, and what you’d love to do; we’ll reply with concrete options."
   },
   "Journal": {
     "label": "Journal",
     "title": "Stories of a place that moves at its own pace",
-    "intro": "Four editorial lines — one new piece every week.",
+    "intro": "Four editorial lines: one new piece every week.",
     "guideCtaKicker": "For our readers",
     "guideCtaTitle": "The Sicilian Summer",
-    "guideCtaLead": "A digital guide and audio experience — a small cultural companion, not a travel package.",
+    "guideCtaLead": "A digital guide and audio experience, a small cultural companion, not a travel package.",
     "guideCtaButton": "Explore the Guide",
     "categoryNames": {
       "cultureHistory": "Culture & History",
@@ -291,19 +324,19 @@
   "Guides": {
     "label": "Phase 2",
     "title": "Guides, in time",
-    "p1": "We are building a small collection of cultural digital guides for our readers — written with the same care as the Journal, never sold like standard travel products.",
+    "p1": "We are building a small collection of cultural digital guides for our readers, written with the same care as the Journal, never sold like standard travel products.",
     "p2": "For now, follow the weekly stories. The guides will arrive quietly, when the editorial voice is ready.",
     "cta": "Explore the Journal"
   },
   "DigitalProducts": {
     "pageLabel": "Digital products",
     "pageTitle": "Guides and listening experiences for slow travelers.",
-    "pageIntro": "Editorial pieces made with the same voice as the Journal — cultural depth, never a catalogue tone.",
+    "pageIntro": "Editorial pieces made with the same voice as the Journal: cultural depth, never a catalogue tone.",
     "productLabel": "First product",
     "productTitle": "The Sicilian Summer",
     "productFormat": "Digital guide + audio experience.",
     "priceLabel": "Suggested price:",
-    "priceRange": "29€ – 39€",
+    "priceRange": "from €29 to €39",
     "presentationLabel": "How we present it",
     "notProduct": "Not as a product.",
     "butAs": "But as:",
@@ -312,7 +345,7 @@
   "Concierge": {
     "label": "Concierge",
     "title": "A concierge service for those who want to experience Sicily authentically.",
-    "intro": "Itineraries, tables, villas, and experiences chosen with care — beyond the obvious circuits, close to the island’s real life. Discreet, bespoke, never loud.",
+    "intro": "Itineraries, tables, villas, and experiences chosen with care, beyond the obvious circuits, close to the island’s real life. Discreet, bespoke, never loud.",
     "servicesTitle": "Services",
     "services": [
       "Personalized itineraries",
@@ -375,42 +408,42 @@
   "CookiePolicy": {
     "label": "Legal",
     "title": "Cookie policy",
-    "intro": "Below is a summary of how this website handles cookies and similar technologies. This page may be updated as our services evolve.",
-    "body": "Technical cookies: we may use strictly necessary cookies to keep the site secure and functioning (for example session or language preferences where applicable).\n\nAnalytics and marketing: unless we explicitly enable them and you consent, we do not use third-party profiling or advertising cookies on this site.\n\nYour choice: when you accept or reject cookies via the banner, we store that preference in your browser (local storage) so we do not ask again on every visit. You can reopen the banner from the small control at the bottom of the page.\n\nContact: for questions about this policy, use the details on our Contact page."
+    "intro": "This notice covers the Del Moro Sicily website, which presents travel experiences in Sicily, editorial content, and enquiry forms. The business owner is Gabriele Virzì.",
+    "body": "What cookies are: small files or identifiers stored on your device when you visit a site. They often keep the site working, remember preferences, or measure how pages are used.\n\nWhat we use on this site: we use cookies and tools that are strictly necessary for secure operation (for example language handling where available, security, and performance). We do not use third-party behavioural advertising cookies unless separately documented and unless you give consent where the law requires it.\n\nYour consent choices: the cookie banner lets you accept or reject non-essential categories when they exist. Your choice is stored locally in your browser (for example via local storage) so we do not show the message on every visit. You can change your decision at any time using the dedicated control on the page.\n\nContact: for questions about this policy, use the addresses on the Contact page. The commercial and editorial project is Del Moro Sicily, curated by Gabriele Virzì."
   },
   "PrivacyPolicy": {
     "label": "Legal",
     "title": "Privacy policy",
-    "intro": "This page describes how Del Moro Sicily processes personal data in connection with this website. It is provided for transparency and may be updated over time.",
-    "body": "Data controller: Del Moro Sicily — for contact details, see the Contact page on this site.\n\nData we may process: when you write to us or subscribe to the newsletter, we process the data you provide (for example name, email, message content) solely to respond or to deliver the service you requested.\n\nLegal bases and retention: we process data as necessary to take steps at your request, to perform a contract, or where we have a legitimate interest, always in line with applicable law. We retain data only for as long as needed for those purposes unless a longer period is required by law.\n\nYour rights: depending on your jurisdiction, you may have the right to access, rectify, erase, restrict, or object to processing, and to lodge a complaint with a supervisory authority.\n\nUpdates: we may revise this policy; the date of the latest version will be reflected on this page when we do."
+    "intro": "Your privacy matters. This notice explains how we process personal data when you visit Del Moro Sicily, read the journal, browse experiences, or send a request. The site promotes travel and experiences in Sicily and related services (tours, rentals, stays, and similar), curated by Gabriele Virzì.",
+    "body": "Data controller: Gabriele Virzì, as the person responsible for the Del Moro Sicily brand and project. To exercise your rights or for privacy questions, use the contacts on the Contact page (email and other details shown there).\n\nCategories of data: we may process identity and contact details (name, surname, email, phone), content you type into forms (messages, travel preferences, indicative dates), technical browsing data generated automatically (IP address, browser type, access times in aggregated or technical log form), and, if you join the newsletter, the email address needed to send it.\n\nPurposes and legal bases: (1) responding to enquiries sent through forms and preparing experience proposals or quotes: processing necessary to take steps at your request (Article 6(1)(b) GDPR) or, where not yet contractual, legitimate interest in handling visitor correspondence; (2) newsletter communications, only with your consent where required (Article 6(1)(a) GDPR); (3) site security, abuse prevention, and legal obligations (Article 6(1)(c) and (f) GDPR).\n\nRetention: we keep data for as long as needed to handle the request and for any later accounting or tax duties, unless the law requires longer. Technical logs may be kept for limited periods compatible with service security.\n\nRecipients: data may be processed by suppliers who support us (hosting, email, site management) as processors under GDPR-compliant arrangements where applicable. We do not sell your personal data.\n\nTransfers outside the EEA: if we use providers outside the European Economic Area, we apply appropriate safeguards (for example the European Commission’s standard contractual clauses) where required.\n\nYour rights: you may request access, rectification, erasure, restriction of processing, objection where applicable, portability of data you supplied in a structured format, and withdrawal of consent for consent-based activities. You may lodge a complaint with your local supervisory authority.\n\nChanges: we will update this notice if purposes or tools change; please review it periodically."
   },
   "Terms": {
     "label": "Legal",
     "title": "Terms and conditions",
-    "intro": "These terms govern use of this website and of the information and services offered through it. By using the site you acknowledge that you have read this notice.",
-    "body": "Use of the site: content is provided for general information about Del Moro Sicily. It does not constitute a binding offer unless we confirm services separately (for example by email or contract).\n\nIntellectual property: texts, images, logos, and design elements are protected by applicable laws. Reuse without permission is not allowed except as permitted by law.\n\nLiability: we strive to keep information accurate but do not guarantee completeness or uninterrupted availability of the site. To the extent permitted by law, we are not liable for indirect damages arising from use of the site.\n\nLinks: third-party sites linked from this website are not under our control; we are not responsible for their content or policies.\n\nGoverning law: unless mandatory rules provide otherwise, these terms are governed by Italian law. For disputes, the courts of Palermo, Italy, shall have exclusive jurisdiction.\n\nChanges: we may update these terms; continued use of the site after changes constitutes acceptance of the updated terms."
+    "intro": "These terms govern access to and use of the Del Moro Sicily website, a project by Gabriele Virzì focused on experiences in Sicily, editorial content, and contact channels. By using the site you accept the version published at the time of use.",
+    "body": "Nature of the service: the site provides information on itineraries, travel themes, ancillary services (such as rentals and stays), and journal articles. Descriptions are general and promotional: a service is confirmed only after written communication between the parties (for example a confirmation email or commercial agreement), with economic and operational terms defined case by case.\n\nPermitted use: you may not use the site unlawfully, to disturb other users, to attempt unauthorised access, to extract data through unauthorised aggressive scraping, or to infringe third-party rights.\n\nIntellectual property: texts, photographs, videos, Del Moro Sicily marks, logos, and layout are owned by Gabriele Virzì or licensors and are protected by copyright and trade mark law. You may share links to pages; extensive reproduction of content without written permission is not allowed, except as permitted by law (quotation, personal use).\n\nLimitation of liability: we aim to keep information accurate and up to date but do not warrant freedom from errors or uninterrupted service. We are not liable for indirect damages, lost profits, or inability to travel based solely on online information without direct confirmation. Links to third-party sites are provided for convenience; we do not control external content.\n\nGoverning law and jurisdiction: unless mandatory rules say otherwise, these terms are governed by Italian law. For disputes arising from use of the site, the courts of Palermo, Italy, shall have jurisdiction, without prejudice to mandatory consumer protections.\n\nChanges: Gabriele Virzì may update these terms; the version in force is the one published on this page. Continued use of the site after publication of changes implies acceptance of the new terms where the law allows."
   },
   "Metadata": {
     "siteName": "Del Moro Sicily",
-    "siteDescription": "An international cultural journal on Sicily and the Mediterranean — slow, poetic, independent of aggressive tourism.",
+    "siteDescription": "An international cultural journal on Sicily and the Mediterranean: slow, poetic, independent of aggressive tourism.",
     "homeTitle": "Not a destination, a state of mind",
-    "homeDescription": "A cultural digital journal on Sicily and the Mediterranean — slow, poetic, and free of aggressive tourism.",
+    "homeDescription": "A cultural digital journal on Sicily and the Mediterranean: slow, poetic, and free of aggressive tourism.",
     "aboutTitle": "About",
     "aboutDescription": "Against aggressive tourism: Del Moro Sicily is an international cultural journal on Mediterranean slowness, Sicily, and freedom in how we approach a place.",
     "journalTitle": "Journal",
-    "journalDescription": "Weekly editorial stories on Sicilian culture — Culture & History, Lifestyle, Places, and Letters.",
+    "journalDescription": "Weekly editorial stories on Sicilian culture: Culture & History, Lifestyle, Places, and Letters.",
     "experiencesTitle": "Experiences",
-    "experiencesDescription": "Sample tours in Western Sicily plus on-request services: cars, boats, private parties, and more.",
+    "experiencesDescription": "Four themed experiences as on the home page, plus on-request services: car hire, rooms and villas, boats, and more.",
     "guidesTitle": "Guides",
-    "guidesDescription": "Curated digital guides — Del Moro Sicily, phase two. Editorial companions, not packages.",
-    "conciergeTitle": "Concierge — Authentic Sicily",
+    "guidesDescription": "Curated digital guides, Del Moro Sicily, phase two. Editorial companions, not packages.",
+    "conciergeTitle": "Concierge: Authentic Sicily",
     "conciergeDescription": "Concierge for travelers who want authentic Sicily: itineraries, restaurants, villas, local experiences, and artisans.",
     "contactTitle": "Contact",
     "contactDescription": "Contact Del Moro Sicily for editorial inquiries and private requests.",
     "bookingTitle": "Book",
     "bookingDescription": "Request info or book an experience: tours, cars, boats, events, and bespoke services in Sicily.",
     "digitalProductsTitle": "Digital products",
-    "digitalProductsDescription": "The Sicilian Summer — a digital guide and audio experience for Del Moro Sicily readers.",
+    "digitalProductsDescription": "The Sicilian Summer: a digital guide and audio experience for Del Moro Sicily readers.",
     "cookiePolicyTitle": "Cookie policy",
     "cookiePolicyDescription": "How Del Moro Sicily uses cookies and how you can manage your preferences.",
     "privacyPolicyTitle": "Privacy policy",

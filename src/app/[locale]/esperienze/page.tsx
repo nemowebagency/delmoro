@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
-import { ExperienceTourCards, type ExperienceTour } from "@/components/experience-tour-cards";
+import { AnimatedSection } from "@/components/animated-section";
+import { ExperienceTilesGrid } from "@/components/experience-tiles-grid";
+import { Hero } from "@/components/hero";
 import { RevealMedia } from "@/components/reveal-media";
 import { RevealText } from "@/components/reveal-text";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -22,61 +24,59 @@ export async function generateMetadata({
 
 export default async function ExperiencesPage() {
   const t = await getTranslations("Experiences");
-  const tours = t.raw("tours") as ExperienceTour[];
 
   return (
-    <div className="container py-[80px] md:py-[100px]">
-      <header className="max-w-4xl">
-        <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
-          {t("label")}
-        </p>
-        <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
-          {t("title")}
-        </h1>
-        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-          {t("intro")}
-        </RevealText>
-      </header>
-
-      <section className="mt-12">
-        <ExperienceTourCards
-          tours={tours}
-          durationLabel={t("duration")}
-          areaLabel={t("area")}
-          priceFromLabel={t("priceFrom")}
-          galleryLabel={t("galleryLabel")}
-          closeLabel={t("close")}
-        />
-      </section>
-
-      <section className="mt-14 border-t border-[color:var(--line)] pt-10">
-        <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)]">
-          {t("otherServicesTitle")}
-        </h2>
-        <div className="mt-4 grid gap-8 md:grid-cols-[minmax(0,1fr)_360px] md:items-center md:gap-12">
-          <div className="text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            <RevealText>{t("otherServicesLead")}</RevealText>
-            <ul className="mt-6 grid gap-3 md:grid-cols-2">
-              {(t.raw("otherServices") as string[]).map((s) => (
-                <li key={s}>• {s}</li>
-              ))}
-            </ul>
-            <ButtonLink href="/prenota" className="mt-10">
-              {t("cta")}
-            </ButtonLink>
+    <>
+      <Hero variant="compact" menuTitleKey="experiences" usePageShellColumn />
+      <div id="page-content" className="scroll-mt-28 md:scroll-mt-32">
+        <AnimatedSection className="w-full scroll-mt-28 border-y border-[color:var(--line)] py-[84px] md:scroll-mt-32 md:py-[104px]">
+          <div className="page-shell flex w-full flex-col">
+            <div className="min-w-0">
+              <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
+                {t("label")}
+              </p>
+              <h2 className="mt-4 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
+                {t("title")}
+              </h2>
+              <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+                {t("intro")}
+              </RevealText>
+            </div>
           </div>
-          <RevealMedia className="overflow-hidden rounded-lg border border-[color:var(--line)] bg-[color:var(--section-warm)] md:justify-self-end">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/media/motors/bearded-man-scooter-with-womanfriend-outdoors.jpg"
-              alt="Noleggio mezzi e mobilità"
-              loading="lazy"
-              className="aspect-[4/3] w-full object-cover"
-            />
-          </RevealMedia>
-        </div>
-      </section>
-    </div>
+
+          <ExperienceTilesGrid layout="home" />
+        </AnimatedSection>
+
+        <AnimatedSection className="border-y border-[color:var(--line)] bg-white py-[84px] md:py-[104px]">
+          <div className="page-shell flex w-full flex-col">
+            <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
+              {t("otherServicesTitle")}
+            </h2>
+            <div className="mt-6 grid w-full gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
+              <div className="min-w-0 space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+                <RevealText>{t("otherServicesLead")}</RevealText>
+                <ul className="grid gap-3 sm:grid-cols-2">
+                  {(t.raw("otherServices") as string[]).map((s) => (
+                    <li key={s}>• {s}</li>
+                  ))}
+                </ul>
+                <ButtonLink href="/prenota" className="mt-4 w-fit">
+                  {t("cta")}
+                </ButtonLink>
+              </div>
+              <RevealMedia className="min-w-0 overflow-hidden border border-[color:var(--line)] bg-[color:var(--section-warm)]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/media/motors/bearded-man-scooter-with-womanfriend-outdoors.jpg"
+                  alt={t("otherServicesImageAlt")}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </RevealMedia>
+            </div>
+          </div>
+        </AnimatedSection>
+      </div>
+    </>
   );
 }
-

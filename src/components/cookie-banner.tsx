@@ -54,7 +54,7 @@ export function CookieBanner() {
   if (showBanner) {
     return (
       <div className="fixed bottom-0 left-0 z-[100] w-full md:bottom-4 md:left-4 md:w-auto md:max-w-md">
-        <div className="m-4 rounded-none border border-[color:var(--line)] bg-[color:var(--paper)] p-6 shadow-2xl md:m-0">
+        <div className="m-4 rounded-2xl border border-[color:var(--line)] bg-[color:var(--paper)] p-6 shadow-2xl md:m-0">
           <div className="mb-4 flex items-start justify-between gap-3">
             <div className="flex min-w-0 items-center gap-3">
               <Cookie className="shrink-0 text-[#b99e7e]" size={24} aria-hidden />
@@ -80,14 +80,14 @@ export function CookieBanner() {
             <button
               type="button"
               onClick={handleAccept}
-              className="flex-1 cursor-pointer rounded-none bg-[#b99e7e] px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-[#a68d6f]"
+              className="flex-1 cursor-pointer rounded-full bg-[#b99e7e] px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-[#a68d6f]"
             >
               {t("accept")}
             </button>
             <button
               type="button"
               onClick={handleReject}
-              className="flex-1 cursor-pointer rounded-none border border-[color:var(--line)] px-6 py-3 font-semibold text-[color:var(--ink)] transition-all duration-300 hover:bg-[color:var(--section-warm)]"
+              className="flex-1 cursor-pointer rounded-full border border-[color:var(--line)] px-6 py-3 font-semibold text-[color:var(--ink)] transition-all duration-300 hover:bg-[color:var(--section-warm)]"
             >
               {t("reject")}
             </button>

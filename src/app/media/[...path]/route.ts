@@ -1,6 +1,8 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
+const EXPERIENCE_SLUGS = new Set(["storia", "natura", "noleggio", "alloggi"]);
+
 const MIME_BY_EXT: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
@@ -20,8 +22,41 @@ export async function GET(
   const { path: parts } = await params;
   if (!parts?.length) return new Response("Not found", { status: 404 });
 
-  // Only allow known folders and prevent path traversal.
   const [folder, ...rest] = parts;
+
+  /** Gallerie esperienze: `video/imagese/{slug}/{file}` → `/media/imagese/{slug}/{file}` */
+  if (folder === "imagese") {
+    if (rest.length !== 2) return new Response("Not found", { status: 404 });
+    const slug = rest[0] ?? "";
+    const filename = decodeURIComponent(rest[1] ?? "");
+    if (!EXPERIENCE_SLUGS.has(slug)) return new Response("Not found", { status: 404 });
+    if (
+      !filename ||
+      filename.includes("..") ||
+      filename.includes("/") ||
+      filename.includes("\\") ||
+      filename.startsWith(".")
+    ) {
+      return new Response("Not found", { status: 404 });
+    }
+    const ext = path.extname(filename).toLowerCase();
+    const mime = MIME_BY_EXT[ext];
+    if (!mime) return new Response("Unsupported", { status: 415 });
+    const absolute = path.join(process.cwd(), "video", "imagese", slug, filename);
+    try {
+      const buf = await readFile(absolute);
+      return new Response(buf, {
+        headers: {
+          "content-type": mime,
+          "cache-control": "public, max-age=31536000, immutable",
+        },
+      });
+    } catch {
+      return new Response("Not found", { status: 404 });
+    }
+  }
+
+  // Only allow known folders and prevent path traversal.
   if (!["img", "gabriele", "motors"].includes(folder)) {
     return new Response("Not found", { status: 404 });
   }

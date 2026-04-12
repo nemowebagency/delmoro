@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Hero } from "@/components/hero";
 import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
@@ -21,24 +22,27 @@ export default async function DigitalProductsPage() {
   const t = await getTranslations("DigitalProducts");
 
   return (
-    <div className="container py-[80px] md:py-[100px]">
-      <header className="max-w-3xl">
+    <>
+      <Hero variant="compact" menuTitleKey="digitalProducts" />
+      <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
+        <div className="page-shell py-[80px] md:py-[100px]">
+          <header className="w-full min-w-0">
         <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
           {t("pageLabel")}
         </p>
-        <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
+        <h2 className="mt-6 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
           {t("pageTitle")}
-        </h1>
+        </h2>
         <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("pageIntro")}
         </RevealText>
       </header>
 
-      <article className="mt-12 max-w-2xl border border-[color:var(--line)] bg-[color:var(--section-warm)] px-8 py-10 md:px-12 md:py-14">
+      <article className="mt-12 w-full min-w-0 border border-[color:var(--line)] bg-[color:var(--section-warm)] px-8 py-10 md:px-12 md:py-14">
         <p className="font-label text-[13px] uppercase tracking-[0.35em] text-[color:var(--gold-label)]">
           {t("productLabel")}
         </p>
-        <h2 className="mt-4 font-serif text-3xl font-normal text-[color:var(--ink)] md:text-[36px]">
+        <h2 className="mt-4 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
           {t("productTitle")}
         </h2>
         <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
@@ -67,6 +71,8 @@ export default async function DigitalProductsPage() {
           </p>
         </div>
       </article>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }

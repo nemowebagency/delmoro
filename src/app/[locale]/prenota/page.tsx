@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ConciergeForm } from "@/components/forms/concierge-form";
+import { Hero } from "@/components/hero";
 import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
@@ -23,14 +24,17 @@ export default async function BookingPage() {
   const services = t.raw("services") as string[];
 
   return (
-    <div className="container py-[80px] md:py-[100px]">
-      <header className="max-w-4xl">
+    <>
+      <Hero variant="compact" menuTitleKey="book" />
+      <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
+        <div className="page-shell py-[80px] md:py-[100px]">
+          <header className="w-full min-w-0">
         <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
           {t("label")}
         </p>
-        <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
+        <h2 className="mt-6 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
           {t("title")}
-        </h1>
+        </h2>
         <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("intro")}
         </RevealText>
@@ -38,7 +42,7 @@ export default async function BookingPage() {
 
       <section className="mt-12 grid gap-12 md:grid-cols-2 md:gap-14">
         <div className="border-t border-[color:var(--line)] pt-8">
-          <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)]">
+          <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
             {t("servicesTitle")}
           </h2>
           <ul className="mt-5 space-y-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
@@ -47,8 +51,8 @@ export default async function BookingPage() {
             ))}
           </ul>
         </div>
-        <div className="border-t border-[color:var(--line)] pt-8">
-          <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)]">
+        <div id="booking-form" className="scroll-mt-28 border-t border-[color:var(--line)] pt-8 md:scroll-mt-32">
+          <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
             {t("requestTitle")}
           </h2>
           <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
@@ -57,7 +61,9 @@ export default async function BookingPage() {
           <ConciergeForm />
         </div>
       </section>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
 

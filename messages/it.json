@@ -11,10 +11,17 @@
     "journal": "Journal",
     "contact": "Contatti",
     "book": "Prenota",
+    "concierge": "Concierge",
+    "guides": "Guide",
+    "digitalProducts": "Prodotti digitali",
+    "privacyPolicy": "Privacy policy",
+    "cookiePolicy": "Cookie policy",
+    "terms": "Termini e condizioni",
     "backToTop": "Torna all'inizio",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu",
-    "mainNav": "Navigazione principale"
+    "mainNav": "Navigazione principale",
+    "experiencesSubmenu": "Quattro filoni di esperienza"
   },
   "Footer": {
     "footerIntro": "La Sicilia nel tuo tempo. Viaggi su misura e note editoriali.",
@@ -33,7 +40,7 @@
     "rights": "© {year} Del Moro Sicily. Tutti i diritti riservati."
   },
   "Hero": {
-    "videoAria": "Viste aeree lente della Sicilia — introduzione silenziosa e cinematografica",
+    "videoAria": "Viste aeree lente della Sicilia, introduzione silenziosa e cinematografica",
     "logoAlt": "Del Moro Sicily",
     "title": "Un modo più lento di vivere la Sicilia",
     "subtitle": "Un journal culturale sul modo di vita mediterraneo.",
@@ -47,7 +54,7 @@
     "manifesto1": "La Sicilia è per chi cerca più di uno sfondo per una foto: strati di storia nella pietra e nelle storie, una luce che cambia il mare nell'arco della giornata, una cucina ancora legata alle stagioni e borghi che sembrano davvero vissuti.",
     "manifesto2": "I nostri servizi sono pensati per chi pretende qualità in ogni esperienza: organizzazione attenta, partner locali di fiducia e percorsi costruiti sul tuo ritmo, non su pacchetti tutti uguali.",
     "manifestoQuote": "Qui il senso sta nelle piccole cose: uno sguardo, un piatto, un tratto di strada. Il nostro compito è lasciarti libero di accorgertene.",
-    "discoverImageAlt": "Veduta della Sicilia — costa e paesaggio",
+    "discoverImageAlt": "Veduta della Sicilia, costa e paesaggio",
     "journalLabel": "Journal",
     "journalTitle": "Dal Journal",
     "journalLead": "Un racconto a settimana su Cultura e storia, Stile di vita, Luoghi e Lettere.",
@@ -84,12 +91,37 @@
   "Experiences": {
     "label": "Esperienze",
     "title": "Sicilia occidentale, e oltre",
-    "intro": "Alcune idee di tour (fittizie) per iniziare a immaginare il viaggio. Tutto può essere personalizzato in base al tuo ritmo.",
+    "seeAllExperiences": "Vedi tutte le esperienze",
+    "requestInfoCta": "Chiedi informazioni",
+    "galleryHeading": "Galleria",
+    "galleryLead": "Atmosfere e dettagli legati a questa esperienza.",
+    "galleryImageNumber": "foto {n}",
+    "galleryOpenImage": "Apri immagine {n} di {total}",
+    "galleryDialogLabel": "Galleria a tutto schermo",
+    "galleryPrevious": "Immagine precedente",
+    "galleryNext": "Immagine successiva",
+    "galleryCounter": "{current} di {total}",
+    "intro": "Quattro filoni per orientarti tra storia, natura, mobilità e soggiorni. Più sotto trovi anche i servizi su misura: noleggio auto, camere e ville, barche e tutto ciò che serve al viaggio.",
+    "themesSectionTitle": "I quattro temi delle esperienze",
     "duration": "Durata",
     "area": "Zona",
     "priceFrom": "A partire da",
     "galleryLabel": "Galleria",
     "close": "Chiudi",
+    "experienceThemes": {
+      "storia": {
+        "body": "Percorsi nella memoria della Sicilia: architetture stratificate, linguaggio delle pietre e storie che leggono il paesaggio al rallentatore."
+      },
+      "natura": {
+        "body": "Sentieri, coste e silenzi dell’entroterra: la Sicilia come respiro, lontano dai circuiti scontati."
+      },
+      "noleggio": {
+        "body": "Auto, barche e skipper selezionati: mobilità su misura con discrezione e sicurezza."
+      },
+      "alloggi": {
+        "body": "Ville, dimore e soggiorni scelti con cura, per adattarsi al ritmo dell’isola."
+      }
+    },
     "tours": [
       {
         "title": "Palermo & Monreale",
@@ -209,7 +241,7 @@
         ],
         "details": [
           "Due giorni per respirare il barocco: Noto al mattino, Modica per una pausa dolce e Ragusa Ibla per una sera lenta.",
-          "Il secondo giorno lo moduliamo tra scorci, botteghe e tempi vuoti — perché sono quelli che restano."
+          "Il secondo giorno lo moduliamo tra scorci, botteghe e tempi vuoti, perché sono quelli che restano."
         ],
         "highlights": [
           "Noto e passeggiata barocca",
@@ -219,7 +251,8 @@
       }
     ],
     "otherServicesTitle": "Altri servizi",
-    "otherServicesLead": "Oltre ai tour, Del Moro può occuparsi anche di servizi su richiesta per rendere il viaggio (o un evento) semplice e speciale.",
+    "otherServicesImageAlt": "Coppia in scooter su strada di campagna",
+    "otherServicesLead": "Oltre ai percorsi tematici, su richiesta gestiamo noleggio auto (anche con consegna e ritiro), camere e ville, transfer e logistica per rendere il viaggio o un evento semplice e curato.",
     "otherServices": [
       "Noleggio auto con consegna e ritiro",
       "Noleggio barche e skipper",
@@ -249,10 +282,10 @@
   "Journal": {
     "label": "Journal",
     "title": "Storie di un luogo che va al proprio ritmo",
-    "intro": "Quattro linee editoriali — un nuovo pezzo ogni settimana.",
+    "intro": "Quattro linee editoriali: un nuovo pezzo ogni settimana.",
     "guideCtaKicker": "Per i lettori",
     "guideCtaTitle": "The Sicilian Summer",
-    "guideCtaLead": "Guida digitale ed esperienza audio — una piccola compagna culturale, non un pacchetto turistico.",
+    "guideCtaLead": "Guida digitale ed esperienza audio, una piccola compagna culturale, non un pacchetto turistico.",
     "guideCtaButton": "Scopri la guida",
     "categoryNames": {
       "cultureHistory": "Cultura e storia",
@@ -291,19 +324,19 @@
   "Guides": {
     "label": "Fase 2",
     "title": "Guide, nel tempo giusto",
-    "p1": "Stiamo preparando una piccola collezione di guide digitali culturali per i nostri lettori — scritte con la stessa cura del Journal, mai vendute come prodotti turistici standard.",
+    "p1": "Stiamo preparando una piccola collezione di guide digitali culturali per i nostri lettori, scritte con la stessa cura del Journal, mai vendute come prodotti turistici standard.",
     "p2": "Per ora segui i racconti settimanali. Le guide arriveranno in silenzio, quando la voce editoriale sarà pronta.",
     "cta": "Scopri il Journal"
   },
   "DigitalProducts": {
     "pageLabel": "Prodotti digitali",
     "pageTitle": "Guide ed esperienze in ascolto per chi viaggia con lentezza.",
-    "pageIntro": "Oggetti editoriali con la stessa voce del Journal — profondità culturale, mai tono da catalogo.",
+    "pageIntro": "Oggetti editoriali con la stessa voce del Journal: profondità culturale, mai tono da catalogo.",
     "productLabel": "Primo prodotto",
     "productTitle": "The Sicilian Summer",
     "productFormat": "Guida digitale + esperienza audio.",
     "priceLabel": "Prezzo consigliato:",
-    "priceRange": "29€ – 39€",
+    "priceRange": "da 29€ a 39€",
     "presentationLabel": "Come lo presentiamo",
     "notProduct": "Non come prodotto.",
     "butAs": "Ma come:",
@@ -312,7 +345,7 @@
   "Concierge": {
     "label": "Concierge",
     "title": "Un servizio per chi vuole vivere la Sicilia in modo autentico.",
-    "intro": "Itinerari, tavoli, ville ed esperienze scelti con cura — fuori dai circuiti ovvi, vicini alla vita reale dell’isola. Discreto, su misura, mai ad alta voce.",
+    "intro": "Itinerari, tavoli, ville ed esperienze scelti con cura, fuori dai circuiti ovvi, vicini alla vita reale dell’isola. Discreto, su misura, mai ad alta voce.",
     "servicesTitle": "Servizi",
     "services": [
       "Itinerari personalizzati",
@@ -375,42 +408,42 @@
   "CookiePolicy": {
     "label": "Note legali",
     "title": "Cookie policy",
-    "intro": "Qui trovi una sintesi su come questo sito gestisce cookie e tecnologie simili. La pagina può essere aggiornata nel tempo insieme al servizio.",
-    "body": "Cookie tecnici: possiamo usare cookie strettamente necessari per sicurezza e funzionamento del sito (ad esempio preferenze di sessione o lingua ove applicabile).\n\nAnalytics e marketing: salvo che non li attiviamo esplicitamente e tu non dia consenso, non utilizziamo cookie di profilazione o pubblicità di terze parti su questo sito.\n\nLa tua scelta: quando accetti o rifiuti dal banner, memorizziamo la preferenza nel browser (local storage) così non ti chiediamo ogni visita. Puoi riaprire il banner dal piccolo controllo in basso a sinistra.\n\nContatti: per domande su questa informativa, usa i recapiti nella pagina Contatti."
+    "intro": "Questa informativa riguarda il sito Del Moro Sicily, dedicato a esperienze di viaggio in Sicilia, contenuti editoriali e richieste tramite moduli. Il titolare dell’attività è Gabriele Virzì.",
+    "body": "Cosa sono i cookie. Sono piccoli file o identificatori che possono essere salvati sul tuo dispositivo quando visiti un sito. Di solito servono per il funzionamento delle pagine, per ricordare alcune preferenze o, in alcuni casi, per statistiche.\n\nCosa usiamo su questo sito. Utilizziamo strumenti strettamente necessari al funzionamento sicuro del sito, inclusa la gestione della lingua quando prevista, la sicurezza e le prestazioni. Non utilizziamo cookie di profilazione o pubblicità comportamentale di terze parti, salvo che non intervenga una diversa attivazione, chiaramente indicata, e salvo il tuo consenso ove la legge lo richieda.\n\nCome gestisci le tue scelte. Il banner dei cookie ti consente, quando serve, di accettare o rifiutare le categorie che non sono indispensabili. La preferenza resta memorizzata nel browser, ad esempio tramite local storage, così non ti chiediamo di decidere a ogni accesso. Puoi cambiare idea in qualsiasi momento usando il controllo dedicato che trovi in pagina.\n\nContatti. Per domande su questa informativa puoi scrivere usando i recapiti nella pagina Contatti. Il progetto è Del Moro Sicily, a cura di Gabriele Virzì."
   },
   "PrivacyPolicy": {
     "label": "Note legali",
     "title": "Privacy policy",
-    "intro": "Questa pagina descrive come Del Moro Sicily tratta i dati personali in relazione a questo sito. È fornita per trasparenza e può essere aggiornata nel tempo.",
-    "body": "Titolare del trattamento: Del Moro Sicily — per i recapiti vedi la pagina Contatti di questo sito.\n\nDati che possiamo trattare: quando ci scrivi o ti iscrivi alla newsletter, trattiamo i dati che ci fornisci (ad esempio nome, email, contenuto del messaggio) solo per risponderti o per erogare il servizio richiesto.\n\nBase giuridica e conservazione: trattiamo i dati nella misura necessaria per adempiere a una tua richiesta, eseguire un contratto o per legittimo interesse, nel rispetto della normativa vigente. Conserviamo i dati solo per il tempo necessario a tali finalità, salvo obblighi di legge più lunghi.\n\nI tuoi diritti: a seconda del tuo ordinamento, puoi avere diritto di accesso, rettifica, cancellazione, limitazione o opposizione al trattamento, e di proporre reclamo all’autorità di controllo.\n\nAggiornamenti: possiamo modificare questa informativa; la data dell’ultima versione sarà indicata su questa pagina."
+    "intro": "La tua privacy è importante. Questa informativa descrive come trattiamo i dati personali quando visiti Del Moro Sicily, leggi il journal, esplori le esperienze o invii una richiesta. Il sito promuove viaggi ed esperienze in Sicilia e servizi collegati (tour, noleggi, alloggi e simili), curati da Gabriele Virzì.",
+    "body": "Titolare del trattamento: Gabriele Virzì, in qualità di referente del marchio e del progetto Del Moro Sicily. Per esercitare i diritti o per richieste sulla privacy utilizza i contatti nella pagina Contatti del sito (email e altri recapiti indicati lì).\n\nTipologie di dati: possiamo trattare dati identificativi e di contatto (nome, cognome, email, telefono), contenuti che inserisci nei moduli (messaggi, preferenze di viaggio, date indicative), dati tecnici di navigazione generati automaticamente (indirizzo IP, tipo di browser, orari di accesso in forma aggregata o di log tecnico), e, se ti iscrivi alla newsletter, l’indirizzo email necessario all’invio.\n\nFinalità e basi giuridiche: (1) rispondere alle richieste inviate tramite i moduli e organizzare proposte di esperienza o preventivi: trattamento necessario per prendere provvedimenti alla tua richiesta (art. 6, par. 1, lett. b GDPR) o, ove non ancora contrattuale, per il legittimo interesse a gestire la corrispondenza con i visitatori; (2) invio di comunicazioni di newsletter, solo previo tuo consenso ove richiesto (art. 6, par. 1, lett. a GDPR); (3) sicurezza del sito, prevenzione abusi e obblighi di legge (art. 6, par. 1, lett. c e f GDPR).\n\nConservazione: conserviamo i dati per il tempo necessario a evadere la richiesta e per eventuali successivi adempimenti contabili o fiscali, salvo periodi più lunghi imposti dalla legge. I log tecnici possono essere conservati per periodi limitati compatibili con la sicurezza del servizio.\n\nDestinatari: i dati possono essere trattati da fornitori che ci assistono (hosting, posta elettronica, strumenti di gestione del sito) in qualità di responsabili del trattamento, con accordi conformi al GDPR ove applicabile. Non vendiamo i tuoi dati personali.\n\nTrasferimenti extra UE: se usiamo fornitori con sede fuori dallo Spazio Economico Europeo, adottiamo garanzie adeguate (es. Clausole contrattuali tipo della Commissione Europea) ove richiesto.\n\nDiritti dell’interessato: puoi chiedere accesso, rettifica, cancellazione, limitazione del trattamento, opposizione ove previsto, portabilità dei dati che fornisci in formato strutturato, e revoca del consenso per le attività basate sul consenso. Puoi proporre reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).\n\nModifiche: aggiorneremo questa informativa se cambiano le finalità o gli strumenti; ti invitiamo a consultarla periodicamente."
   },
   "Terms": {
     "label": "Note legali",
     "title": "Termini e condizioni",
-    "intro": "Questi termini regolano l’uso di questo sito e delle informazioni e dei servizi offerti tramite esso. Utilizzando il sito dichiari di aver letto questa informativa.",
-    "body": "Uso del sito: i contenuti sono forniti a titolo informativo generale su Del Moro Sicily. Non costituiscono offerta vincolante salvo conferma separata dei servizi (ad esempio via email o contratto).\n\nProprietà intellettuale: testi, immagini, logotipi e elementi di design sono tutelati dalle leggi applicabili. La riutilizzazione senza autorizzazione non è consentita salvo quanto consentito dalla legge.\n\nResponsabilità: ci impegniamo a mantenere le informazioni corrette ma non garantiamo completezza o disponibilità continua del sito. Nei limiti consentiti dalla legge, non siamo responsabili per danni indiretti derivanti dall’uso del sito.\n\nCollegamenti: i siti di terzi collegati non sono sotto il nostro controllo; non siamo responsabili dei loro contenuti o policy.\n\nLegge applicabile: salvo norme imperative diverse, questi termini sono regolati dalla legge italiana. Per le controversie è competente il Foro di Palermo.\n\nModifiche: possiamo aggiornare questi termini; l’uso continuato del sito dopo le modifiche implica accettazione dei termini aggiornati."
+    "intro": "I presenti termini disciplinano l’accesso e l’uso del sito Del Moro Sicily, progetto di Gabriele Virzì dedicato a esperienze in Sicilia, contenuti editoriali e canali di contatto. Navigando il sito dichiari di aver preso visione della versione pubblicata in quel momento.",
+    "body": "Natura del servizio. Il sito presenta informazioni su itinerari, temi di viaggio, servizi accessori come noleggi e alloggi, e articoli del journal. Le descrizioni hanno valore generale e promozionale. Un servizio si intende confermato solo dopo una comunicazione scritta tra le parti, ad esempio una email di conferma o un accordo commerciale, con condizioni economiche e operative definite di volta in volta.\n\nUtilizzo consentito. È vietato usare il sito in modo illecito, disturbare altri utenti, tentare accessi non autorizzati, estrarre dati in modo automatizzato e non consentito, o violare diritti di terzi.\n\nProprietà intellettuale. Testi, fotografie, video, marchi Del Moro Sicily, logotipi e layout sono di titolarità di Gabriele Virzì o di chi ne concede la licenza, e sono protetti dalle norme sul diritto d’autore e sui marchi. Puoi condividere i link alle pagine. La riproduzione estesa dei contenuti senza autorizzazione scritta non è consentita, salvo i casi previsti dalla legge, come la citazione o l’uso personale.\n\nResponsabilità. Ci impegniamo a mantenere informazioni corrette e aggiornate, ma non possiamo garantire l’assenza di errori né il servizio senza interruzioni. Non siamo responsabili per danni indiretti, perdita di profitto o impossibilità di viaggio se ti affidi solo alle informazioni online senza una conferma diretta con noi. I link a siti di terzi sono un aiuto per te: non controlliamo i contenuti esterni.\n\nLegge applicabile e foro. Salvo norme che non si possono derogare, questi termini sono regolati dalla legge italiana. Per le controversie legate all’uso del sito è competente il Foro di Palermo, ferma ogni altra competenza che la legge riconosce al consumatore.\n\nModifiche. Gabriele Virzì può aggiornare questi termini. Vale la versione pubblicata su questa pagina. Se continui a usare il sito dopo la pubblicazione delle modifiche, si intendono accettate le nuove condizioni, nei limiti consentiti dalla legge."
   },
   "Metadata": {
     "siteName": "Del Moro Sicily",
-    "siteDescription": "Un journal culturale internazionale su Sicilia e Mediterraneo — lento, poetico, lontano dal turismo aggressivo.",
+    "siteDescription": "Un journal culturale internazionale su Sicilia e Mediterraneo: lento, poetico, lontano dal turismo aggressivo.",
     "homeTitle": "Non una destinazione, uno stato d’animo",
-    "homeDescription": "Un journal digitale culturale su Sicilia e Mediterraneo — lento, poetico, senza turismo aggressivo.",
+    "homeDescription": "Un journal digitale culturale su Sicilia e Mediterraneo: lento, poetico, senza turismo aggressivo.",
     "aboutTitle": "Chi siamo",
     "aboutDescription": "Contro il turismo aggressivo: Del Moro Sicily è un journal culturale internazionale sulla lentezza mediterranea, la Sicilia e la libertà di avvicinarsi a un luogo.",
     "journalTitle": "Journal",
-    "journalDescription": "Storie editoriali settimanali sulla cultura siciliana — Cultura e storia, Stile di vita, Luoghi e Lettere.",
+    "journalDescription": "Storie editoriali settimanali sulla cultura siciliana: Cultura e storia, Stile di vita, Luoghi e Lettere.",
     "experiencesTitle": "Esperienze",
-    "experiencesDescription": "Tour ed esperienze (esempi) in Sicilia occidentale e servizi su richiesta: auto, barche, feste private e altro.",
+    "experiencesDescription": "Quattro esperienze tematiche come in home, più servizi su richiesta: noleggio auto, camere e ville, barche e altro.",
     "guidesTitle": "Guide",
-    "guidesDescription": "Guide digitali curate — Del Moro Sicily, fase due. Compagne editoriali, non pacchetti.",
-    "conciergeTitle": "Concierge — Sicilia autentica",
+    "guidesDescription": "Guide digitali curate, Del Moro Sicily, fase due. Compagne editoriali, non pacchetti.",
+    "conciergeTitle": "Concierge: Sicilia autentica",
     "conciergeDescription": "Servizio concierge per chi vuole vivere la Sicilia in modo autentico: itinerari, ristoranti, ville, esperienze e artigiani.",
     "contactTitle": "Contatti",
     "contactDescription": "Contatta Del Moro Sicily per richieste editoriali e private.",
     "bookingTitle": "Prenota",
     "bookingDescription": "Richiedi informazioni o prenota un’esperienza: tour, auto, barche, eventi e servizi su misura in Sicilia.",
     "digitalProductsTitle": "Prodotti digitali",
-    "digitalProductsDescription": "The Sicilian Summer — guida digitale ed esperienza audio per i lettori di Del Moro Sicily.",
+    "digitalProductsDescription": "The Sicilian Summer: guida digitale ed esperienza audio per i lettori di Del Moro Sicily.",
     "cookiePolicyTitle": "Cookie policy",
     "cookiePolicyDescription": "Come Del Moro Sicily utilizza i cookie e come gestire le preferenze.",
     "privacyPolicyTitle": "Privacy policy",

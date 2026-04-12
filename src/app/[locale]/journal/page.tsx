@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Hero } from "@/components/hero";
 import { JournalCard } from "@/components/journal-card";
 import { ButtonLink } from "@/components/ui/button-link";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
@@ -33,15 +34,17 @@ export default async function JournalPage({
     t(`categoryNames.${editorialCategoryMessageKey(c)}`);
 
   return (
-    <div>
-      <div className="container py-[80px] md:py-[100px]">
-        <header className="max-w-4xl">
+    <>
+      <Hero variant="compact" menuTitleKey="journal" />
+      <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
+        <div className="page-shell py-[80px] md:py-[100px]">
+        <header className="w-full min-w-0">
           <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
             {t("label")}
           </p>
-          <h1 className="mt-6 font-serif text-4xl font-normal leading-[1.25] text-[color:var(--ink)] md:text-[45px]">
+          <h2 className="mt-6 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
             {t("title")}
-          </h1>
+          </h2>
           <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("intro")}
           </p>
@@ -49,7 +52,7 @@ export default async function JournalPage({
       </div>
 
       <section className="border-y border-[color:var(--line)] bg-[color:var(--section-warm)]">
-        <div className="container grid gap-10 py-[72px] md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-10 md:py-[88px]">
+        <div className="page-shell grid gap-10 py-[72px] md:grid-cols-2 md:gap-10 md:py-[88px] lg:grid-cols-3 lg:gap-10">
           {journalArticles.map((article) => (
             <JournalCard
               key={article.slug}
@@ -61,22 +64,25 @@ export default async function JournalPage({
         </div>
       </section>
 
-      <section className="container border-t border-[color:var(--line)] py-[72px] md:py-[96px]">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
-            {t("guideCtaKicker")}
-          </p>
-          <h2 className="mt-4 font-serif text-3xl font-normal leading-tight text-[color:var(--ink)] md:text-[36px]">
-            {t("guideCtaTitle")}
-          </h2>
-          <p className="mx-auto mt-4 max-w-lg text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            {t("guideCtaLead")}
-          </p>
-          <ButtonLink href="/digital-products" className="mt-8">
-            {t("guideCtaButton")}
-          </ButtonLink>
+      <section className="border-t border-[color:var(--line)] py-[72px] md:py-[96px]">
+        <div className="page-shell">
+          <div className="mx-auto w-full max-w-none text-center">
+            <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
+              {t("guideCtaKicker")}
+            </p>
+            <h2 className="mt-4 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
+              {t("guideCtaTitle")}
+            </h2>
+            <p className="mx-auto mt-4 w-full text-[15px] leading-[1.75] text-[color:var(--muted)]">
+              {t("guideCtaLead")}
+            </p>
+            <ButtonLink href="/digital-products" className="mt-8">
+              {t("guideCtaButton")}
+            </ButtonLink>
+          </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

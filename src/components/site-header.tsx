@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { ExperiencesNavDesktop, ExperiencesMobileBlock } from "@/components/experiences-nav";
 import { LocaleSwitcher } from "@/components/locale-switcher";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -119,6 +120,9 @@ export function SiteHeader() {
             aria-label={t("mainNav")}
           >
             {siteConfig.nav.map((item) => {
+              if (item.href === "/esperienze") {
+                return <ExperiencesNavDesktop key={item.href} overlayOnHero={overlayOnHero} />;
+              }
               const isBook = item.href === "/prenota";
               return (
                 <Link
@@ -138,7 +142,7 @@ export function SiteHeader() {
                               : "border-[color:var(--ink)]/40 text-[color:var(--ink)]"),
                         )
                       : cn(
-                          "font-label whitespace-nowrap rounded-sm px-2.5 py-1.5 text-[15px] font-normal tracking-wide transition-[color,text-decoration-color] underline-offset-10 decoration-1 decoration-transparent",
+                          "font-label whitespace-nowrap rounded-full px-2.5 py-1.5 text-[15px] font-normal tracking-wide transition-[color,text-decoration-color] underline-offset-10 decoration-1 decoration-transparent",
                           "lg:px-3.5 lg:py-1.5 lg:text-[16px]",
                           overlayOnHero
                             ? "text-white/85 hover:text-white hover:underline hover:decoration-[#b99e7e]"
@@ -161,7 +165,7 @@ export function SiteHeader() {
           <button
             type="button"
             className={cn(
-              "inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm transition-colors lg:hidden",
+              "inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full transition-colors lg:hidden",
               "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2",
               overlayOnHero
                 ? "text-white focus-visible:outline-white/60"
@@ -198,7 +202,7 @@ export function SiteHeader() {
               <button
                 ref={closeBtnRef}
                 type="button"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-sm text-[color:var(--ink)] transition hover:text-[#b3997a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--gold-label)]"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[color:var(--ink)] transition hover:text-[#b3997a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--gold-label)]"
                 onClick={() => setMobileOpen(false)}
                 aria-label={t("closeMenu")}
               >
@@ -211,7 +215,20 @@ export function SiteHeader() {
             >
               <ul className="flex flex-col gap-1">
                 {siteConfig.nav.map((item) => {
-                  const active = pathname === item.href;
+                  const active =
+                    item.href === "/esperienze"
+                      ? pathname === "/esperienze" || (pathname ?? "").startsWith("/esperienze/")
+                      : pathname === item.href;
+                  if (item.href === "/esperienze") {
+                    return (
+                      <ExperiencesMobileBlock
+                        key={item.href}
+                        active={active}
+                        onNavigate={() => setMobileOpen(false)}
+                        linkClassName={mobileNavLinkClass}
+                      />
+                    );
+                  }
                   return (
                     <li key={item.href}>
                       <Link

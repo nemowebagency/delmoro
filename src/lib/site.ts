@@ -4,7 +4,7 @@ import { absoluteUrl, pathWithLocale } from "@/lib/locale-path";
 
 const siteUrl = "https://delmorosicily.com";
 
-/** Demo coordinates for the contact page — replace before launch */
+/** Demo coordinates for the contact page; replace before launch */
 export const contactPlaceholders = {
   email: "studio@delmorosicily.com",
   phone: "+39 091 555 0166",
@@ -16,7 +16,7 @@ export const siteConfig = {
   name: "Del Moro Sicily",
   email: "hello@delmorosicily.com",
   description:
-    "An international cultural journal on Sicily and the Mediterranean — slow, poetic, independent of aggressive tourism.",
+    "An international cultural journal on Sicily and the Mediterranean: slow, poetic, independent of aggressive tourism.",
   tagline: "True luxury is not excess, it is access.",
   siteUrl,
   /** Codice fiscale (persona / titolare). */

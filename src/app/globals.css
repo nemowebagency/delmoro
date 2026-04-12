@@ -52,7 +52,7 @@ body {
   color: #fff;
 }
 
-/* auto: lo scroll “morbido” e inerziale è gestito da Lenis (smooth-scroll.tsx) */
+/* Scroll nativo del browser */
 html {
   scroll-behavior: auto;
 }
@@ -85,4 +85,9 @@ html {
 
 .container {
   @apply mx-auto w-full max-w-[1140px] px-5 md:px-8;
+}
+
+/* Larghezza contenuti come le sezioni principali della home (~70%) */
+.page-shell {
+  @apply mx-auto w-full px-6 md:w-[70%] md:px-8 lg:px-10;
 }

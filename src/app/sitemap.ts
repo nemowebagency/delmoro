@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { pathWithLocale } from "@/lib/locale-path";
+import { HOME_EXPERIENCE_TILES } from "@/lib/experience-tiles";
 import { journalArticles } from "@/lib/mock-data";
 import { siteConfig } from "@/lib/site";
 
@@ -38,5 +39,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  return [...localizedEntries, ...articles];
+  const experienceThemes = routing.locales.flatMap((locale) =>
+    HOME_EXPERIENCE_TILES.map((tile) => ({
+      url: `${base}${pathWithLocale(locale, `/esperienze/${tile.slug}`)}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
+    })),
+  );
+
+  return [...localizedEntries, ...experienceThemes, ...articles];
 }

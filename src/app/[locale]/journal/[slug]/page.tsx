@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NewsletterForm } from "@/components/forms/newsletter-form";
+import { Hero } from "@/components/hero";
 import { RevealMedia } from "@/components/reveal-media";
 import { ButtonLink } from "@/components/ui/button-link";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
@@ -55,6 +56,8 @@ export default async function JournalArticlePage({
 
   return (
     <article className="pb-16">
+      <Hero variant="compact" menuTitleKey="journal" />
+      <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
       <section className="relative h-[55svh] min-h-[380px]">
         <RevealMedia className="absolute inset-0" delay={0.02}>
           <Image
@@ -65,14 +68,14 @@ export default async function JournalArticlePage({
           />
         </RevealMedia>
         <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative flex h-full items-end pb-12 text-white">
-          <div className="max-w-3xl">
+        <div className="page-shell relative flex h-full items-end pb-12 text-white">
+          <div className="w-full min-w-0">
             <p className="font-label text-[13px] uppercase tracking-[0.35em] text-[color:var(--gold-label)]">
               {categoryLabel}
             </p>
-            <h1 className="mt-4 font-serif text-4xl font-normal leading-[1.25] md:text-[45px]">
+            <h2 className="mt-4 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance">
               {article.title[loc]}
-            </h1>
+            </h2>
             <p className="mt-4 text-[15px] text-white/80">
               {article.location[loc]} · {article.publishedAt[loc]} · {article.readTime[loc]}
             </p>
@@ -80,12 +83,12 @@ export default async function JournalArticlePage({
         </div>
       </section>
 
-      <section className="container mt-12 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
-        <div className="max-w-3xl">
+      <section className="page-shell mt-12 grid gap-10 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="min-w-0">
           {article.content[loc].map((paragraph, i) => (
             <p
               key={i}
-              className="mb-6 whitespace-pre-line text-[15px] leading-[1.75] text-[color:var(--muted)] md:text-[17px]"
+              className="mb-6 whitespace-pre-line text-[15px] leading-[1.75] text-[color:var(--muted)]"
             >
               {paragraph}
             </p>
@@ -104,8 +107,8 @@ export default async function JournalArticlePage({
         </aside>
       </section>
 
-      <section className="container mt-14">
-        <h2 className="font-serif text-3xl font-normal text-[color:var(--ink)] md:text-[36px]">
+      <section className="page-shell mt-14">
+        <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
           {t("related")}
         </h2>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -118,7 +121,7 @@ export default async function JournalArticlePage({
               <p className="font-label text-[12px] uppercase tracking-[0.35em] text-[color:var(--gold-label)]">
                 {tj(`categoryNames.${editorialCategoryMessageKey(item.category)}`)}
               </p>
-              <p className="mt-3 font-serif text-2xl font-normal text-[color:var(--ink)]">
+              <p className="mt-3 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
                 {item.title[loc]}
               </p>
               <p className="mt-2 text-[15px] leading-[1.75] text-[color:var(--muted)]">
@@ -129,17 +132,20 @@ export default async function JournalArticlePage({
         </div>
       </section>
 
-      <section className="container mt-14 max-w-4xl border-t border-[color:var(--line)] bg-[color:var(--section-warm)] px-8 py-12 md:px-12">
-        <h3 className="font-serif text-3xl font-normal text-[color:var(--muted)] md:text-[36px]">
-          {t("subscribeTitle")}
-        </h3>
-        <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted-warm)]">
-          {t("subscribeLead")}
-        </p>
-        <div className="mt-4">
-          <NewsletterForm />
+      <section className="mt-14 border-t border-[color:var(--line)] bg-[color:var(--section-warm)] py-12">
+        <div className="page-shell">
+          <h3 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
+            {t("subscribeTitle")}
+          </h3>
+          <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+            {t("subscribeLead")}
+          </p>
+          <div className="mt-4">
+            <NewsletterForm />
+          </div>
         </div>
       </section>
+      </div>
     </article>
   );
 }

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Lottie from "lottie-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { cn } from "@/lib/utils";
 
 const SCROLL_LOTTIE_SRC = encodeURI("/Scroll Down.json");
 
@@ -21,8 +22,32 @@ function heroTitleParts(rawTitle: string): { before: string; last: string } | nu
   return null;
 }
 
-export function Hero() {
+export type HeroVariant = "home" | "compact";
+
+export type HeroProps =
+  | { variant?: "home" }
+  /** Stessa hero della home: titolo grande come in home, altezza minima ~45svh (può crescere col contenuto). */
+  | {
+      variant: "compact";
+      /** Chiave `Nav` (es. `experiences`). Ignorata se è impostato `titleOverride`. */
+      menuTitleKey: string;
+      pageSubtitle?: string;
+      /** Allinea titolo e sottotitolo alla colonna `page-shell` (70% come il corpo sotto l’hero). */
+      usePageShellColumn?: boolean;
+      /** Titolo hero personalizzato (es. nome esperienza), stessa scala tipografica della home. */
+      titleOverride?: string;
+    };
+
+export function Hero(props: HeroProps) {
+  const variant = props.variant ?? "home";
+  const isCompact = variant === "compact";
+  const menuTitleKey = props.variant === "compact" ? props.menuTitleKey : undefined;
+  const pageSubtitle = props.variant === "compact" ? props.pageSubtitle : undefined;
+  const titleOverride = props.variant === "compact" ? props.titleOverride : undefined;
+  const usePageShellColumn = props.variant === "compact" && Boolean(props.usePageShellColumn);
+
   const t = useTranslations("Hero");
+  const tNav = useTranslations("Nav");
   const videoRef = useRef<HTMLVideoElement>(null);
   const [scrollLottie, setScrollLottie] = useState<object | null>(null);
   const rawTitle = t("title").trim();
@@ -57,7 +82,12 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden border-b border-[color:var(--line)]"
+      className={[
+        "relative overflow-hidden border-b border-[color:var(--line)]",
+        isCompact ? "min-h-[45svh]" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
       <div className="absolute inset-0">
         <video
@@ -78,10 +108,30 @@ export function Hero() {
         />
       </div>
 
-      <div className="relative flex min-h-[90svh] w-full flex-col justify-end px-6 pb-20 pt-16 sm:pb-24 sm:pt-20 md:pb-28 md:pt-24">
-        <div className="mx-auto flex w-full flex-col items-start gap-4 text-left text-white md:w-[70%] md:gap-5 md:px-8 lg:px-10">
+      <div
+        className={cn(
+          "relative flex w-full flex-col justify-end text-left text-white",
+          usePageShellColumn ? "px-0" : "px-6",
+          isCompact
+            ? "min-h-[45svh] gap-4 pb-20 pt-16 sm:pb-24 sm:pt-20 md:gap-5 md:pb-28 md:pt-24"
+            : "min-h-[90svh] pb-20 pt-16 sm:pb-24 sm:pt-20 md:pb-28 md:pt-24",
+        )}
+      >
+        <div
+          className={cn(
+            "flex w-full flex-col items-start text-left text-white",
+            "gap-4 md:gap-5",
+            usePageShellColumn
+              ? "page-shell"
+              : "mx-auto w-full md:w-[70%] md:px-8 lg:px-10",
+          )}
+        >
           <h1 className="w-full font-serif text-[60px] font-normal leading-[1.04] tracking-normal text-balance sm:text-[76px] md:text-[100px] md:leading-[1.01] lg:text-[118px]">
-            {split ? (
+            {isCompact && titleOverride ? (
+              titleOverride
+            ) : isCompact && menuTitleKey ? (
+              tNav(menuTitleKey)
+            ) : split ? (
               <>
                 {split.before}
                 <br />
@@ -92,15 +142,29 @@ export function Hero() {
             )}
           </h1>
 
-          <p className="w-full max-w-[44rem] text-balance text-[15px] leading-[1.75] text-white/85 md:text-[16px]">
-            {t("subtitle")}
-          </p>
+          {(!isCompact || (pageSubtitle != null && pageSubtitle !== "")) && (
+            <p
+              className={[
+                "w-full max-w-[44rem] text-balance text-white/85",
+                isCompact
+                  ? "line-clamp-3 text-[15px] leading-[1.75] md:text-[16px]"
+                  : "text-[15px] leading-[1.75] md:text-[16px]",
+              ].join(" ")}
+            >
+              {isCompact ? pageSubtitle : t("subtitle")}
+            </p>
+          )}
         </div>
       </div>
 
-      <div className="pointer-events-none absolute bottom-5 left-1/2 z-10 -translate-x-1/2 md:bottom-8">
+      <div
+        className={[
+          "pointer-events-none absolute left-1/2 z-10 -translate-x-1/2",
+          "bottom-5 md:bottom-8",
+        ].join(" ")}
+      >
         <Link
-          href="#discover-sicily"
+          href={isCompact ? "#page-content" : "#discover-sicily"}
           aria-label={t("scrollHint")}
           className="pointer-events-auto block opacity-90 transition-opacity hover:opacity-100"
         >

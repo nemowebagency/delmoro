@@ -11,7 +11,6 @@ import { CustomCursor } from "@/components/custom-cursor";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { ScrollToTopOnNavigation } from "@/components/scroll-to-top";
-import { SmoothScroll } from "@/components/smooth-scroll";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 import "../globals.css";
@@ -79,17 +78,15 @@ export default async function LocaleLayout({
       <body className="min-h-full flex flex-col bg-[color:var(--paper)]">
         <MotionConfig reducedMotion="never">
           <NextIntlClientProvider messages={messages}>
-            <SmoothScroll>
-              <CustomCursor />
-              <CookieBanner />
-              <Suspense fallback={null}>
-                <ScrollToTopOnNavigation />
-              </Suspense>
-              <SiteHeader />
-              <main className="flex-1">{children}</main>
-              <SiteFooter />
-              <BackToTop />
-            </SmoothScroll>
+            <CustomCursor />
+            <CookieBanner />
+            <Suspense fallback={null}>
+              <ScrollToTopOnNavigation />
+            </Suspense>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+            <BackToTop />
           </NextIntlClientProvider>
         </MotionConfig>
       </body>

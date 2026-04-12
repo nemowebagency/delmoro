@@ -40,7 +40,7 @@ export const journalArticles: JournalArticle[] = [
       it: "Perché la Sicilia sembra diversa",
     },
     excerpt: {
-      en: "Places you visit, and places that stay — Sicily asks you to slow down, stay, and notice.",
+      en: "Places you visit, and places that stay: Sicily asks you to slow down, stay, and notice.",
       it: "Luoghi che visiti e luoghi che restano: la Sicilia chiede di rallentare, fermarsi e accorgersi.",
     },
     category: "Letters",
@@ -56,7 +56,7 @@ and places that stay.
 Sicily belongs to the second kind.
 
 Not because of what it shows,
-but because of what it does—quietly, almost without asking.`,
+but because of what it does: quietly, almost without asking.`,
         `It begins slowly.
 
 Not with monuments,
@@ -142,7 +142,7 @@ e luoghi che restano.
 La Sicilia appartiene al secondo tipo.
 
 Non per ciò che mostra,
-ma per ciò che fa — in silenzio, quasi senza chiedere.`,
+ma per ciò che fa: in silenzio, quasi senza chiedere.`,
         `Comincia piano.
 
 Non con i monumenti,
@@ -230,8 +230,8 @@ resta.`,
       it: "Il moro e le molte facce della Sicilia",
     },
     excerpt: {
-      en: "Teste di Moro on balconies and in homes — a ceramic symbol of an island shaped by centuries of encounter and exchange.",
-      it: "Teste di Moro sui balconi e in casa — un simbolo in ceramica di un’isola plasmata da secoli di incontro e scambio.",
+      en: "Teste di Moro on balconies and in homes: a ceramic symbol of an island shaped by centuries of encounter and exchange.",
+      it: "Teste di Moro sui balconi e in casa: un simbolo in ceramica di un’isola plasmata da secoli di incontro e scambio.",
     },
     category: "Culture & History",
     readTime: { en: "8 min read", it: "8 min di lettura" },
@@ -343,7 +343,7 @@ Not spectacle.
 But depth.
 
 A place shaped by many voices,
-that learned how to speak as one — Il Moro Sicily`,
+that learned how to speak as one: Il Moro Sicily`,
       ],
       it: [
         `C’è un simbolo che torna, ancora e ancora, in tutta la Sicilia.
@@ -449,7 +449,7 @@ Non lo spettacolo.
 Ma la profondità.
 
 Un luogo plasmato da molte voci,
-che ha imparato a parlare come una sola — Il Moro Sicily`,
+che ha imparato a parlare come una sola: Il Moro Sicily`,
       ],
     },
   },
@@ -473,9 +473,9 @@ che ha imparato a parlare come una sola — Il Moro Sicily`,
       en: [
         "From above, Sicilian towns look like a single idea held together by light. Up close, they are something else: asymmetry, repair, and centuries of decisions pressed into stone.",
         "The architecture does not shout. It narrows the street until two people must slow down to pass. It lifts a balcony just enough to offer shade without stealing the sky.",
-        "Baroque facades in the southeast, Arab-Norman echoes in Palermo, rural limestone in the interior — none of it is a style catalogue. It is a record of who stayed, who left, and what had to be rebuilt after fire or history.",
+        "Baroque facades in the southeast, Arab-Norman echoes in Palermo, rural limestone in the interior: none of it is a style catalogue. It is a record of who stayed, who left, and what had to be rebuilt after fire or history.",
         "To walk these towns is to accept that beauty here is often modest and always earned. A doorway, a wellhead, a staircase worn in the center: each is a lesson in patience.",
-        "This is not tourism as consumption. It is learning to see a place the way its walls ask you to see it — slowly, and in fragments that only merge when you stop trying to hurry.",
+        "This is not tourism as consumption. It is learning to see a place the way its walls ask you to see it: slowly, and in fragments that only merge when you stop trying to hurry.",
       ],
       it: [
         "Visti dall’alto, i paesi siciliani sembrano un’unica idea tenuta insieme dalla luce. Da vicino sono altro: asimmetrie, riparazioni e secoli di decisioni premute nella pietra.",
@@ -504,7 +504,7 @@ che ha imparato a parlare come una sola — Il Moro Sicily`,
         "A Sicilian market does not begin when you arrive. It began hours earlier, in deliveries and banter and the first knives cutting through greens.",
         "Morning is the honest hour: before heat, before performance. The sellers know their regulars by voice. The buyers know which stall hides the best artichokes.",
         "Here food is still public life. A conversation about fish becomes a conversation about family; a complaint about prices becomes a story about last year’s harvest.",
-        "To move slowly through the aisles is not inefficiency. It is respect — for the labor in each crate, for the elders who have held the same corners for decades.",
+        "To move slowly through the aisles is not inefficiency. It is respect: for the labor in each crate, for the elders who have held the same corners for decades.",
         "If you want to understand Sicily, skip the checklist. Begin with a slow morning in the market, and leave with hands full and nowhere urgent to be.",
       ],
       it: [
@@ -594,7 +594,7 @@ che ha imparato a parlare come una sola — Il Moro Sicily`,
         "Summer in Sicily is not just weather. It is choreography.",
         "Early markets, long white afternoons, late passeggiata, and nights that expand without warning.",
         "Everyday life becomes cinematic, not because it is staged, but because it is intensely present.",
-        "The meaning of summer is not escape from responsibility — it is permission to remember that the body belongs to the season, to salt, to heat, to the sound of the sea when the town goes quiet.",
+        "The meaning of summer is not escape from responsibility: it is permission to remember that the body belongs to the season, to salt, to heat, to the sound of the sea when the town goes quiet.",
         "People return to Sicily because something in the light asks a question only this island answers. Each visit adds a line to that answer. Each summer deepens the handwriting.",
       ],
       it: [
