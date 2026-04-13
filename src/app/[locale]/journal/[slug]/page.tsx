@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Hero } from "@/components/hero";
 import { RevealMedia } from "@/components/reveal-media";
 import { ArticleShareButtons } from "@/components/article-share-buttons";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
@@ -57,7 +56,6 @@ export default async function JournalArticlePage({
 
   return (
     <article className="pb-16">
-      <Hero variant="compact" menuTitleKey="journal" />
       <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
       <section className="relative h-[55svh] min-h-[380px]">
         <RevealMedia className="absolute inset-0" delay={0.02}>

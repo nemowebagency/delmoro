@@ -56,25 +56,20 @@ function IconInstagram({ className }: { className?: string }) {
 }
 
 export function ArticleShareButtons({ url, title }: Props) {
-  const [copied, setCopied] = useState(false);
-
   const shareText = useMemo(() => `${title}\n${url}`, [title, url]);
 
   const links = useMemo(
     () => [
       {
         id: "whatsapp",
-        label: "WhatsApp",
         href: `https://wa.me/?text=${enc(shareText)}`,
       },
       {
         id: "facebook",
-        label: "Facebook",
         href: `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`,
       },
       {
         id: "x",
-        label: "X",
         href: `https://x.com/intent/tweet?url=${enc(url)}&text=${enc(title)}`,
       },
     ],
@@ -82,8 +77,6 @@ export function ArticleShareButtons({ url, title }: Props) {
   );
 
   const onInstagram = useCallback(async () => {
-    setCopied(false);
-
     try {
       if (typeof navigator !== "undefined" && "share" in navigator) {
         await navigator.share({ title, text: title, url });
@@ -95,12 +88,14 @@ export function ArticleShareButtons({ url, title }: Props) {
 
     try {
       await navigator.clipboard.writeText(url);
-      setCopied(true);
       window.open("https://www.instagram.com/", "_blank", "noopener,noreferrer");
     } catch {
       window.open("https://www.instagram.com/", "_blank", "noopener,noreferrer");
     }
   }, [title, url]);
+
+  const baseClass =
+    "inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#bda589] bg-transparent text-[color:var(--muted)] transition-[color,border-color,background-color] hover:bg-[#bda589] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#bda589] focus-visible:ring-offset-2";
 
   return (
     <div className="mt-6 flex flex-wrap gap-3">
@@ -110,29 +105,23 @@ export function ArticleShareButtons({ url, title }: Props) {
           href={l.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-label inline-flex h-11 items-center justify-center gap-2 rounded-full border border-[#bda589] bg-transparent px-6 text-[14px] font-normal normal-case tracking-wide text-[color:var(--muted)] transition-[color,border-color,background-color] hover:border-[#bda589] hover:bg-[#bda589] hover:text-white"
+          aria-label={l.id === "whatsapp" ? "WhatsApp" : l.id === "facebook" ? "Facebook" : "X"}
+          className={baseClass}
         >
-          {l.id === "whatsapp" ? <IconWhatsApp className="h-4 w-4" /> : null}
-          {l.id === "facebook" ? <IconFacebook className="h-4 w-4" /> : null}
-          {l.id === "x" ? <IconX className="h-4 w-4" /> : null}
-          {l.label}
+          {l.id === "whatsapp" ? <IconWhatsApp className="h-5 w-5" /> : null}
+          {l.id === "facebook" ? <IconFacebook className="h-5 w-5" /> : null}
+          {l.id === "x" ? <IconX className="h-5 w-5" /> : null}
         </a>
       ))}
 
       <button
         type="button"
         onClick={onInstagram}
-        className="font-label inline-flex h-11 cursor-pointer items-center justify-center gap-2 rounded-full border border-[#bda589] bg-[#bda589] px-6 text-[14px] font-normal normal-case tracking-wide text-white transition-[color,border-color,background-color] hover:border-[color:var(--ink)] hover:bg-[color:var(--ink)] hover:text-white"
+        aria-label="Instagram"
+        className={`${baseClass} cursor-pointer`}
       >
-        <IconInstagram className="h-4 w-4" />
-        Instagram
+        <IconInstagram className="h-5 w-5" />
       </button>
-
-      {copied ? (
-        <p className="w-full text-sm text-[color:var(--gold-label)]">
-          Link copiato.
-        </p>
-      ) : null}
     </div>
   );
 }
