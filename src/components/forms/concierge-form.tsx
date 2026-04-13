@@ -50,7 +50,7 @@ export function ConciergeForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="font-label h-12 w-fit rounded-full border border-[color:var(--bronze)] bg-[color:var(--bronze)] px-6 text-sm font-medium uppercase tracking-[0.2em] text-white transition hover:border-[color:var(--bronze-hover)] hover:bg-[color:var(--bronze-hover)] disabled:opacity-70"
+        className="font-label h-12 w-fit rounded-full border border-[#bda589] bg-transparent px-6 text-sm font-medium uppercase tracking-[0.2em] text-[color:var(--muted)] transition-[color,border-color,background-color] hover:border-[#bda589] hover:bg-[#bda589] hover:text-white disabled:opacity-70"
       >
         {t("conciergeSubmit")}
       </button>

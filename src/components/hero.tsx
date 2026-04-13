@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Lottie from "lottie-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -36,6 +37,9 @@ export type HeroProps =
       usePageShellColumn?: boolean;
       /** Titolo hero personalizzato (es. nome esperienza), stessa scala tipografica della home. */
       titleOverride?: string;
+      /** Se presente, sostituisce il video con un'immagine di hero. */
+      backgroundImageSrc?: string;
+      backgroundImageAlt?: string;
     };
 
 export function Hero(props: HeroProps) {
@@ -45,6 +49,10 @@ export function Hero(props: HeroProps) {
   const pageSubtitle = props.variant === "compact" ? props.pageSubtitle : undefined;
   const titleOverride = props.variant === "compact" ? props.titleOverride : undefined;
   const usePageShellColumn = props.variant === "compact" && Boolean(props.usePageShellColumn);
+  const backgroundImageSrc =
+    props.variant === "compact" ? props.backgroundImageSrc : undefined;
+  const backgroundImageAlt =
+    props.variant === "compact" ? props.backgroundImageAlt : undefined;
 
   const t = useTranslations("Hero");
   const tNav = useTranslations("Nav");
@@ -57,6 +65,7 @@ export function Hero(props: HeroProps) {
   useEffect(() => {
     const el = videoRef.current;
     if (!el) return;
+    if (backgroundImageSrc) return;
     const slow = () => {
       el.playbackRate = 0.88;
     };
@@ -90,18 +99,29 @@ export function Hero(props: HeroProps) {
         .join(" ")}
     >
       <div className="absolute inset-0">
-        <video
-          ref={videoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label={t("videoAria")}
-        >
-          <source src="/media/Full-hd.mp4" type="video/mp4" />
-        </video>
+        {backgroundImageSrc ? (
+          <Image
+            src={backgroundImageSrc}
+            alt={backgroundImageAlt ?? ""}
+            fill
+            priority
+            className="absolute inset-0 object-cover"
+            sizes="100vw"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label={t("videoAria")}
+          >
+            <source src="/media/Full-hd.mp4" type="video/mp4" />
+          </video>
+        )}
         <div
           className="absolute inset-0 bg-linear-to-t from-[#0a1f36]/82 from-0% via-[#132f4d]/38 via-42% to-transparent to-100%"
           aria-hidden

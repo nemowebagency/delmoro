@@ -49,19 +49,20 @@ export default async function ExperiencesPage() {
 
         <AnimatedSection className="border-y border-[color:var(--line)] bg-white py-[84px] md:py-[104px]">
           <div className="page-shell flex w-full flex-col">
-            <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
-              {t("otherServicesTitle")}
-            </h2>
             <div className="mt-6 grid w-full gap-10 lg:grid-cols-2 lg:items-center lg:gap-12">
               <div className="min-w-0 space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-                <RevealText>{t("otherServicesLead")}</RevealText>
-                <ul className="grid gap-3 sm:grid-cols-2">
-                  {(t.raw("otherServices") as string[]).map((s) => (
-                    <li key={s}>• {s}</li>
-                  ))}
-                </ul>
-                <ButtonLink href="/prenota" className="mt-4 w-fit">
-                  {t("cta")}
+                <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
+                  {t("otherServicesTitle")}
+                </h2>
+                <RevealText className="whitespace-pre-line">
+                  {t("otherServicesLead")}
+                </RevealText>
+                <ButtonLink
+                  href="/prenota"
+                  variant="outlineBeige"
+                  className="mt-4 w-fit px-9 py-2 md:px-10 md:py-2.5"
+                >
+                  {t("seeExperiences")}
                 </ButtonLink>
               </div>
               <RevealMedia className="min-w-0 overflow-hidden border border-[color:var(--line)] bg-[color:var(--section-warm)]">

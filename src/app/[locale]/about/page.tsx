@@ -29,12 +29,11 @@ export default async function AboutPage() {
       <div id="page-content" className="scroll-mt-24 md:scroll-mt-28">
         <div className="page-shell py-[80px] md:py-[100px]">
           <AnimatedSection>
-        <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
-          {t("label")}
-        </p>
-
-        <div className="mt-6 grid gap-10 md:grid-cols-2 md:items-center md:gap-12">
+        <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-12">
           <div className="text-[15px] leading-[1.75] text-[color:var(--muted)]">
+            <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
+              {t("label")}
+            </p>
             <h2 className="font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
               {t("title")}
             </h2>

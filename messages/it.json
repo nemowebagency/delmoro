@@ -92,6 +92,7 @@
     "label": "Esperienze",
     "title": "Sicilia occidentale, e oltre",
     "seeAllExperiences": "Vedi tutte le esperienze",
+    "seeExperiences": "Vedi le esperienze",
     "requestInfoCta": "Chiedi informazioni",
     "galleryHeading": "Galleria",
     "galleryLead": "Atmosfere e dettagli legati a questa esperienza.",
@@ -250,9 +251,9 @@
         ]
       }
     ],
-    "otherServicesTitle": "Altri servizi",
+    "otherServicesTitle": "Servizi aggiuntivi",
     "otherServicesImageAlt": "Coppia in scooter su strada di campagna",
-    "otherServicesLead": "Oltre ai percorsi tematici, su richiesta gestiamo noleggio auto (anche con consegna e ritiro), camere e ville, transfer e logistica per rendere il viaggio o un evento semplice e curato.",
+    "otherServicesLead": "Per rendere la tua esperienza in Sicilia ancora più semplice e indimenticabile, offriamo una gamma di servizi aggiuntivi pensati per ogni esigenza.\n\nDalla prenotazione di ristoranti esclusivi ai trasferimenti privati, dall’organizzazione di eventi speciali al supporto personalizzato durante tutto il soggiorno, ci occupiamo di ogni dettaglio al tuo posto.\n\nChe si tratti di una sorpresa romantica, di un servizio last minute o di richieste su misura, il nostro obiettivo è farti vivere la Sicilia senza pensieri.\n\nTu rilassati, al resto pensiamo noi.",
     "otherServices": [
       "Noleggio auto con consegna e ritiro",
       "Noleggio barche e skipper",

@@ -56,6 +56,8 @@ export default async function ExperienceThemePage({
         menuTitleKey="experiences"
         usePageShellColumn
         titleOverride={themeTitle}
+        backgroundImageSrc={tile.src}
+        backgroundImageAlt={tHome(tile.altKey)}
       />
       <div id="page-content" className="scroll-mt-28 md:scroll-mt-32">
         <AnimatedSection className="w-full scroll-mt-28 py-[84px] md:scroll-mt-32 md:py-[104px]">
@@ -67,10 +69,10 @@ export default async function ExperienceThemePage({
                 </p>
                 <RevealText>{tExp(`experienceThemes.${slug}.body`)}</RevealText>
                 <div className="flex flex-wrap gap-3 pt-2">
-                  <ButtonLink href="/esperienze" variant="navBook" className="w-fit">
+                  <ButtonLink href="/esperienze" variant="outlineBeige" className="w-fit px-9 py-2 md:px-10 md:py-2.5">
                     {tExp("seeAllExperiences")}
                   </ButtonLink>
-                  <ButtonLink href="/prenota#booking-form" variant="ghost" className="w-fit">
+                  <ButtonLink href="/prenota#booking-form" variant="beigeFill" className="w-fit px-9 py-2 md:px-10 md:py-2.5">
                     {tExp("requestInfoCta")}
                   </ButtonLink>
                 </div>

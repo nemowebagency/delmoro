@@ -92,6 +92,7 @@
     "label": "Experiences",
     "title": "Western Sicily, and beyond",
     "seeAllExperiences": "See all experiences",
+    "seeExperiences": "See experiences",
     "requestInfoCta": "Request information",
     "galleryHeading": "Gallery",
     "galleryLead": "Mood and details connected to this experience.",
@@ -250,9 +251,9 @@
         ]
       }
     ],
-    "otherServicesTitle": "Other services",
+    "otherServicesTitle": "Additional services",
     "otherServicesImageAlt": "Two people on a scooter on a country road",
-    "otherServicesLead": "Beyond the themed routes, we can arrange car hire (including delivery and pick-up), rooms and villas, transfers and logistics to make your trip or event smooth and well looked after.",
+    "otherServicesLead": "To make your Sicily experience even easier and more unforgettable, we offer a range of additional services designed for every need.\n\nFrom booking exclusive restaurants to private transfers, from organising special events to personalised support throughout your stay, we take care of every detail for you.\n\nWhether it’s a romantic surprise, a last-minute request, or something completely tailored, our goal is to let you experience Sicily without a worry.\n\nYou relax — we’ll take care of the rest.",
     "otherServices": [
       "Car hire with delivery and pickup",
       "Boat hire and skipper",

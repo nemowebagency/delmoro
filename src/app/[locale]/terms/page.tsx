@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { Hero } from "@/components/hero";
-import { RevealText } from "@/components/reveal-text";
 import { buildMetadata } from "@/lib/site";
 
 export async function generateMetadata({
@@ -33,9 +32,9 @@ export default async function TermsPage() {
         <h2 className="mt-6 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
           {t("title")}
         </h2>
-        <RevealText className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <p className="mt-6 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           {t("intro")}
-        </RevealText>
+        </p>
       </header>
           <div className="mt-10 w-full min-w-0">
             <p className="whitespace-pre-line text-[15px] leading-[1.75] text-[color:var(--muted)]">

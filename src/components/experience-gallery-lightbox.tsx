@@ -79,12 +79,15 @@ export function ExperienceGalleryLightbox({
           role="dialog"
           aria-modal="true"
           aria-label={t("galleryDialogLabel")}
+          onMouseDown={(e) => {
+            if (e.target === e.currentTarget) close();
+          }}
         >
           <div className="flex shrink-0 justify-end pb-2">
             <button
               type="button"
               onClick={close}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full text-white/90 transition hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60"
+              className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full text-white/90 transition hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60"
               aria-label={t("close")}
             >
               <X className="h-6 w-6" strokeWidth={1.5} />
@@ -94,6 +97,7 @@ export function ExperienceGalleryLightbox({
           <div className="relative flex min-h-0 flex-1 flex-col items-center justify-center gap-4">
             <div
               className="relative h-[min(72vh,820px)] w-full max-w-5xl px-10 sm:px-14 md:px-16"
+              onMouseDown={(e) => e.stopPropagation()}
               onTouchStart={(e) => {
                 touchStartX.current = e.touches[0]?.clientX ?? null;
               }}
@@ -112,7 +116,7 @@ export function ExperienceGalleryLightbox({
                 <button
                   type="button"
                   onClick={() => go(-1)}
-                  className="absolute left-0 top-1/2 z-[1] inline-flex -translate-y-1/2 rounded-full border border-white/20 bg-black/45 p-2 text-white/95 backdrop-blur-sm transition hover:bg-black/65 sm:p-2.5"
+                  className="absolute left-0 top-1/2 z-[1] inline-flex cursor-pointer -translate-y-1/2 rounded-full border border-white/20 bg-black/45 p-2 text-white/95 backdrop-blur-sm transition hover:bg-black/65 sm:p-2.5"
                   aria-label={t("galleryPrevious")}
                 >
                   <ChevronLeft className="h-6 w-6 sm:h-7 sm:w-7" strokeWidth={1.5} />
@@ -132,7 +136,7 @@ export function ExperienceGalleryLightbox({
                 <button
                   type="button"
                   onClick={() => go(1)}
-                  className="absolute right-0 top-1/2 z-[1] inline-flex -translate-y-1/2 rounded-full border border-white/20 bg-black/45 p-2 text-white/95 backdrop-blur-sm transition hover:bg-black/65 sm:p-2.5"
+                  className="absolute right-0 top-1/2 z-[1] inline-flex cursor-pointer -translate-y-1/2 rounded-full border border-white/20 bg-black/45 p-2 text-white/95 backdrop-blur-sm transition hover:bg-black/65 sm:p-2.5"
                   aria-label={t("galleryNext")}
                 >
                   <ChevronRight className="h-6 w-6 sm:h-7 sm:w-7" strokeWidth={1.5} />

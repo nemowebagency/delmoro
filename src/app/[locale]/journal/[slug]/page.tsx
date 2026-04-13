@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero";
 import { RevealMedia } from "@/components/reveal-media";
-import { ButtonLink } from "@/components/ui/button-link";
+import { ArticleShareButtons } from "@/components/article-share-buttons";
 import { editorialCategoryMessageKey } from "@/lib/editorial-labels";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { journalArticles } from "@/lib/mock-data";
+import { absoluteUrl } from "@/lib/locale-path";
 import { buildMetadata } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -43,6 +43,7 @@ export default async function JournalArticlePage({
   const article = journalArticles.find((item) => item.slug === slug);
   if (!article) notFound();
   const loc = locale === "it" ? "it" : "en";
+  const shareUrl = absoluteUrl(locale, `/journal/${article.slug}`);
 
   const t = await getTranslations({ locale, namespace: "Article" });
   const tj = await getTranslations({ locale, namespace: "Journal" });
@@ -101,9 +102,7 @@ export default async function JournalArticlePage({
           <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
             {t("furtherLead")}
           </p>
-          <ButtonLink href="/concierge" className="mt-6">
-            {t("privateAccess")}
-          </ButtonLink>
+          <ArticleShareButtons url={shareUrl} title={article.title[loc]} />
         </aside>
       </section>
 
@@ -132,19 +131,6 @@ export default async function JournalArticlePage({
         </div>
       </section>
 
-      <section className="mt-14 border-t border-[color:var(--line)] bg-[color:var(--section-warm)] py-12">
-        <div className="page-shell">
-          <h3 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
-            {t("subscribeTitle")}
-          </h3>
-          <p className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            {t("subscribeLead")}
-          </p>
-          <div className="mt-4">
-            <NewsletterForm />
-          </div>
-        </div>
-      </section>
       </div>
     </article>
   );

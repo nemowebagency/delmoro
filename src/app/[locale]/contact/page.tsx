@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { ContactForm } from "@/components/forms/contact-form";
-import { NewsletterForm } from "@/components/forms/newsletter-form";
 import { Hero } from "@/components/hero";
 import { RevealText } from "@/components/reveal-text";
 import { buildMetadata, contactPlaceholders } from "@/lib/site";
@@ -90,17 +89,6 @@ export default async function ContactPage() {
             {t("writeTitle")}
           </h2>
           <ContactForm />
-        </div>
-        <div className="border-t border-[color:var(--line)] pt-8">
-          <h2 className="font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)]">
-            {t("newsletterTitle")}
-          </h2>
-          <RevealText className="mt-3 text-[15px] leading-[1.75] text-[color:var(--muted)]">
-            {t("newsletterLead")}
-          </RevealText>
-          <div className="mt-4">
-            <NewsletterForm />
-          </div>
         </div>
       </section>
         </div>

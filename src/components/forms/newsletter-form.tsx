@@ -2,8 +2,9 @@
 
 import { FormEvent, useState } from "react";
 import { useTranslations } from "next-intl";
+import { cn } from "@/lib/utils";
 
-export function NewsletterForm() {
+export function NewsletterForm({ className }: { className?: string }) {
   const t = useTranslations("Forms");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
@@ -30,7 +31,7 @@ export function NewsletterForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className="mx-auto mt-2 w-full max-w-xl"
+      className={cn("mx-auto mt-2 w-full max-w-xl", className)}
     >
       <div className="flex w-full items-stretch rounded-full border border-[color:var(--bronze)] bg-[color:var(--paper)] p-1.5 pl-5 transition-colors focus-within:border-[color:var(--gold-label)]">
         <input
@@ -43,7 +44,7 @@ export function NewsletterForm() {
         />
         <button
           type="submit"
-          className="font-label shrink-0 cursor-pointer rounded-full border border-[color:var(--bronze)] bg-[color:var(--bronze)] px-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors duration-200 hover:border-[#c9b08a] hover:bg-[#c9b08a] disabled:cursor-not-allowed disabled:opacity-70 sm:px-6 sm:text-sm"
+          className="font-label shrink-0 cursor-pointer rounded-full border border-[#bda589] bg-[#bda589] px-4 text-xs font-medium uppercase tracking-[0.2em] text-white transition-colors duration-200 hover:border-[color:var(--ink)] hover:bg-[color:var(--ink)] disabled:cursor-not-allowed disabled:opacity-70 sm:px-6 sm:text-sm"
           disabled={status === "loading"}
         >
           {t("subscribe")}
