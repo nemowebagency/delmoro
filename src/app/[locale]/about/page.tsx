@@ -34,7 +34,7 @@ export default async function AboutPage() {
             <p className="font-label text-[15px] font-normal uppercase tracking-[0.38em] text-[color:var(--gold-label)]">
               {t("label")}
             </p>
-            <h2 className="font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
+            <h2 className="mt-6 font-serif text-[45px] font-normal leading-[1.08] tracking-normal text-balance text-[color:var(--ink)]">
               {t("title")}
             </h2>
             <RevealText className="mt-5">{t("intro")}</RevealText>

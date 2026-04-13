@@ -40,10 +40,7 @@ export default async function ContactPage() {
       </header>
 
       <section className="mt-10 w-full min-w-0 border-t border-[color:var(--line)] pt-8">
-        <p className="font-label text-[13px] uppercase tracking-[0.35em] text-[color:var(--gold-label)]">
-          {t("detailsTitle")}
-        </p>
-        <dl className="mt-6 space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
+        <dl className="space-y-5 text-[15px] leading-[1.75] text-[color:var(--muted)]">
           <div>
             <dt className="font-label text-[12px] uppercase tracking-[0.3em] text-[color:var(--muted-warm)]">
               {t("emailLabel")}
