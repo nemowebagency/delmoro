@@ -28,7 +28,7 @@ const FALLBACK_GALLERY: Record<ExperienceTileSlug, string[]> = {
   ],
   alloggi: [
     "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=960&q=80",
-    "https://images.unsplash.com/photo-1611892440504-42a792e54d34?auto=format&fit=crop&w=960&q=80",
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=960&q=80",
     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=960&q=80",
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=960&q=80",
   ],

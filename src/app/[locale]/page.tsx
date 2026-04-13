@@ -19,11 +19,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+  const tMeta = await getTranslations({ locale, namespace: "Metadata" });
+  const tHero = await getTranslations({ locale, namespace: "Hero" });
   return buildMetadata({
     locale,
-    title: t("homeTitle"),
-    description: t("homeDescription"),
+    title: tHero("title"),
+    description: tMeta("homeDescription"),
     path: "/",
   });
 }
