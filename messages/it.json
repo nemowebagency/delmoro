@@ -6,11 +6,11 @@
   },
   "Nav": {
     "home": "Home",
-    "experiences": "Esperienze",
+    "experiences": "Sicilian Life",
     "about": "Chi siamo",
     "journal": "Journal",
     "contact": "Contatti",
-    "book": "Prenota",
+    "book": "Contattaci",
     "concierge": "Concierge",
     "guides": "Guide",
     "digitalProducts": "Prodotti digitali",
@@ -42,42 +42,51 @@
   "Hero": {
     "videoAria": "Viste aeree lente della Sicilia, introduzione silenziosa e cinematografica",
     "logoAlt": "Del Moro Sicily",
-    "title": "Un modo più lento di vivere la Sicilia",
-    "subtitle": "La tua guida culturale esclusivaper la Sicilia.",
+    "title": "Un ponte digitale dedicato alla vita siciliana.",
+    "subtitle": "Non una destinazione ma un modo di essere.",
     "ctaExplore": "Esplora",
     "ctaAbout": "chi siamo",
     "scrollHint": "Scorri alla sezione successiva"
   },
   "Home": {
-    "discoverOverline": "Home",
-    "manifestoLabel": "Scopri la Sicilia",
-    "manifesto1": "La Sicilia è per chi cerca più di uno sfondo per una foto: strati di storia nella pietra e nelle storie, una luce che cambia il mare nell'arco della giornata, una cucina ancora legata alle stagioni e borghi che sembrano davvero vissuti.",
-    "manifesto2": "I nostri servizi sono pensati per chi pretende qualità in ogni esperienza: organizzazione attenta, partner locali di fiducia e percorsi costruiti sul tuo ritmo, non su pacchetti tutti uguali.",
+    "discoverOverline": "Mission",
+    "manifestoLabel": "La nostra missione",
+    "manifesto1": "Del Moro Sicily è un luogo metaforico e digitale, uno spazio in cui la Sicilia incontra il mondo e dove chiunque la ami può sentirsi parte di qualcosa. Il progetto vuole raccontare la Sicilia e i Siciliani in maniera autentica, andando oltre il turismo veloce e superficiale che spesso trasforma luoghi pieni di storia, in semplici prodotti da consumare. Attraverso il Journal, il cuore di questo spazio, condividiamo storie, luoghi, architettura, tradizioni, gastronomia in maniera autentica e cerchiamo di trasmettere quel particolare rapporto mediterraneo con il tempo che rende la vita più lenta, più piena e più consapevole. La Sicilia non è solo una destinazione, ma un modo di vivere, di osservare e di sentire. Un luogo che, per molti, finisce lentamente per diventare casa. E se esiste una Sicilia che desideri vivere, o semplicemente hai il desiderio di riscoprire l’isola con occhi nuovi, puoi raccontarcelo. E se allineato con i nostri valori, Noi ti aiuteremo a viverla con una lente più autentica, più lenta e più meravigliata. Perché i luoghi più belli non si visitano soltanto: si imparano a sentire.",
     "manifestoQuote": "Qui il senso sta nelle piccole cose: uno sguardo, un piatto, un tratto di strada. Il nostro compito è lasciarti libero di accorgertene.",
     "discoverImageAlt": "Veduta della Sicilia, costa e paesaggio",
     "journalLabel": "Journal",
-    "journalTitle": "Dal Journal",
+    "journalTitle": "Un viaggio digitale aggiornato lentamente",
     "journalLead": "Un racconto a settimana su Cultura e storia, Stile di vita, Luoghi e Lettere.",
+    "journalTile": {
+      "hiddenPlaces": "Luoghi nascosti",
+      "cultureLegends": "Cultura e leggende",
+      "letters": "Lettere",
+      "lifestyle": "Vita lenta"
+    },
     "journalCta": "Scopri il Journal",
     "aboutLabel": "Chi siamo",
     "aboutTitle": "Un ponte culturale tra la Sicilia e chi la ama.",
-    "aboutBody": "Delmoro Sicily nasce per farti vivere la Sicilia senza pensieri.\nCi prendiamo cura di ogni dettaglio della tua vacanza, così tu puoi solo lasciarti andare alle emozioni.\n\nNon organizziamo semplici viaggi: creiamo esperienze su misura, fatte di bellezza, autenticità e libertà.\n\nLa Sicilia, come non l’hai mai vissuta.",
+    "aboutBody": "Del Moro Sicily è un invito a far parte della nostra visione: una famiglia internazionale unita dall’amore per la bellezza autentica, la cultura e lo stile di vita mediterraneo. Del moro è composto da una rete di giovani imprenditori locali che vogliono portare l'esperienza del visitatore a un livello successivo, quello più autentico.\n\nDiventa parte di una famiglia: crea con noi questo spazio digitale, raccontaci la tua storia siciliana per farla diventare un articolo di Del Moro Sicily.",
     "discoverMore": "Scopri di più",
     "letterLabel": "Newsletter",
     "letterTitle": "Ogni settimana, una nuova storia.",
-    "letterBody": "Lettere, novità, promozioni... iscriviti per ricevere le ultime informazioni da Del Moro Sicily.",
-    "experiencesLabel": "Esperienze",
-    "experiencesTitle": "Viaggi su misura in Sicilia",
+    "letterBody": "Iscriviti per ricevere una lettera dal mediterraneo ogni settimana.",
+    "experiencesLabel": "Vita siciliana",
+    "experiencesTitle": "Esperienze pensate per essere vissute, non semplicemente visitate",
     "experiencesLead": "Le nostre esperienze sono fatte per farti stare senza pensieri: ci pensiamo noi a itinerari, spostamenti, alloggi e ogni dettaglio: tu hai solo da goderti la Sicilia.",
     "experiencesCta": "Vedi le Esperienze",
-    "experiencesTileHistory": "Immergiti nella storia",
-    "experiencesTileNature": "Esperienze naturalistiche",
-    "experiencesTileRental": "Noleggio mezzi",
-    "experiencesTileStays": "Alloggi selezionati",
-    "experiencesTileHistoryAlt": "Colonne antiche e architettura storica",
-    "experiencesTileNatureAlt": "Colline e costa mediterranea",
-    "experiencesTileRentalAlt": "Auto su una strada panoramica vicino al mare",
-    "experiencesTileStaysAlt": "Esterno di villa con piscina e giardino",
+    "experiencesTileHistory": "In mare",
+    "experiencesTileNature": "A tavola",
+    "experiencesTileRental": "Soggiorna",
+    "experiencesTileStays": "Sicilia privata",
+    "experiencesTileHistorySubtitle": "Una giornata modellata dal mare",
+    "experiencesTileNatureSubtitle": "Imparare la Sicilia dalla sua tavola",
+    "experiencesTileRentalSubtitle": "Un luogo dove fermarsi, lentamente",
+    "experiencesTileStaysSubtitle": "In arrivo",
+    "experiencesTileHistoryAlt": "Barca sul mare di Sicilia",
+    "experiencesTileNatureAlt": "Tavola siciliana con prodotti locali",
+    "experiencesTileRentalAlt": "Soggiorno tranquillo in Sicilia",
+    "experiencesTileStaysAlt": "Sicilia privata",
     "bookCta": "Prenota"
   },
   "About": {
@@ -110,16 +119,16 @@
     "galleryLabel": "Galleria",
     "close": "Chiudi",
     "experienceThemes": {
-      "storia": {
+      "by-sea": {
         "body": "Percorsi nella memoria della Sicilia: architetture stratificate, linguaggio delle pietre e storie che leggono il paesaggio al rallentatore."
       },
-      "natura": {
+      "at-the-table": {
         "body": "Sentieri, coste e silenzi dell’entroterra: la Sicilia come respiro, lontano dai circuiti scontati."
       },
-      "noleggio": {
+      "stay": {
         "body": "Auto, barche e skipper selezionati: mobilità su misura con discrezione e sicurezza."
       },
-      "alloggi": {
+      "private-sicily": {
         "body": "Ville, dimore e soggiorni scelti con cura, per adattarsi al ritmo dell’isola."
       }
     },

@@ -33,10 +33,9 @@ export const siteConfig = {
   },
   nav: [
     { href: "/", labelKey: "home" },
-    { href: "/esperienze", labelKey: "experiences" },
     { href: "/journal", labelKey: "journal" },
-    { href: "/contact", labelKey: "contact" },
     { href: "/about", labelKey: "about" },
+    { href: "/esperienze", labelKey: "experiences" },
     { href: "/prenota", labelKey: "book" },
   ],
 };

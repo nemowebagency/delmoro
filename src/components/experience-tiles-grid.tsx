@@ -38,6 +38,9 @@ export async function ExperienceTilesGrid({ layout = "inner" }: ExperienceTilesG
               <figcaption className="mt-3 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)] transition-colors group-hover/tile:text-[color:var(--gold-label)]">
                 {t(tile.titleKey)}
               </figcaption>
+              <p className="mt-2 text-[15px] leading-[1.55] text-[color:var(--muted)]">
+                {t(tile.subtitleKey)}
+              </p>
             </Link>
           </figure>
         ))}

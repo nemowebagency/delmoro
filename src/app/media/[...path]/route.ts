@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-const EXPERIENCE_SLUGS = new Set(["storia", "natura", "noleggio", "alloggi"]);
+const EXPERIENCE_SLUGS = new Set(["by-sea", "at-the-table", "stay", "private-sicily"]);
 
 const MIME_BY_EXT: Record<string, string> = {
   ".jpg": "image/jpeg",

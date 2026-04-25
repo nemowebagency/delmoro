@@ -119,7 +119,7 @@ export function Hero(props: HeroProps) {
             preload="metadata"
             aria-label={t("videoAria")}
           >
-            <source src="/media/Full-hd.mp4" type="video/mp4" />
+            <source src="/media/video%20Del%20Moro.mp4" type="video/mp4" />
           </video>
         )}
         <div

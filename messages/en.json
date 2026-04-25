@@ -6,11 +6,11 @@
   },
   "Nav": {
     "home": "Home",
-    "experiences": "Experiences",
+    "experiences": "Sicilian Life",
     "about": "About",
     "journal": "Journal",
     "contact": "Contact",
-    "book": "Book",
+    "book": "Contact us",
     "concierge": "Concierge",
     "guides": "Guides",
     "digitalProducts": "Digital products",
@@ -42,42 +42,51 @@
   "Hero": {
     "videoAria": "Slow aerial views of Sicily, silent, cinematic intro",
     "logoAlt": "Del Moro Sicily",
-    "title": "A slower way to experience Sicily",
-    "subtitle": "Your exclusive cultural guide to Sicily.",
+    "title": "A digital space dedicated to the Sicilian life.",
+    "subtitle": "Not a destination, a state of mind.",
     "ctaExplore": "Explore",
     "ctaAbout": "About",
     "scrollHint": "Scroll to the next section"
   },
   "Home": {
-    "discoverOverline": "Home",
-    "manifestoLabel": "Discover Sicily",
-    "manifesto1": "Sicily is for travellers who want more than a backdrop for photos: layers of history in stone and story, light that changes the sea by the hour, food that still follows the seasons, and towns that feel genuinely lived in.",
-    "manifesto2": "Our services are designed for people who expect quality in every experience: careful planning, trusted local partners, and itineraries built around your rhythm, not a one-size-fits-all package.",
+    "discoverOverline": "Mission",
+    "manifestoLabel": "Our mission",
+    "manifesto1": "Del Moro Sicily is a metaphorical and digital space, a space where Sicily meets the world and where anyone who loves it can feel part of something. The project aims to tell the story of Sicily and Sicilians authentically, going beyond the fast and superficial tourism that often transforms places steeped in history into mere products to be consumed. Through the Journal, the heart of this space, we share stories, places, architecture, traditions, and gastronomy authentically, and we seek to convey that unique Mediterranean relationship with time that makes life slower, fuller, and more mindful. Sicily is not just a destination, but a way of life, of observing, and of feeling. A place that, for many, slowly becomes home. And if there's a Sicily you long to experience, or you simply want to rediscover the island with new eyes, you can tell us about it. And if it aligns with our values, we will help you experience it with a more authentic, slower, and more marvelous lens. Because the most beautiful places aren't just visited: they're learned to feel.",
     "manifestoQuote": "Here, the reward is in the small things: a view, a meal, a stretch of road. Our job is to leave you free to notice them.",
     "discoverImageAlt": "View of Sicily, coast and landscape",
     "journalLabel": "Journal",
-    "journalTitle": "From the Journal",
+    "journalTitle": "A digital journal updated slowly",
     "journalLead": "One story each week about Culture & History, Lifestyle, Places, and Letters.",
+    "journalTile": {
+      "hiddenPlaces": "Hidden places",
+      "cultureLegends": "Culture and legends",
+      "letters": "Letters",
+      "lifestyle": "Lifestyle"
+    },
     "journalCta": "Explore the Journal",
     "aboutLabel": "About",
     "aboutTitle": "A cultural bridge between Sicily and those who love it.",
-    "aboutBody": "Del Moro Sicily exists so you can experience Sicily without a worry.\nWe take care of every detail of your stay, so you can simply give in to the moment.\n\nWe don’t just arrange trips: we craft bespoke experiences built on beauty, authenticity, and freedom.\n\nSicily, as you’ve never lived it before.",
+    "aboutBody": "Del Moro Sicily is an invitation to join our vision: an international family united by a love for authentic beauty, culture, and the Mediterranean way of life. Del Moro is a network of young local entrepreneurs determined to take the visitor’s experience to the next, most authentic level.\n\nBecome part of a family: help us shape this digital space, and share your Sicilian story so it can become an article in Del Moro Sicily.",
     "discoverMore": "Discover more",
     "letterLabel": "Newsletter",
     "letterTitle": "Each week, a new story.",
     "letterBody": "Letters, news, promotions... subscribe to receive the latest updates from Del Moro Sicily.",
-    "experiencesLabel": "Experiences",
-    "experiencesTitle": "Bespoke journeys in Sicily",
+    "experiencesLabel": "Sicilian life",
+    "experiencesTitle": "Experiences designed to be lived, not simply visited",
     "experiencesLead": "Our experiences are built so you can travel without a worry: we take care of itineraries, transfers, stays, and every detail. You simply enjoy Sicily.",
     "experiencesCta": "See Experiences",
-    "experiencesTileHistory": "Immerse yourself in history",
-    "experiencesTileNature": "Natural experiences",
-    "experiencesTileRental": "Vehicle rental",
-    "experiencesTileStays": "Selected accommodations",
-    "experiencesTileHistoryAlt": "Ancient stone columns and historic architecture",
-    "experiencesTileNatureAlt": "Mediterranean hills and coastline",
-    "experiencesTileRentalAlt": "Car on a scenic road by the sea",
-    "experiencesTileStaysAlt": "Refined villa exterior with pool and garden",
+    "experiencesTileHistory": "By Sea",
+    "experiencesTileNature": "At the table",
+    "experiencesTileRental": "Stay",
+    "experiencesTileStays": "Private Sicily",
+    "experiencesTileHistorySubtitle": "A day shaped by sea",
+    "experiencesTileNatureSubtitle": "Learning Sicily through its table",
+    "experiencesTileRentalSubtitle": "A place to stay, slowly",
+    "experiencesTileStaysSubtitle": "Coming soon",
+    "experiencesTileHistoryAlt": "Boat on the Sicilian sea",
+    "experiencesTileNatureAlt": "A Sicilian table laid with local food",
+    "experiencesTileRentalAlt": "Quiet Sicilian stay",
+    "experiencesTileStaysAlt": "Private Sicily",
     "bookCta": "Book"
   },
   "About": {
@@ -110,16 +119,16 @@
     "galleryLabel": "Gallery",
     "close": "Close",
     "experienceThemes": {
-      "storia": {
+      "by-sea": {
         "body": "Paths through Sicily’s memory: layered architecture, the language of stone, and stories that read the landscape slowly."
       },
-      "natura": {
+      "at-the-table": {
         "body": "Trails, coastlines, and inland silence: Sicily as a breath of air, away from the obvious circuits."
       },
-      "noleggio": {
+      "stay": {
         "body": "Cars, boats, and selected skippers: discreet, safe mobility tailored to you."
       },
-      "alloggi": {
+      "private-sicily": {
         "body": "Villas, homes, and stays chosen with care, tuned to the island’s rhythm."
       }
     },
