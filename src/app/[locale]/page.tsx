@@ -147,7 +147,7 @@ export default async function Home() {
                       className="object-cover"
                     />
                   </div>
-                  <figcaption className="mt-3 font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)] transition-colors group-hover/tile:text-[color:var(--gold-label)]">
+                  <figcaption className="mt-3 font-serif text-[40px] font-normal leading-[1.08] text-[color:var(--ink)] transition-colors group-hover/tile:text-[color:var(--gold-label)] md:text-[42px]">
                     {t(`journalTile.${tile.key}`)}
                   </figcaption>
                 </Link>

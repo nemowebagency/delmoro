@@ -16,7 +16,7 @@ export const HOME_EXPERIENCE_TILES = [
   },
   {
     slug: "stay",
-    src: "/media/alec-favale-PFmM7T4mMOk-unsplash.jpg",
+    src: "/media/alloggi.jpg",
     titleKey: "experiencesTileRental",
     subtitleKey: "experiencesTileRentalSubtitle",
     altKey: "experiencesTileRentalAlt",

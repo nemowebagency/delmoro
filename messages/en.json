@@ -56,7 +56,7 @@
     "discoverImageAlt": "View of Sicily, coast and landscape",
     "journalLabel": "Journal",
     "journalTitle": "A digital journal updated slowly",
-    "journalLead": "One story each week about Culture & History, Lifestyle, Places, and Letters.",
+    "journalLead": "Stories about Culture & History, Lifestyle, Places, and Letters.",
     "journalTile": {
       "hiddenPlaces": "Hidden places",
       "cultureLegends": "Culture and legends",
@@ -120,16 +120,51 @@
     "close": "Close",
     "experienceThemes": {
       "by-sea": {
-        "body": "Paths through Sicily’s memory: layered architecture, the language of stone, and stories that read the landscape slowly."
+        "body": "Experience includes:\n- families\n- private celebrations\n- private boat day\n- sunset aperitivo\n- lunch stop\n- local host\n- transfer (if applicable)",
+        "afterSubtitle": "Some places are better reached slowly. By boat, Sicily changes rhythm.",
+        "forWhoTitle": "For who",
+        "forWhoLead": "Perfect for:",
+        "forWhoItems": {
+          "couples": "couples",
+          "returningTravelers": "returning travelers",
+          "slowTravelers": "slow travelers"
+        },
+        "whereTitle": "Where",
+        "whereItems": {
+          "palermoCoast": "Palermo coast",
+          "scopelloFaraglioni": "Faraglioni di Scopello",
+          "zingaroReserve": "Riserva dello Zingaro",
+          "sanVito": "San Vito Lo Capo"
+        },
+        "requestTitle": "Make a request"
       },
       "at-the-table": {
-        "body": "Trails, coastlines, and inland silence: Sicily as a breath of air, away from the obvious circuits."
+        "body": "Experience includes:\n- Sicilian handmade pasta lessons in Scopello\n- private chef\n- winery taste\n- countryside and mountain food trail.",
+        "afterSubtitle": "Some places are understood through monuments.\nSicily is understood through its table.\nThis is where Sicily is truly learned.",
+        "forWhoTitle": "For who",
+        "forWhoLead": "Perfect for:",
+        "forWhoItems": {
+          "couples": "couples",
+          "returningTravelers": "returning travelers",
+          "slowTravelers": "slow travelers"
+        },
+        "whereTitle": "Where",
+        "whereItems": {
+          "palermoCoast": "Palermo coast",
+          "scopelloFaraglioni": "Faraglioni di Scopello",
+          "zingaroReserve": "Riserva dello Zingaro",
+          "sanVito": "San Vito Lo Capo"
+        },
+        "requestTitle": "Make a request"
       },
       "stay": {
-        "body": "Cars, boats, and selected skippers: discreet, safe mobility tailored to you."
+        "body": "",
+        "afterSubtitle": "Del Moro apartment, Castellammare del Golfo."
+        ,
+        "requestTitle": "Make a request"
       },
       "private-sicily": {
-        "body": "Villas, homes, and stays chosen with care, tuned to the island’s rhythm."
+        "body": ""
       }
     },
     "tours": [
@@ -140,9 +175,18 @@
         "area": "Palermo / Monreale",
         "priceFrom": "€ 190",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1586201375754-79b26055f2a4?auto=format&fit=crop&w=1200&q=80", "alt": "Palermo streets" },
-          { "src": "https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&w=1200&q=80", "alt": "Sicilian market" },
-          { "src": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80", "alt": "Monreale mosaics" }
+          {
+            "src": "https://images.unsplash.com/photo-1586201375754-79b26055f2a4?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Palermo streets"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Sicilian market"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Monreale mosaics"
+          }
         ],
         "details": [
           "We move through historic markets and lively streets, stopping where food truly tells Palermo’s story.",
@@ -161,9 +205,18 @@
         "area": "Trapani",
         "priceFrom": "€ 240",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80", "alt": "Coastline" },
-          { "src": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80", "alt": "Sea trail" },
-          { "src": "https://images.unsplash.com/photo-1505739773434-c9fca0d0ed24?auto=format&fit=crop&w=1200&q=80", "alt": "San Vito Lo Capo beach" }
+          {
+            "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Coastline"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Sea trail"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1505739773434-c9fca0d0ed24?auto=format&fit=crop&w=1200&q=80",
+            "alt": "San Vito Lo Capo beach"
+          }
         ],
         "details": [
           "A real sea day: light walks, stops in coves, and time to swim without rushing.",
@@ -182,9 +235,18 @@
         "area": "Erice / Marsala",
         "priceFrom": "€ 220",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80", "alt": "Hilltop town" },
-          { "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80", "alt": "Salt pans" },
-          { "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80", "alt": "Winery tasting" }
+          {
+            "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Hilltop town"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Salt pans"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Winery tasting"
+          }
         ],
         "details": [
           "Erice is stone, wind, and endless views: we move slowly through lanes and small shops.",
@@ -203,9 +265,18 @@
         "area": "Agrigento",
         "priceFrom": "€ 260",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1526932521119-1ee3d32d6c50?auto=format&fit=crop&w=1200&q=80", "alt": "Ancient temple" },
-          { "src": "https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?auto=format&fit=crop&w=1200&q=80", "alt": "White cliffs" },
-          { "src": "https://images.unsplash.com/photo-1520975693414-6b92f15536b6?auto=format&fit=crop&w=1200&q=80", "alt": "Sea view" }
+          {
+            "src": "https://images.unsplash.com/photo-1526932521119-1ee3d32d6c50?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Ancient temple"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?auto=format&fit=crop&w=1200&q=80",
+            "alt": "White cliffs"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1520975693414-6b92f15536b6?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Sea view"
+          }
         ],
         "details": [
           "Morning among the temples, with pauses to understand the place without turning it into a checklist.",
@@ -224,9 +295,18 @@
         "area": "Egadi Islands",
         "priceFrom": "€ 390",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80", "alt": "Boat day" },
-          { "src": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80", "alt": "Clear water" },
-          { "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80", "alt": "Island coast" }
+          {
+            "src": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Boat day"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Clear water"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Island coast"
+          }
         ],
         "details": [
           "A boat day among Favignana’s iconic coves: stops, swims, and a relaxed pace.",
@@ -245,9 +325,18 @@
         "area": "Val di Noto",
         "priceFrom": "€ 540",
         "gallery": [
-          { "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80", "alt": "Baroque street" },
-          { "src": "https://images.unsplash.com/photo-1541976844346-f18aeac57b06?auto=format&fit=crop&w=1200&q=80", "alt": "Town square" },
-          { "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80", "alt": "Evening atmosphere" }
+          {
+            "src": "https://images.unsplash.com/photo-1526481280695-3c687fd5432c?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Baroque street"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1541976844346-f18aeac57b06?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Town square"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Evening atmosphere"
+          }
         ],
         "details": [
           "Two days to breathe the Baroque: Noto in the morning, Modica for a sweet pause, and Ragusa Ibla for an unhurried evening.",
@@ -291,16 +380,18 @@
   },
   "Journal": {
     "label": "Journal",
-    "title": "Stories of a place that moves at its own pace",
-    "intro": "Four editorial lines: one new piece every week.",
-    "guideCtaKicker": "For our readers",
-    "guideCtaTitle": "The Sicilian Summer",
-    "guideCtaLead": "A digital guide and audio experience, a small cultural companion, not a travel package.",
-    "guideCtaButton": "Explore the Guide",
+    "title": "A digital journal updated slowly",
+    "intro": "One story each week about Culture & History, Lifestyle, Places, and Letters.",
+    "resultsTitle": "Results",
+    "resultsSubtitle": "Showing articles for: {category}",
+    "guideCtaKicker": "Contact",
+    "guideCtaTitle": "Ready to experience Sicily?",
+    "guideCtaLead": "Write to us and we’ll shape a bespoke experience—slow, authentic, and thoughtfully curated.",
+    "guideCtaButton": "Contact us",
     "categoryNames": {
       "cultureHistory": "Culture & History",
       "lifestyle": "Lifestyle",
-      "places": "Places",
+      "places": "Hidden places",
       "letters": "Letters"
     },
     "storyCount": "{count, plural, =1 {# story} other {# stories}}",
@@ -392,6 +483,10 @@
     "contactError": "Unable to send your message right now.",
     "travelWindow": "Travel window",
     "guests": "Number of guests",
+    "visitingFrom": "Where are you visiting from?",
+    "desiredDates": "Desired dates",
+    "experienceLookingFor": "What kind of experience are you looking for?",
+    "accommodationLookingFor": "What type of accommodation are you looking for?",
     "conciergeNotes": "Tell us about your rhythm, interests, and what kind of Sicily you are looking for.",
     "conciergeSubmit": "Make your request",
     "conciergeSuccess": "Request received. We will respond personally within 48 hours.",

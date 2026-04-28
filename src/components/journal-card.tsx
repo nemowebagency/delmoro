@@ -34,7 +34,7 @@ export function JournalCard({
           <p className="font-label text-[13px] font-normal uppercase tracking-[0.35em] text-[color:var(--gold-label)]">
             {categoryLabel ?? article.category}
           </p>
-          <h3 className="mt-2 text-balance font-serif text-[45px] font-normal leading-[1.08] text-[color:var(--ink)] transition-colors group-hover:text-[color:var(--gold-label)]">
+          <h3 className="mt-2 text-balance font-serif text-[34px] font-normal leading-[1.08] text-[color:var(--ink)] transition-colors group-hover:text-[color:var(--gold-label)] md:text-[36px]">
             {title}
           </h3>
           <p className="mt-2 text-[15px] leading-[1.75] text-[color:var(--muted)]">
